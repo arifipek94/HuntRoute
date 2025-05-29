@@ -1,0 +1,560 @@
+{
+  "meta": {
+    "count": 5,
+    "links": {
+      "self": "https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=MEL&destinationLocationCode=DPS&departureDate=2025-07-02&adults=1&max=5"
+    }
+  },
+  "data": [
+    {
+      "type": "flight-offer",
+      "id": "1",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-02",
+      "lastTicketingDateTime": "2025-06-02",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT6H25M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "MEL",
+                "terminal": "0",
+                "at": "2025-07-02T07:00:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "I",
+                "at": "2025-07-02T11:25:00"
+              },
+              "carrierCode": "OD",
+              "number": "178",
+              "aircraft": {
+                "code": "7M8"
+              },
+              "operating": {
+                "carrierCode": "OD"
+              },
+              "duration": "PT6H25M",
+              "id": "5",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "170.05",
+        "base": "91.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "170.05"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": false
+      },
+      "validatingAirlineCodes": [
+        "GP"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "170.05",
+            "base": "91.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "5",
+              "cabin": "ECONOMY",
+              "fareBasis": "XOWBSSAU",
+              "brandedFare": "SS",
+              "brandedFareLabel": "SUPER SAVER",
+              "class": "X",
+              "includedCheckedBags": {
+                "weight": 0,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "weight": 7,
+                "weightUnit": "KG"
+              },
+              "amenities": [
+                {
+                  "description": "UPTO44LB 20KG BAGGAGE",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "UPTO66LB 30KG BAGGAGE",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "UPTO88LB40KG BAGGAGE",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "UPTO22LB 10KG BAGGAGE",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "PRE RESERVED SEAT ASSIGNMENT",
+                  "isChargeable": true,
+                  "amenityType": "PRE_RESERVED_SEAT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "MEALS",
+                  "isChargeable": true,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "2",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-02",
+      "lastTicketingDateTime": "2025-06-02",
+      "numberOfBookableSeats": 2,
+      "itineraries": [
+        {
+          "duration": "PT6H10M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "MEL",
+                "terminal": "2",
+                "at": "2025-07-02T16:10:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "I",
+                "at": "2025-07-02T20:20:00"
+              },
+              "carrierCode": "JQ",
+              "number": "33",
+              "aircraft": {
+                "code": "32Q"
+              },
+              "operating": {
+                "carrierCode": "JQ"
+              },
+              "duration": "PT6H10M",
+              "id": "3",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "245.76",
+        "base": "149.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "245.76"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": false
+      },
+      "validatingAirlineCodes": [
+        "HR"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "245.76",
+            "base": "149.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "3",
+              "cabin": "ECONOMY",
+              "fareBasis": "CLOW2",
+              "class": "C",
+              "includedCheckedBags": {
+                "quantity": 0
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "3",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-02",
+      "lastTicketingDateTime": "2025-06-02",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT6H10M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "MEL",
+                "terminal": "2",
+                "at": "2025-07-02T06:25:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "I",
+                "at": "2025-07-02T10:35:00"
+              },
+              "carrierCode": "JQ",
+              "number": "31",
+              "aircraft": {
+                "code": "32Q"
+              },
+              "operating": {
+                "carrierCode": "JQ"
+              },
+              "duration": "PT6H10M",
+              "id": "1",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "293.76",
+        "base": "197.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "293.76"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "HR"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "293.76",
+            "base": "197.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "1",
+              "cabin": "ECONOMY",
+              "fareBasis": "HLOW2",
+              "class": "H",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "4",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-02",
+      "lastTicketingDateTime": "2025-06-02",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT6H10M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "MEL",
+                "terminal": "2",
+                "at": "2025-07-02T17:40:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "I",
+                "at": "2025-07-02T21:50:00"
+              },
+              "carrierCode": "JQ",
+              "number": "35",
+              "aircraft": {
+                "code": "32Q"
+              },
+              "operating": {
+                "carrierCode": "JQ"
+              },
+              "duration": "PT6H10M",
+              "id": "4",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "293.76",
+        "base": "197.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "293.76"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "HR"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "293.76",
+            "base": "197.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "4",
+              "cabin": "ECONOMY",
+              "fareBasis": "HLOW2",
+              "class": "H",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "5",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-02",
+      "lastTicketingDateTime": "2025-06-02",
+      "numberOfBookableSeats": 1,
+      "itineraries": [
+        {
+          "duration": "PT6H10M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "MEL",
+                "terminal": "2",
+                "at": "2025-07-02T09:15:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "I",
+                "at": "2025-07-02T13:25:00"
+              },
+              "carrierCode": "JQ",
+              "number": "43",
+              "aircraft": {
+                "code": "32Q"
+              },
+              "operating": {
+                "carrierCode": "JQ"
+              },
+              "duration": "PT6H10M",
+              "id": "2",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "293.76",
+        "base": "197.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "293.76"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "HR"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "293.76",
+            "base": "197.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "2",
+              "cabin": "ECONOMY",
+              "fareBasis": "HLOW2",
+              "class": "H",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dictionaries": {
+    "locations": {
+      "MEL": {
+        "cityCode": "MEL",
+        "countryCode": "AU"
+      },
+      "DPS": {
+        "cityCode": "DPS",
+        "countryCode": "ID"
+      }
+    },
+    "aircraft": {
+      "7M8": "BOEING 737 MAX 8",
+      "32Q": "AIRBUS A321NEO"
+    },
+    "currencies": {
+      "EUR": "EURO"
+    },
+    "carriers": {
+      "OD": "BATIK AIR MALAYSIA",
+      "JQ": "JETSTAR"
+    }
+  }
+}

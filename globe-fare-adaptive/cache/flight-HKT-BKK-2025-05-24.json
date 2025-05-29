@@ -1,0 +1,11 @@
+{
+  "errors": [
+    {
+      "status": 400,
+      "code": 425,
+      "title": "INVALID DATE",
+      "detail": "Date/Time is in the past",
+      "source": {}
+    }
+  ]
+}

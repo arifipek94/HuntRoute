@@ -1,0 +1,890 @@
+{
+  "from": "TPE",
+  "to": "DPS",
+  "date": "2025-06-18",
+  "data": [
+    {
+      "type": "flight-offer",
+      "id": "1",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-05-31",
+      "lastTicketingDateTime": "2025-05-31",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT15H55M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "TPE",
+                "terminal": "1",
+                "at": "2025-06-18T18:30:00"
+              },
+              "arrival": {
+                "iataCode": "KUL",
+                "terminal": "1",
+                "at": "2025-06-18T23:25:00"
+              },
+              "carrierCode": "OD",
+              "number": "883",
+              "aircraft": {
+                "code": "7M8"
+              },
+              "operating": {
+                "carrierCode": "OD"
+              },
+              "duration": "PT4H55M",
+              "id": "7",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "KUL",
+                "terminal": "1",
+                "at": "2025-06-19T07:15:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "I",
+                "at": "2025-06-19T10:25:00"
+              },
+              "carrierCode": "OD",
+              "number": "308",
+              "aircraft": {
+                "code": "738"
+              },
+              "operating": {
+                "carrierCode": "OD"
+              },
+              "duration": "PT3H10M",
+              "id": "8",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "142.32",
+        "base": "76.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "142.32"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": false
+      },
+      "validatingAirlineCodes": [
+        "GP"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "142.32",
+            "base": "76.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "7",
+              "cabin": "ECONOMY",
+              "fareBasis": "XOWBSSTW",
+              "brandedFare": "SS",
+              "brandedFareLabel": "SUPER SAVER",
+              "class": "X",
+              "includedCheckedBags": {
+                "weight": 0,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "weight": 7,
+                "weightUnit": "KG"
+              },
+              "amenities": [
+                {
+                  "description": "UPTO44LB 20KG BAGGAGE",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "UPTO66LB 30KG BAGGAGE",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "UPTO88LB40KG BAGGAGE",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "UPTO22LB 10KG BAGGAGE",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "PRE RESERVED SEAT ASSIGNMENT",
+                  "isChargeable": true,
+                  "amenityType": "PRE_RESERVED_SEAT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "MEALS",
+                  "isChargeable": true,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            },
+            {
+              "segmentId": "8",
+              "cabin": "ECONOMY",
+              "fareBasis": "XOWBSSMY",
+              "brandedFare": "SS",
+              "brandedFareLabel": "SUPER SAVER",
+              "class": "X",
+              "includedCheckedBags": {
+                "weight": 0,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "weight": 7,
+                "weightUnit": "KG"
+              },
+              "amenities": [
+                {
+                  "description": "UPTO44LB 20KG BAGGAGE",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "UPTO66LB 30KG BAGGAGE",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "UPTO88LB40KG BAGGAGE",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "UPTO22LB 10KG BAGGAGE",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "PRE RESERVED SEAT ASSIGNMENT",
+                  "isChargeable": true,
+                  "amenityType": "PRE_RESERVED_SEAT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "MEALS",
+                  "isChargeable": true,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "2",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-05-31",
+      "lastTicketingDateTime": "2025-05-31",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT19H10M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "TPE",
+                "terminal": "1",
+                "at": "2025-06-18T18:30:00"
+              },
+              "arrival": {
+                "iataCode": "KUL",
+                "terminal": "1",
+                "at": "2025-06-18T23:25:00"
+              },
+              "carrierCode": "OD",
+              "number": "883",
+              "aircraft": {
+                "code": "7M8"
+              },
+              "operating": {
+                "carrierCode": "OD"
+              },
+              "duration": "PT4H55M",
+              "id": "1",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "KUL",
+                "terminal": "1",
+                "at": "2025-06-19T10:40:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "I",
+                "at": "2025-06-19T13:40:00"
+              },
+              "carrierCode": "OD",
+              "number": "306",
+              "aircraft": {
+                "code": "738"
+              },
+              "operating": {
+                "carrierCode": "OD"
+              },
+              "duration": "PT3H",
+              "id": "2",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "142.32",
+        "base": "76.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "142.32"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": false
+      },
+      "validatingAirlineCodes": [
+        "GP"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "142.32",
+            "base": "76.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "1",
+              "cabin": "ECONOMY",
+              "fareBasis": "XOWBSSTW",
+              "brandedFare": "SS",
+              "brandedFareLabel": "SUPER SAVER",
+              "class": "X",
+              "includedCheckedBags": {
+                "weight": 0,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "weight": 7,
+                "weightUnit": "KG"
+              },
+              "amenities": [
+                {
+                  "description": "UPTO44LB 20KG BAGGAGE",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "UPTO66LB 30KG BAGGAGE",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "UPTO88LB40KG BAGGAGE",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "UPTO22LB 10KG BAGGAGE",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "PRE RESERVED SEAT ASSIGNMENT",
+                  "isChargeable": true,
+                  "amenityType": "PRE_RESERVED_SEAT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "MEALS",
+                  "isChargeable": true,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            },
+            {
+              "segmentId": "2",
+              "cabin": "ECONOMY",
+              "fareBasis": "XOWBSSMY",
+              "brandedFare": "SS",
+              "brandedFareLabel": "SUPER SAVER",
+              "class": "X",
+              "includedCheckedBags": {
+                "weight": 0,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "weight": 7,
+                "weightUnit": "KG"
+              },
+              "amenities": [
+                {
+                  "description": "UPTO44LB 20KG BAGGAGE",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "UPTO66LB 30KG BAGGAGE",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "UPTO88LB40KG BAGGAGE",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "UPTO22LB 10KG BAGGAGE",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "PRE RESERVED SEAT ASSIGNMENT",
+                  "isChargeable": true,
+                  "amenityType": "PRE_RESERVED_SEAT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "MEALS",
+                  "isChargeable": true,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "3",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-18",
+      "lastTicketingDateTime": "2025-06-18",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT16H50M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "TPE",
+                "terminal": "1",
+                "at": "2025-06-18T19:00:00"
+              },
+              "arrival": {
+                "iataCode": "SGN",
+                "terminal": "2",
+                "at": "2025-06-18T21:25:00"
+              },
+              "carrierCode": "VJ",
+              "number": "843",
+              "aircraft": {
+                "code": "321"
+              },
+              "operating": {
+                "carrierCode": "VJ"
+              },
+              "duration": "PT3H25M",
+              "id": "5",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "SGN",
+                "terminal": "2",
+                "at": "2025-06-19T07:00:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "I",
+                "at": "2025-06-19T11:50:00"
+              },
+              "carrierCode": "VJ",
+              "number": "899",
+              "aircraft": {
+                "code": "321"
+              },
+              "operating": {
+                "carrierCode": "VJ"
+              },
+              "duration": "PT3H50M",
+              "id": "6",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "149.18",
+        "base": "84.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "149.18"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "HR"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "149.18",
+            "base": "84.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "5",
+              "cabin": "ECONOMY",
+              "fareBasis": "ESP",
+              "class": "E",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "weight": 7,
+                "weightUnit": "KG"
+              }
+            },
+            {
+              "segmentId": "6",
+              "cabin": "ECONOMY",
+              "fareBasis": "ESP",
+              "class": "E",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "weight": 7,
+                "weightUnit": "KG"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "4",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-18",
+      "lastTicketingDateTime": "2025-06-18",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT17H55M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "TPE",
+                "terminal": "1",
+                "at": "2025-06-18T19:00:00"
+              },
+              "arrival": {
+                "iataCode": "SGN",
+                "terminal": "2",
+                "at": "2025-06-18T21:25:00"
+              },
+              "carrierCode": "VJ",
+              "number": "843",
+              "aircraft": {
+                "code": "321"
+              },
+              "operating": {
+                "carrierCode": "VJ"
+              },
+              "duration": "PT3H25M",
+              "id": "9",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "SGN",
+                "terminal": "2",
+                "at": "2025-06-19T07:55:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "I",
+                "at": "2025-06-19T12:55:00"
+              },
+              "carrierCode": "VJ",
+              "number": "849",
+              "aircraft": {
+                "code": "321"
+              },
+              "operating": {
+                "carrierCode": "VJ"
+              },
+              "duration": "PT4H",
+              "id": "10",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "149.18",
+        "base": "84.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "149.18"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "HR"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "149.18",
+            "base": "84.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "9",
+              "cabin": "ECONOMY",
+              "fareBasis": "ESP",
+              "class": "E",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "weight": 7,
+                "weightUnit": "KG"
+              }
+            },
+            {
+              "segmentId": "10",
+              "cabin": "ECONOMY",
+              "fareBasis": "ESP",
+              "class": "E",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "weight": 7,
+                "weightUnit": "KG"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "5",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-18",
+      "lastTicketingDateTime": "2025-06-18",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT21H25M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "TPE",
+                "terminal": "1",
+                "at": "2025-06-18T19:00:00"
+              },
+              "arrival": {
+                "iataCode": "HAN",
+                "terminal": "2",
+                "at": "2025-06-18T20:55:00"
+              },
+              "carrierCode": "VJ",
+              "number": "943",
+              "aircraft": {
+                "code": "321"
+              },
+              "operating": {
+                "carrierCode": "VJ"
+              },
+              "duration": "PT2H55M",
+              "id": "3",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "HAN",
+                "terminal": "2",
+                "at": "2025-06-19T10:05:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "I",
+                "at": "2025-06-19T16:25:00"
+              },
+              "carrierCode": "VJ",
+              "number": "997",
+              "aircraft": {
+                "code": "321"
+              },
+              "operating": {
+                "carrierCode": "VJ"
+              },
+              "duration": "PT5H20M",
+              "id": "4",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "149.18",
+        "base": "84.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "149.18"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "HR"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "149.18",
+            "base": "84.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "3",
+              "cabin": "ECONOMY",
+              "fareBasis": "ESP",
+              "class": "E",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "weight": 7,
+                "weightUnit": "KG"
+              }
+            },
+            {
+              "segmentId": "4",
+              "cabin": "ECONOMY",
+              "fareBasis": "ESP",
+              "class": "E",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "weight": 7,
+                "weightUnit": "KG"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "timestamp": 1748432107877,
+  "__timestamp": 1748432107877,
+  "__source": "amadeus-api",
+  "cached_at": "2025-05-28T11:35:07.877Z",
+  "expires_at": "2025-05-28T23:35:07.877Z"
+}

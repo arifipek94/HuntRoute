@@ -1,0 +1,1056 @@
+{
+  "from": "MNL",
+  "to": "DPS",
+  "date": "2025-06-18",
+  "data": [
+    {
+      "type": "flight-offer",
+      "id": "1",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-18",
+      "lastTicketingDateTime": "2025-06-18",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT3H55M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "MNL",
+                "terminal": "1",
+                "at": "2025-06-18T20:00:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "I",
+                "at": "2025-06-18T23:55:00"
+              },
+              "carrierCode": "PR",
+              "number": "537",
+              "aircraft": {
+                "code": "321"
+              },
+              "operating": {
+                "carrierCode": "PR"
+              },
+              "duration": "PT3H55M",
+              "id": "9",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "143.22",
+        "base": "115.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "143.22"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "PR"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "143.22",
+            "base": "115.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "9",
+              "cabin": "ECONOMY",
+              "fareBasis": "TOTII",
+              "brandedFare": "ESAVER",
+              "brandedFareLabel": "ECONOMY SAVER",
+              "class": "T",
+              "includedCheckedBags": {
+                "weight": 30,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "weight": 7,
+                "weightUnit": "KG"
+              },
+              "amenities": [
+                {
+                  "description": "SEAT RESERVATION",
+                  "isChargeable": true,
+                  "amenityType": "PRE_RESERVED_SEAT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "INFLIGHT HOT MEAL",
+                  "isChargeable": false,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "NO SHOW FEE",
+                  "isChargeable": true,
+                  "amenityType": "TRAVEL_SERVICES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "CHANGE FEE",
+                  "isChargeable": true,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "50 PERCENT MILES EARNED",
+                  "isChargeable": false,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "REFUND BEFORE DEPARTURE",
+                  "isChargeable": true,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "REFUND AFTER DEPARTURE",
+                  "isChargeable": true,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "2",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-18",
+      "lastTicketingDateTime": "2025-06-18",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT8H40M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "MNL",
+                "terminal": "1",
+                "at": "2025-06-18T06:50:00"
+              },
+              "arrival": {
+                "iataCode": "KUL",
+                "terminal": "1",
+                "at": "2025-06-18T10:35:00"
+              },
+              "carrierCode": "MH",
+              "number": "805",
+              "aircraft": {
+                "code": "73H"
+              },
+              "operating": {
+                "carrierCode": "MH"
+              },
+              "duration": "PT3H45M",
+              "id": "5",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "KUL",
+                "terminal": "1",
+                "at": "2025-06-18T12:25:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "I",
+                "at": "2025-06-18T15:30:00"
+              },
+              "carrierCode": "MH",
+              "number": "851",
+              "aircraft": {
+                "code": "73H"
+              },
+              "operating": {
+                "carrierCode": "MH"
+              },
+              "duration": "PT3H5M",
+              "id": "6",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "186.47",
+        "base": "169.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "186.47"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "MH"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "186.47",
+            "base": "169.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "5",
+              "cabin": "ECONOMY",
+              "fareBasis": "QBXOWPH",
+              "brandedFare": "BASIC",
+              "brandedFareLabel": "BASIC",
+              "class": "Q",
+              "includedCheckedBags": {
+                "weight": 25,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              },
+              "amenities": [
+                {
+                  "description": "PRE RESERVED SEAT ASSIGNMENT",
+                  "isChargeable": false,
+                  "amenityType": "PRE_RESERVED_SEAT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "SNACK",
+                  "isChargeable": false,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "CHILD DISCOUNT",
+                  "isChargeable": false,
+                  "amenityType": "TRAVEL_SERVICES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "INFANT DISCOUNT",
+                  "isChargeable": false,
+                  "amenityType": "TRAVEL_SERVICES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "CHANGE BEFORE DEPARTURE",
+                  "isChargeable": true,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "CHANGE AFTER DEPARTURE",
+                  "isChargeable": true,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "REFUND BEFORE DEPARTURE",
+                  "isChargeable": true,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            },
+            {
+              "segmentId": "6",
+              "cabin": "ECONOMY",
+              "fareBasis": "QBXOWPH",
+              "brandedFare": "BASIC",
+              "brandedFareLabel": "BASIC",
+              "class": "Q",
+              "includedCheckedBags": {
+                "weight": 25,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              },
+              "amenities": [
+                {
+                  "description": "PRE RESERVED SEAT ASSIGNMENT",
+                  "isChargeable": false,
+                  "amenityType": "PRE_RESERVED_SEAT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "SNACK",
+                  "isChargeable": false,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "CHILD DISCOUNT",
+                  "isChargeable": false,
+                  "amenityType": "TRAVEL_SERVICES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "INFANT DISCOUNT",
+                  "isChargeable": false,
+                  "amenityType": "TRAVEL_SERVICES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "CHANGE BEFORE DEPARTURE",
+                  "isChargeable": true,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "CHANGE AFTER DEPARTURE",
+                  "isChargeable": true,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "REFUND BEFORE DEPARTURE",
+                  "isChargeable": true,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "3",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-18",
+      "lastTicketingDateTime": "2025-06-18",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT11H40M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "MNL",
+                "terminal": "1",
+                "at": "2025-06-18T06:50:00"
+              },
+              "arrival": {
+                "iataCode": "KUL",
+                "terminal": "1",
+                "at": "2025-06-18T10:35:00"
+              },
+              "carrierCode": "MH",
+              "number": "805",
+              "aircraft": {
+                "code": "73H"
+              },
+              "operating": {
+                "carrierCode": "MH"
+              },
+              "duration": "PT3H45M",
+              "id": "7",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "KUL",
+                "terminal": "1",
+                "at": "2025-06-18T15:10:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "I",
+                "at": "2025-06-18T18:30:00"
+              },
+              "carrierCode": "MH",
+              "number": "853",
+              "aircraft": {
+                "code": "73H"
+              },
+              "operating": {
+                "carrierCode": "MH"
+              },
+              "duration": "PT3H20M",
+              "id": "8",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "186.47",
+        "base": "169.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "186.47"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "MH"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "186.47",
+            "base": "169.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "7",
+              "cabin": "ECONOMY",
+              "fareBasis": "QBXOWPH",
+              "brandedFare": "BASIC",
+              "brandedFareLabel": "BASIC",
+              "class": "Q",
+              "includedCheckedBags": {
+                "weight": 25,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              },
+              "amenities": [
+                {
+                  "description": "PRE RESERVED SEAT ASSIGNMENT",
+                  "isChargeable": false,
+                  "amenityType": "PRE_RESERVED_SEAT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "SNACK",
+                  "isChargeable": false,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "CHILD DISCOUNT",
+                  "isChargeable": false,
+                  "amenityType": "TRAVEL_SERVICES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "INFANT DISCOUNT",
+                  "isChargeable": false,
+                  "amenityType": "TRAVEL_SERVICES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "CHANGE BEFORE DEPARTURE",
+                  "isChargeable": true,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "CHANGE AFTER DEPARTURE",
+                  "isChargeable": true,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "REFUND BEFORE DEPARTURE",
+                  "isChargeable": true,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            },
+            {
+              "segmentId": "8",
+              "cabin": "ECONOMY",
+              "fareBasis": "QBXOWPH",
+              "brandedFare": "BASIC",
+              "brandedFareLabel": "BASIC",
+              "class": "Q",
+              "includedCheckedBags": {
+                "weight": 25,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              },
+              "amenities": [
+                {
+                  "description": "PRE RESERVED SEAT ASSIGNMENT",
+                  "isChargeable": false,
+                  "amenityType": "PRE_RESERVED_SEAT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "SNACK",
+                  "isChargeable": false,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "CHILD DISCOUNT",
+                  "isChargeable": false,
+                  "amenityType": "TRAVEL_SERVICES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "INFANT DISCOUNT",
+                  "isChargeable": false,
+                  "amenityType": "TRAVEL_SERVICES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "CHANGE BEFORE DEPARTURE",
+                  "isChargeable": true,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "CHANGE AFTER DEPARTURE",
+                  "isChargeable": true,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "REFUND BEFORE DEPARTURE",
+                  "isChargeable": true,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "4",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-18",
+      "lastTicketingDateTime": "2025-06-18",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT21H",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "MNL",
+                "terminal": "1",
+                "at": "2025-06-18T15:05:00"
+              },
+              "arrival": {
+                "iataCode": "KUL",
+                "terminal": "1",
+                "at": "2025-06-18T19:00:00"
+              },
+              "carrierCode": "MH",
+              "number": "705",
+              "aircraft": {
+                "code": "73H"
+              },
+              "operating": {
+                "carrierCode": "MH"
+              },
+              "duration": "PT3H55M",
+              "id": "1",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "KUL",
+                "terminal": "1",
+                "at": "2025-06-19T09:00:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "I",
+                "at": "2025-06-19T12:05:00"
+              },
+              "carrierCode": "MH",
+              "number": "715",
+              "aircraft": {
+                "code": "333"
+              },
+              "operating": {
+                "carrierCode": "MH"
+              },
+              "duration": "PT3H5M",
+              "id": "2",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "188.34",
+        "base": "169.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "188.34"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "MH"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "188.34",
+            "base": "169.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "1",
+              "cabin": "ECONOMY",
+              "fareBasis": "QBXOWPH",
+              "brandedFare": "BASIC",
+              "brandedFareLabel": "BASIC",
+              "class": "Q",
+              "includedCheckedBags": {
+                "weight": 25,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              },
+              "amenities": [
+                {
+                  "description": "PRE RESERVED SEAT ASSIGNMENT",
+                  "isChargeable": false,
+                  "amenityType": "PRE_RESERVED_SEAT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "SNACK",
+                  "isChargeable": false,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "CHILD DISCOUNT",
+                  "isChargeable": false,
+                  "amenityType": "TRAVEL_SERVICES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "INFANT DISCOUNT",
+                  "isChargeable": false,
+                  "amenityType": "TRAVEL_SERVICES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "CHANGE BEFORE DEPARTURE",
+                  "isChargeable": true,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "CHANGE AFTER DEPARTURE",
+                  "isChargeable": true,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "REFUND BEFORE DEPARTURE",
+                  "isChargeable": true,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            },
+            {
+              "segmentId": "2",
+              "cabin": "ECONOMY",
+              "fareBasis": "QBXOWPH",
+              "brandedFare": "BASIC",
+              "brandedFareLabel": "BASIC",
+              "class": "Q",
+              "includedCheckedBags": {
+                "weight": 25,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              },
+              "amenities": [
+                {
+                  "description": "PRE RESERVED SEAT ASSIGNMENT",
+                  "isChargeable": false,
+                  "amenityType": "PRE_RESERVED_SEAT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "SNACK",
+                  "isChargeable": false,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "CHILD DISCOUNT",
+                  "isChargeable": false,
+                  "amenityType": "TRAVEL_SERVICES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "INFANT DISCOUNT",
+                  "isChargeable": false,
+                  "amenityType": "TRAVEL_SERVICES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "CHANGE BEFORE DEPARTURE",
+                  "isChargeable": true,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "CHANGE AFTER DEPARTURE",
+                  "isChargeable": true,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "REFUND BEFORE DEPARTURE",
+                  "isChargeable": true,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "5",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-02",
+      "lastTicketingDateTime": "2025-06-02",
+      "numberOfBookableSeats": 1,
+      "itineraries": [
+        {
+          "duration": "PT16H5M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "MNL",
+                "terminal": "3",
+                "at": "2025-06-18T21:45:00"
+              },
+              "arrival": {
+                "iataCode": "SIN",
+                "terminal": "4",
+                "at": "2025-06-19T01:25:00"
+              },
+              "carrierCode": "3K",
+              "number": "766",
+              "aircraft": {
+                "code": "320"
+              },
+              "operating": {
+                "carrierCode": "3K"
+              },
+              "duration": "PT3H40M",
+              "id": "3",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "SIN",
+                "terminal": "4",
+                "at": "2025-06-19T10:50:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "I",
+                "at": "2025-06-19T13:50:00"
+              },
+              "carrierCode": "3K",
+              "number": "241",
+              "aircraft": {
+                "code": "320"
+              },
+              "operating": {
+                "carrierCode": "3K"
+              },
+              "duration": "PT3H",
+              "id": "4",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "200.04",
+        "base": "148.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "200.04"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "HR"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "200.04",
+            "base": "148.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "3",
+              "cabin": "ECONOMY",
+              "fareBasis": "HLOW",
+              "class": "H",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            },
+            {
+              "segmentId": "4",
+              "cabin": "ECONOMY",
+              "fareBasis": "CLOW",
+              "class": "C",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "timestamp": 1748432107206,
+  "__timestamp": 1748432107206,
+  "__source": "amadeus-api",
+  "cached_at": "2025-05-28T11:35:07.206Z",
+  "expires_at": "2025-05-28T23:35:07.206Z"
+}

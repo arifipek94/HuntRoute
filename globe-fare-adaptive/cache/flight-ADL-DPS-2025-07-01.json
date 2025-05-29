@@ -1,0 +1,983 @@
+{
+  "meta": {
+    "count": 5,
+    "links": {
+      "self": "https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=ADL&destinationLocationCode=DPS&departureDate=2025-07-01&adults=1&max=5"
+    }
+  },
+  "data": [
+    {
+      "type": "flight-offer",
+      "id": "1",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-02",
+      "lastTicketingDateTime": "2025-06-02",
+      "numberOfBookableSeats": 1,
+      "itineraries": [
+        {
+          "duration": "PT5H25M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "ADL",
+                "terminal": "I",
+                "at": "2025-07-01T06:15:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "I",
+                "at": "2025-07-01T10:10:00"
+              },
+              "carrierCode": "JQ",
+              "number": "125",
+              "aircraft": {
+                "code": "32Q"
+              },
+              "operating": {
+                "carrierCode": "JQ"
+              },
+              "duration": "PT5H25M",
+              "id": "7",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "286.50",
+        "base": "185.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "286.50"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "HR"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "286.50",
+            "base": "185.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "7",
+              "cabin": "ECONOMY",
+              "fareBasis": "HLOW1",
+              "class": "H",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "2",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-11",
+      "lastTicketingDateTime": "2025-06-11",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT11H20M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "ADL",
+                "terminal": "1",
+                "at": "2025-07-01T11:00:00"
+              },
+              "arrival": {
+                "iataCode": "SYD",
+                "terminal": "3",
+                "at": "2025-07-01T13:20:00"
+              },
+              "carrierCode": "QF",
+              "number": "738",
+              "aircraft": {
+                "code": "73H"
+              },
+              "operating": {
+                "carrierCode": "QF"
+              },
+              "duration": "PT1H50M",
+              "id": "3",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "SYD",
+                "terminal": "1",
+                "at": "2025-07-01T16:20:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "I",
+                "at": "2025-07-01T20:50:00"
+              },
+              "carrierCode": "QF",
+              "number": "43",
+              "aircraft": {
+                "code": "332"
+              },
+              "operating": {
+                "carrierCode": "QF"
+              },
+              "duration": "PT6H30M",
+              "id": "4",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "326.18",
+        "base": "219.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "326.18"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "QF"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "326.18",
+            "base": "219.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "3",
+              "cabin": "ECONOMY",
+              "fareBasis": "SSDPO",
+              "brandedFare": "ECSV",
+              "brandedFareLabel": "ECONOMY SAVER",
+              "class": "S",
+              "includedCheckedBags": {
+                "weight": 30,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "quantity": 2
+              },
+              "amenities": [
+                {
+                  "description": "PRE PAID BAGGAGE",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "40KG BAGGAGE ALLOWANCE",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "50KG BAGGAGE ALLOWANCE",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "COMPLIMENTARY BEVERAGES",
+                  "isChargeable": false,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "MEAL OR SNACK",
+                  "isChargeable": false,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "USB POWER",
+                  "isChargeable": false,
+                  "amenityType": "ENTERTAINMENT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "STANDARD SEATING",
+                  "isChargeable": false,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            },
+            {
+              "segmentId": "4",
+              "cabin": "ECONOMY",
+              "fareBasis": "SSDPO",
+              "brandedFare": "ECSV",
+              "brandedFareLabel": "ECONOMY SAVER",
+              "class": "S",
+              "includedCheckedBags": {
+                "weight": 30,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              },
+              "amenities": [
+                {
+                  "description": "PRE PAID BAGGAGE",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "40KG BAGGAGE ALLOWANCE",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "50KG BAGGAGE ALLOWANCE",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "COMPLIMENTARY BEVERAGES",
+                  "isChargeable": false,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "MEAL OR SNACK",
+                  "isChargeable": false,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "USB POWER",
+                  "isChargeable": false,
+                  "amenityType": "ENTERTAINMENT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "STANDARD SEATING",
+                  "isChargeable": false,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "3",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-11",
+      "lastTicketingDateTime": "2025-06-11",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT13H25M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "ADL",
+                "terminal": "1",
+                "at": "2025-07-01T08:55:00"
+              },
+              "arrival": {
+                "iataCode": "SYD",
+                "terminal": "3",
+                "at": "2025-07-01T11:15:00"
+              },
+              "carrierCode": "QF",
+              "number": "736",
+              "aircraft": {
+                "code": "73H"
+              },
+              "operating": {
+                "carrierCode": "QF"
+              },
+              "duration": "PT1H50M",
+              "id": "8",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "SYD",
+                "terminal": "1",
+                "at": "2025-07-01T16:20:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "I",
+                "at": "2025-07-01T20:50:00"
+              },
+              "carrierCode": "QF",
+              "number": "43",
+              "aircraft": {
+                "code": "332"
+              },
+              "operating": {
+                "carrierCode": "QF"
+              },
+              "duration": "PT6H30M",
+              "id": "9",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "326.18",
+        "base": "219.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "326.18"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "QF"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "326.18",
+            "base": "219.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "8",
+              "cabin": "ECONOMY",
+              "fareBasis": "SSDPO",
+              "brandedFare": "ECSV",
+              "brandedFareLabel": "ECONOMY SAVER",
+              "class": "S",
+              "includedCheckedBags": {
+                "weight": 30,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "quantity": 2
+              },
+              "amenities": [
+                {
+                  "description": "PRE PAID BAGGAGE",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "40KG BAGGAGE ALLOWANCE",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "50KG BAGGAGE ALLOWANCE",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "COMPLIMENTARY BEVERAGES",
+                  "isChargeable": false,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "MEAL OR SNACK",
+                  "isChargeable": false,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "USB POWER",
+                  "isChargeable": false,
+                  "amenityType": "ENTERTAINMENT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "STANDARD SEATING",
+                  "isChargeable": false,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            },
+            {
+              "segmentId": "9",
+              "cabin": "ECONOMY",
+              "fareBasis": "SSDPO",
+              "brandedFare": "ECSV",
+              "brandedFareLabel": "ECONOMY SAVER",
+              "class": "S",
+              "includedCheckedBags": {
+                "weight": 30,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              },
+              "amenities": [
+                {
+                  "description": "PRE PAID BAGGAGE",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "40KG BAGGAGE ALLOWANCE",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "50KG BAGGAGE ALLOWANCE",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "COMPLIMENTARY BEVERAGES",
+                  "isChargeable": false,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "MEAL OR SNACK",
+                  "isChargeable": false,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "USB POWER",
+                  "isChargeable": false,
+                  "amenityType": "ENTERTAINMENT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "STANDARD SEATING",
+                  "isChargeable": false,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "4",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-02",
+      "lastTicketingDateTime": "2025-06-02",
+      "numberOfBookableSeats": 1,
+      "itineraries": [
+        {
+          "duration": "PT20H20M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "ADL",
+                "terminal": "I",
+                "at": "2025-07-01T15:40:00"
+              },
+              "arrival": {
+                "iataCode": "PER",
+                "terminal": "1",
+                "at": "2025-07-01T17:35:00"
+              },
+              "carrierCode": "JQ",
+              "number": "108",
+              "aircraft": {
+                "code": "32Q"
+              },
+              "operating": {
+                "carrierCode": "JQ"
+              },
+              "duration": "PT3H25M",
+              "id": "5",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "PER",
+                "terminal": "1",
+                "at": "2025-07-02T06:50:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "I",
+                "at": "2025-07-02T10:30:00"
+              },
+              "carrierCode": "JQ",
+              "number": "110",
+              "aircraft": {
+                "code": "32Q"
+              },
+              "operating": {
+                "carrierCode": "JQ"
+              },
+              "duration": "PT3H40M",
+              "id": "6",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "346.02",
+        "base": "226.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "346.02"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "HR"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "346.02",
+            "base": "226.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "5",
+              "cabin": "ECONOMY",
+              "fareBasis": "CLOW",
+              "class": "C",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            },
+            {
+              "segmentId": "6",
+              "cabin": "ECONOMY",
+              "fareBasis": "HLOW1",
+              "class": "H",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "5",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-05-30",
+      "lastTicketingDateTime": "2025-05-30",
+      "numberOfBookableSeats": 6,
+      "itineraries": [
+        {
+          "duration": "PT13H5M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "ADL",
+                "terminal": "1",
+                "at": "2025-07-01T10:40:00"
+              },
+              "arrival": {
+                "iataCode": "OOL",
+                "terminal": "1",
+                "at": "2025-07-01T13:30:00"
+              },
+              "carrierCode": "VA",
+              "number": "1449",
+              "aircraft": {
+                "code": "73H"
+              },
+              "operating": {
+                "carrierCode": "VA"
+              },
+              "duration": "PT2H20M",
+              "id": "1",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "OOL",
+                "terminal": "1",
+                "at": "2025-07-01T17:35:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "I",
+                "at": "2025-07-01T22:15:00"
+              },
+              "carrierCode": "VA",
+              "number": "83",
+              "aircraft": {
+                "code": "73H"
+              },
+              "duration": "PT6H40M",
+              "id": "2",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "378.61",
+        "base": "314.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "378.61",
+        "additionalServices": [
+          {
+            "amount": "48.33",
+            "type": "CHECKED_BAGS"
+          }
+        ]
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "VA"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "378.61",
+            "base": "314.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "1",
+              "cabin": "ECONOMY",
+              "fareBasis": "EHCHAO",
+              "brandedFare": "CH",
+              "brandedFareLabel": "CHOICE",
+              "class": "E",
+              "includedCheckedBags": {
+                "quantity": 1
+              },
+              "includedCabinBags": {
+                "quantity": 2
+              },
+              "amenities": [
+                {
+                  "description": "SNACK",
+                  "isChargeable": true,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "ALCOHOLIC DRINK",
+                  "isChargeable": true,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "NON ALCOHOLIC DRINK",
+                  "isChargeable": true,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "STANDARD SEAT",
+                  "isChargeable": false,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            },
+            {
+              "segmentId": "2",
+              "cabin": "ECONOMY",
+              "fareBasis": "EHCHAO",
+              "brandedFare": "CH",
+              "brandedFareLabel": "CHOICE",
+              "class": "E",
+              "includedCheckedBags": {
+                "quantity": 1
+              },
+              "includedCabinBags": {
+                "quantity": 2
+              },
+              "amenities": [
+                {
+                  "description": "SNACK",
+                  "isChargeable": true,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "ALCOHOLIC DRINK",
+                  "isChargeable": true,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "NON ALCOHOLIC DRINK",
+                  "isChargeable": true,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "STANDARD SEAT",
+                  "isChargeable": false,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dictionaries": {
+    "locations": {
+      "DPS": {
+        "cityCode": "DPS",
+        "countryCode": "ID"
+      },
+      "ADL": {
+        "cityCode": "ADL",
+        "countryCode": "AU"
+      },
+      "PER": {
+        "cityCode": "PER",
+        "countryCode": "AU"
+      },
+      "OOL": {
+        "cityCode": "OOL",
+        "countryCode": "AU"
+      },
+      "SYD": {
+        "cityCode": "SYD",
+        "countryCode": "AU"
+      }
+    },
+    "aircraft": {
+      "332": "AIRBUS A330-200",
+      "32Q": "AIRBUS A321NEO",
+      "73H": "BOEING 737-800 (WINGLETS)"
+    },
+    "currencies": {
+      "EUR": "EURO"
+    },
+    "carriers": {
+      "QF": "QANTAS AIRWAYS",
+      "JQ": "JETSTAR",
+      "VA": "VIRGIN AUSTRALIA INTL"
+    }
+  }
+}

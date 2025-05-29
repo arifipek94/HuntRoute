@@ -1,0 +1,586 @@
+{
+  "meta": {
+    "count": 5,
+    "links": {
+      "self": "https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=CGK&destinationLocationCode=DPS&departureDate=2025-07-02&adults=1&max=5"
+    }
+  },
+  "data": [
+    {
+      "type": "flight-offer",
+      "id": "1",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-05",
+      "lastTicketingDateTime": "2025-06-05",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT11H20M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "CGK",
+                "terminal": "2",
+                "at": "2025-07-02T20:00:00"
+              },
+              "arrival": {
+                "iataCode": "SUB",
+                "terminal": "1",
+                "at": "2025-07-02T21:35:00"
+              },
+              "carrierCode": "ID",
+              "number": "6594",
+              "aircraft": {
+                "code": "738"
+              },
+              "operating": {
+                "carrierCode": "ID"
+              },
+              "duration": "PT1H35M",
+              "id": "1",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "SUB",
+                "terminal": "1",
+                "at": "2025-07-03T06:20:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "D",
+                "at": "2025-07-03T08:20:00"
+              },
+              "carrierCode": "ID",
+              "number": "6412",
+              "aircraft": {
+                "code": "32A"
+              },
+              "operating": {
+                "carrierCode": "ID"
+              },
+              "duration": "PT1H",
+              "id": "2",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "98.72",
+        "base": "56.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "98.72"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "GP"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "98.72",
+            "base": "56.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "1",
+              "cabin": "ECONOMY",
+              "fareBasis": "XIDOW",
+              "class": "X",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            },
+            {
+              "segmentId": "2",
+              "cabin": "ECONOMY",
+              "fareBasis": "XIDOW",
+              "class": "X",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "2",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-05",
+      "lastTicketingDateTime": "2025-06-05",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT12H20M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "CGK",
+                "terminal": "2",
+                "at": "2025-07-02T19:00:00"
+              },
+              "arrival": {
+                "iataCode": "SUB",
+                "terminal": "1",
+                "at": "2025-07-02T20:30:00"
+              },
+              "carrierCode": "ID",
+              "number": "6586",
+              "aircraft": {
+                "code": "32A"
+              },
+              "operating": {
+                "carrierCode": "ID"
+              },
+              "duration": "PT1H30M",
+              "id": "3",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "SUB",
+                "terminal": "1",
+                "at": "2025-07-03T06:20:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "D",
+                "at": "2025-07-03T08:20:00"
+              },
+              "carrierCode": "ID",
+              "number": "6412",
+              "aircraft": {
+                "code": "32A"
+              },
+              "operating": {
+                "carrierCode": "ID"
+              },
+              "duration": "PT1H",
+              "id": "4",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "98.72",
+        "base": "56.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "98.72"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "GP"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "98.72",
+            "base": "56.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "3",
+              "cabin": "ECONOMY",
+              "fareBasis": "XIDOW",
+              "class": "X",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            },
+            {
+              "segmentId": "4",
+              "cabin": "ECONOMY",
+              "fareBasis": "XIDOW",
+              "class": "X",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "3",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-07-02",
+      "lastTicketingDateTime": "2025-07-02",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT1H55M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "CGK",
+                "terminal": "3",
+                "at": "2025-07-02T09:40:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "D",
+                "at": "2025-07-02T12:35:00"
+              },
+              "carrierCode": "GA",
+              "number": "404",
+              "aircraft": {
+                "code": "738"
+              },
+              "operating": {
+                "carrierCode": "GA"
+              },
+              "duration": "PT1H55M",
+              "id": "5",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "104.62",
+        "base": "78.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "104.62"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "GA"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "104.62",
+            "base": "78.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "5",
+              "cabin": "ECONOMY",
+              "fareBasis": "YOWID",
+              "class": "Y",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "4",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-07-02",
+      "lastTicketingDateTime": "2025-07-02",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT1H55M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "CGK",
+                "terminal": "3",
+                "at": "2025-07-02T11:50:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "D",
+                "at": "2025-07-02T14:45:00"
+              },
+              "carrierCode": "GA",
+              "number": "408",
+              "aircraft": {
+                "code": "738"
+              },
+              "operating": {
+                "carrierCode": "GA"
+              },
+              "duration": "PT1H55M",
+              "id": "6",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "104.62",
+        "base": "78.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "104.62"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "GA"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "104.62",
+            "base": "78.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "6",
+              "cabin": "ECONOMY",
+              "fareBasis": "YOWID",
+              "class": "Y",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "5",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-07-02",
+      "lastTicketingDateTime": "2025-07-02",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT1H55M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "CGK",
+                "terminal": "3",
+                "at": "2025-07-02T14:30:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "D",
+                "at": "2025-07-02T17:25:00"
+              },
+              "carrierCode": "GA",
+              "number": "410",
+              "aircraft": {
+                "code": "738"
+              },
+              "operating": {
+                "carrierCode": "GA"
+              },
+              "duration": "PT1H55M",
+              "id": "7",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "104.62",
+        "base": "78.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "104.62"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "GA"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "104.62",
+            "base": "78.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "7",
+              "cabin": "ECONOMY",
+              "fareBasis": "YOWID",
+              "class": "Y",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dictionaries": {
+    "locations": {
+      "SUB": {
+        "cityCode": "SUB",
+        "countryCode": "ID"
+      },
+      "CGK": {
+        "cityCode": "JKT",
+        "countryCode": "ID"
+      },
+      "DPS": {
+        "cityCode": "DPS",
+        "countryCode": "ID"
+      }
+    },
+    "aircraft": {
+      "738": "BOEING 737-800",
+      "32A": "AIRBUS A320 (SHARKLETS)"
+    },
+    "currencies": {
+      "EUR": "EURO"
+    },
+    "carriers": {
+      "GA": "GARUDA INDONESIA",
+      "ID": "BATIK AIR INDONESIA"
+    }
+  }
+}

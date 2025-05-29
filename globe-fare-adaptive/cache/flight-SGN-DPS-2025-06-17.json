@@ -1,0 +1,490 @@
+{
+  "from": "SGN",
+  "to": "DPS",
+  "date": "2025-06-17",
+  "data": [
+    {
+      "type": "flight-offer",
+      "id": "1",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-17",
+      "lastTicketingDateTime": "2025-06-17",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT3H45M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "SGN",
+                "terminal": "2",
+                "at": "2025-06-17T09:45:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "I",
+                "at": "2025-06-17T14:30:00"
+              },
+              "carrierCode": "VJ",
+              "number": "897",
+              "aircraft": {
+                "code": "321"
+              },
+              "operating": {
+                "carrierCode": "VJ"
+              },
+              "duration": "PT3H45M",
+              "id": "2",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "109.59",
+        "base": "68.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "109.59"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "GP"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "109.59",
+            "base": "68.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "2",
+              "cabin": "ECONOMY",
+              "fareBasis": "ESP",
+              "class": "E",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "weight": 7,
+                "weightUnit": "KG"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "2",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-17",
+      "lastTicketingDateTime": "2025-06-17",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT3H50M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "SGN",
+                "terminal": "2",
+                "at": "2025-06-17T08:15:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "I",
+                "at": "2025-06-17T13:05:00"
+              },
+              "carrierCode": "VJ",
+              "number": "893",
+              "aircraft": {
+                "code": "321"
+              },
+              "operating": {
+                "carrierCode": "VJ"
+              },
+              "duration": "PT3H50M",
+              "id": "5",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "109.59",
+        "base": "68.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "109.59"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "GP"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "109.59",
+            "base": "68.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "5",
+              "cabin": "ECONOMY",
+              "fareBasis": "ESP",
+              "class": "E",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "weight": 7,
+                "weightUnit": "KG"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "3",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-17",
+      "lastTicketingDateTime": "2025-06-17",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT4H",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "SGN",
+                "terminal": "2",
+                "at": "2025-06-17T07:55:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "I",
+                "at": "2025-06-17T12:55:00"
+              },
+              "carrierCode": "VJ",
+              "number": "849",
+              "aircraft": {
+                "code": "321"
+              },
+              "operating": {
+                "carrierCode": "VJ"
+              },
+              "duration": "PT4H",
+              "id": "1",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "109.59",
+        "base": "68.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "109.59"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "GP"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "109.59",
+            "base": "68.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "1",
+              "cabin": "ECONOMY",
+              "fareBasis": "ESP",
+              "class": "E",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "weight": 7,
+                "weightUnit": "KG"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "4",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-17",
+      "lastTicketingDateTime": "2025-06-17",
+      "numberOfBookableSeats": 4,
+      "itineraries": [
+        {
+          "duration": "PT3H50M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "SGN",
+                "terminal": "2",
+                "at": "2025-06-17T07:00:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "I",
+                "at": "2025-06-17T11:50:00"
+              },
+              "carrierCode": "VJ",
+              "number": "899",
+              "aircraft": {
+                "code": "321"
+              },
+              "operating": {
+                "carrierCode": "VJ"
+              },
+              "duration": "PT3H50M",
+              "id": "4",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "109.59",
+        "base": "68.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "109.59"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "GP"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "109.59",
+            "base": "68.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "4",
+              "cabin": "ECONOMY",
+              "fareBasis": "ESP",
+              "class": "E",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "weight": 7,
+                "weightUnit": "KG"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "5",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-05-29",
+      "lastTicketingDateTime": "2025-05-29",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT3H45M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "SGN",
+                "terminal": "2",
+                "at": "2025-06-17T09:45:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "1",
+                "at": "2025-06-17T14:30:00"
+              },
+              "carrierCode": "H1",
+              "number": "4081",
+              "aircraft": {
+                "code": "32S"
+              },
+              "operating": {
+                "carrierCode": "VJ"
+              },
+              "duration": "PT3H45M",
+              "id": "3",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "120.06",
+        "base": "59.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "120.06"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "HR"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "120.06",
+            "base": "59.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "3",
+              "cabin": "ECONOMY",
+              "fareBasis": "VOWVJ",
+              "class": "V",
+              "includedCheckedBags": {
+                "quantity": 1
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "timestamp": 1748429249605,
+  "__timestamp": 1748429249605,
+  "__source": "amadeus-api",
+  "cached_at": "2025-05-28T10:47:29.605Z",
+  "expires_at": "2025-05-28T22:47:29.605Z"
+}

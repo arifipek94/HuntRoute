@@ -1,0 +1,7268 @@
+[
+  {
+    "from": "KUL",
+    "to": "BKK",
+    "price": "67.89",
+    "airline": "OD",
+    "departure": "2025-07-01T07:05:00",
+    "arrival": "2025-07-01T08:15:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-07-01T07:05:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "0",
+          "at": "2025-07-01T08:15:00"
+        },
+        "carrierCode": "OD",
+        "number": "524",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT2H10M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-15T10:53:21.873Z"
+  },
+  {
+    "from": "SGN",
+    "to": "BKK",
+    "price": "105.04",
+    "airline": "H1",
+    "departure": "2025-07-01T08:35:00",
+    "arrival": "2025-07-01T10:05:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "SGN",
+          "terminal": "2",
+          "at": "2025-07-01T08:35:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-07-01T10:05:00"
+        },
+        "carrierCode": "H1",
+        "number": "4014",
+        "aircraft": {
+          "code": "32S"
+        },
+        "operating": {
+          "carrierCode": "VJ"
+        },
+        "duration": "PT1H30M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-15T10:53:24.182Z"
+  },
+  {
+    "from": "HKT",
+    "to": "BKK",
+    "price": "44.40",
+    "airline": "SL",
+    "departure": "2025-07-01T09:05:00",
+    "arrival": "2025-07-01T10:20:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "HKT",
+          "terminal": "D",
+          "at": "2025-07-01T09:05:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "2",
+          "at": "2025-07-01T10:20:00"
+        },
+        "carrierCode": "SL",
+        "number": "751",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT1H15M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-15T10:53:25.785Z"
+  },
+  {
+    "from": "HAN",
+    "to": "BKK",
+    "price": "99.80",
+    "airline": "VN",
+    "departure": "2025-07-01T19:00:00",
+    "arrival": "2025-07-01T21:05:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "HAN",
+          "terminal": "2",
+          "at": "2025-07-01T19:00:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-07-01T21:05:00"
+        },
+        "carrierCode": "VN",
+        "number": "617",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "VN"
+        },
+        "duration": "PT2H5M",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-15T10:53:27.906Z"
+  },
+  {
+    "from": "KTM",
+    "to": "BKK",
+    "price": "127.61",
+    "airline": "SL",
+    "departure": "2025-07-01T14:25:00",
+    "arrival": "2025-07-01T18:55:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "KTM",
+          "terminal": "I",
+          "at": "2025-07-01T14:25:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "1",
+          "at": "2025-07-01T18:55:00"
+        },
+        "carrierCode": "SL",
+        "number": "221",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT3H15M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-15T10:53:31.413Z"
+  },
+  {
+    "from": "RGN",
+    "to": "BKK",
+    "price": "107.69",
+    "airline": "TG",
+    "departure": "2025-07-01T11:25:00",
+    "arrival": "2025-07-01T13:25:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "RGN",
+          "terminal": "1",
+          "at": "2025-07-01T11:25:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-07-01T13:25:00"
+        },
+        "carrierCode": "TG",
+        "number": "302",
+        "aircraft": {
+          "code": "320"
+        },
+        "operating": {
+          "carrierCode": "TG"
+        },
+        "duration": "PT1H30M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-15T10:53:33.902Z"
+  },
+  {
+    "from": "TPE",
+    "to": "BKK",
+    "price": "78.30",
+    "airline": "SL",
+    "departure": "2025-07-01T10:45:00",
+    "arrival": "2025-07-01T13:35:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "TPE",
+          "terminal": "1",
+          "at": "2025-07-01T10:45:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "1",
+          "at": "2025-07-01T13:35:00"
+        },
+        "carrierCode": "SL",
+        "number": "399",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT3H50M",
+        "id": "4",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-15T10:53:36.449Z"
+  },
+  {
+    "from": "ICN",
+    "to": "BKK",
+    "price": "100.47",
+    "airline": "TW",
+    "departure": "2025-07-01T20:05:00",
+    "arrival": "2025-07-02T00:15:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "ICN",
+          "terminal": "1",
+          "at": "2025-07-01T20:05:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-07-02T00:15:00"
+        },
+        "carrierCode": "TW",
+        "number": "101",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "TW"
+        },
+        "duration": "PT6H10M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-15T10:53:39.020Z"
+  },
+  {
+    "from": "HKG",
+    "to": "BKK",
+    "price": "60.21",
+    "airline": "SL",
+    "departure": "2025-07-01T14:15:00",
+    "arrival": "2025-07-01T16:10:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "HKG",
+          "terminal": "1",
+          "at": "2025-07-01T14:15:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "1",
+          "at": "2025-07-01T16:10:00"
+        },
+        "carrierCode": "SL",
+        "number": "361",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT2H55M",
+        "id": "7",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-15T10:53:41.730Z"
+  },
+  {
+    "from": "MNL",
+    "to": "BKK",
+    "price": "123.63",
+    "airline": "HB",
+    "departure": "2025-07-01T03:10:00",
+    "arrival": "2025-07-01T10:10:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "MNL",
+          "terminal": "3",
+          "at": "2025-07-01T03:10:00"
+        },
+        "arrival": {
+          "iataCode": "HKG",
+          "terminal": "1",
+          "at": "2025-07-01T05:20:00"
+        },
+        "carrierCode": "HB",
+        "number": "232",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "HB"
+        },
+        "duration": "PT2H10M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "HKG",
+          "terminal": "1",
+          "at": "2025-07-01T08:00:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-07-01T10:10:00"
+        },
+        "carrierCode": "HB",
+        "number": "281",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "HB"
+        },
+        "duration": "PT3H10M",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-15T10:53:45.100Z"
+  },
+  {
+    "from": "CGK",
+    "to": "BKK",
+    "price": "60.20",
+    "airline": "SL",
+    "departure": "2025-07-01T05:00:00",
+    "arrival": "2025-07-01T08:25:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "CGK",
+          "terminal": "2",
+          "at": "2025-07-01T05:00:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "1",
+          "at": "2025-07-01T08:25:00"
+        },
+        "carrierCode": "SL",
+        "number": "117",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT3H25M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-15T10:53:48.692Z"
+  },
+  {
+    "from": "SIN",
+    "to": "BKK",
+    "price": "73.39",
+    "airline": "SL",
+    "departure": "2025-07-01T12:55:00",
+    "arrival": "2025-07-01T14:15:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "SIN",
+          "terminal": "3",
+          "at": "2025-07-01T12:55:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "1",
+          "at": "2025-07-01T14:15:00"
+        },
+        "carrierCode": "SL",
+        "number": "101",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT2H20M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-15T10:53:51.459Z"
+  },
+  {
+    "from": "DAC",
+    "to": "BKK",
+    "price": "196.01",
+    "airline": "AI",
+    "departure": "2025-07-01T21:00:00",
+    "arrival": "2025-07-02T07:40:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "DAC",
+          "terminal": "2",
+          "at": "2025-07-01T21:00:00"
+        },
+        "arrival": {
+          "iataCode": "DEL",
+          "terminal": "3",
+          "at": "2025-07-01T23:20:00"
+        },
+        "carrierCode": "AI",
+        "number": "238",
+        "aircraft": {
+          "code": "32A"
+        },
+        "operating": {
+          "carrierCode": "AI"
+        },
+        "duration": "PT2H50M",
+        "id": "7",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "DEL",
+          "terminal": "3",
+          "at": "2025-07-02T01:40:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-07-02T07:40:00"
+        },
+        "carrierCode": "AI",
+        "number": "336",
+        "aircraft": {
+          "code": "32N"
+        },
+        "operating": {
+          "carrierCode": "AI"
+        },
+        "duration": "PT4H30M",
+        "id": "8",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-15T10:53:55.201Z"
+  },
+  {
+    "from": "MAA",
+    "to": "BKK",
+    "price": "140.54",
+    "airline": "UL",
+    "departure": "2025-07-01T21:15:00",
+    "arrival": "2025-07-02T06:15:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "MAA",
+          "terminal": "2",
+          "at": "2025-07-01T21:15:00"
+        },
+        "arrival": {
+          "iataCode": "CMB",
+          "at": "2025-07-01T22:40:00"
+        },
+        "carrierCode": "UL",
+        "number": "124",
+        "aircraft": {
+          "code": "320"
+        },
+        "operating": {
+          "carrierCode": "UL"
+        },
+        "duration": "PT1H25M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "CMB",
+          "at": "2025-07-02T01:10:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-07-02T06:15:00"
+        },
+        "carrierCode": "UL",
+        "number": "402",
+        "aircraft": {
+          "code": "320"
+        },
+        "operating": {
+          "carrierCode": "UL"
+        },
+        "duration": "PT3H35M",
+        "id": "4",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-15T10:53:59.454Z"
+  },
+  {
+    "from": "CGK",
+    "to": "DPS",
+    "price": "98.56",
+    "airline": "ID",
+    "departure": "2025-07-01T20:00:00",
+    "arrival": "2025-07-02T08:20:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "CGK",
+          "terminal": "2",
+          "at": "2025-07-01T20:00:00"
+        },
+        "arrival": {
+          "iataCode": "SUB",
+          "terminal": "1",
+          "at": "2025-07-01T21:35:00"
+        },
+        "carrierCode": "ID",
+        "number": "6594",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "ID"
+        },
+        "duration": "PT1H35M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "SUB",
+          "terminal": "1",
+          "at": "2025-07-02T06:20:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "D",
+          "at": "2025-07-02T08:20:00"
+        },
+        "carrierCode": "ID",
+        "number": "6412",
+        "aircraft": {
+          "code": "32A"
+        },
+        "operating": {
+          "carrierCode": "ID"
+        },
+        "duration": "PT1H",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-15T10:54:00.568Z"
+  },
+  {
+    "from": "KUL",
+    "to": "DPS",
+    "price": "55.03",
+    "airline": "OD",
+    "departure": "2025-07-01T14:00:00",
+    "arrival": "2025-07-01T17:00:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-07-01T14:00:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T17:00:00"
+        },
+        "carrierCode": "OD",
+        "number": "193",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT3H",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-15T10:54:04.390Z"
+  },
+  {
+    "from": "SIN",
+    "to": "DPS",
+    "price": "126.14",
+    "airline": "3K",
+    "departure": "2025-07-01T15:45:00",
+    "arrival": "2025-07-01T18:35:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "SIN",
+          "terminal": "4",
+          "at": "2025-07-01T15:45:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T18:35:00"
+        },
+        "carrierCode": "3K",
+        "number": "245",
+        "aircraft": {
+          "code": "320"
+        },
+        "operating": {
+          "carrierCode": "3K"
+        },
+        "duration": "PT2H50M",
+        "id": "6",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-15T10:54:07.903Z"
+  },
+  {
+    "from": "PER",
+    "to": "DPS",
+    "price": "124.02",
+    "airline": "ID",
+    "departure": "2025-07-01T14:15:00",
+    "arrival": "2025-07-01T18:00:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "PER",
+          "terminal": "0",
+          "at": "2025-07-01T14:15:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "D",
+          "at": "2025-07-01T18:00:00"
+        },
+        "carrierCode": "ID",
+        "number": "6008",
+        "aircraft": {
+          "code": "32A"
+        },
+        "operating": {
+          "carrierCode": "ID"
+        },
+        "duration": "PT3H45M",
+        "id": "8",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-15T10:54:09.478Z"
+  },
+  {
+    "from": "MEL",
+    "to": "DPS",
+    "price": "170.14",
+    "airline": "OD",
+    "departure": "2025-07-01T07:00:00",
+    "arrival": "2025-07-01T11:25:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "MEL",
+          "terminal": "0",
+          "at": "2025-07-01T07:00:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T11:25:00"
+        },
+        "carrierCode": "OD",
+        "number": "178",
+        "aircraft": {
+          "code": "7M8"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT6H25M",
+        "id": "5",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-15T10:54:11.971Z"
+  },
+  {
+    "from": "SYD",
+    "to": "DPS",
+    "price": "272.00",
+    "airline": "JQ",
+    "departure": "2025-07-01T16:25:00",
+    "arrival": "2025-07-01T21:00:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "SYD",
+          "terminal": "1",
+          "at": "2025-07-01T16:25:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T21:00:00"
+        },
+        "carrierCode": "JQ",
+        "number": "37",
+        "aircraft": {
+          "code": "32Q"
+        },
+        "operating": {
+          "carrierCode": "JQ"
+        },
+        "duration": "PT6H35M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-15T10:54:14.338Z"
+  },
+  {
+    "from": "BNE",
+    "to": "DPS",
+    "price": "195.34",
+    "airline": "OD",
+    "departure": "2025-07-01T07:15:00",
+    "arrival": "2025-07-01T11:30:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "BNE",
+          "terminal": "I",
+          "at": "2025-07-01T07:15:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T11:30:00"
+        },
+        "carrierCode": "OD",
+        "number": "158",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT6H15M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-15T10:54:16.171Z"
+  },
+  {
+    "from": "ADL",
+    "to": "DPS",
+    "price": "286.65",
+    "airline": "JQ",
+    "departure": "2025-07-01T06:15:00",
+    "arrival": "2025-07-01T10:10:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "ADL",
+          "terminal": "I",
+          "at": "2025-07-01T06:15:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T10:10:00"
+        },
+        "carrierCode": "JQ",
+        "number": "125",
+        "aircraft": {
+          "code": "32Q"
+        },
+        "operating": {
+          "carrierCode": "JQ"
+        },
+        "duration": "PT5H25M",
+        "id": "7",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-15T10:54:17.714Z"
+  },
+  {
+    "from": "SGN",
+    "to": "DPS",
+    "price": "109.70",
+    "airline": "VJ",
+    "departure": "2025-07-01T09:45:00",
+    "arrival": "2025-07-01T14:30:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "SGN",
+          "terminal": "2",
+          "at": "2025-07-01T09:45:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T14:30:00"
+        },
+        "carrierCode": "VJ",
+        "number": "897",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "VJ"
+        },
+        "duration": "PT3H45M",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-15T10:54:22.659Z"
+  },
+  {
+    "from": "BKI",
+    "to": "DPS",
+    "price": "105.75",
+    "airline": "OD",
+    "departure": "2025-07-01T11:20:00",
+    "arrival": "2025-07-01T19:40:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "BKI",
+          "terminal": "1",
+          "at": "2025-07-01T11:20:00"
+        },
+        "arrival": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-07-01T13:50:00"
+        },
+        "carrierCode": "OD",
+        "number": "1003",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT2H30M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-07-01T16:30:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T19:40:00"
+        },
+        "carrierCode": "OD",
+        "number": "177",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT3H10M",
+        "id": "4",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-15T10:54:24.597Z"
+  },
+  {
+    "from": "DAD",
+    "to": "DPS",
+    "price": "110.17",
+    "airline": "OD",
+    "departure": "2025-07-01T12:50:00",
+    "arrival": "2025-07-01T21:00:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "DAD",
+          "terminal": "0",
+          "at": "2025-07-01T12:50:00"
+        },
+        "arrival": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-07-01T16:40:00"
+        },
+        "carrierCode": "OD",
+        "number": "503",
+        "aircraft": {
+          "code": "7M8"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT2H50M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-07-01T17:50:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T21:00:00"
+        },
+        "carrierCode": "OD",
+        "number": "171",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT3H10M",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-15T10:54:25.888Z"
+  },
+  {
+    "from": "HKG",
+    "to": "DPS",
+    "price": "157.15",
+    "airline": "OD",
+    "departure": "2025-07-01T15:15:00",
+    "arrival": "2025-07-02T10:25:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "HKG",
+          "terminal": "1",
+          "at": "2025-07-01T15:15:00"
+        },
+        "arrival": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-07-01T19:05:00"
+        },
+        "carrierCode": "OD",
+        "number": "606",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT3H50M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-07-02T07:15:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-02T10:25:00"
+        },
+        "carrierCode": "OD",
+        "number": "308",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT3H10M",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-15T10:54:28.275Z"
+  },
+  {
+    "from": "ICN",
+    "to": "DPS",
+    "price": "163.87",
+    "airline": "VJ",
+    "departure": "2025-07-01T21:15:00",
+    "arrival": "2025-07-02T11:50:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "ICN",
+          "terminal": "1",
+          "at": "2025-07-01T21:15:00"
+        },
+        "arrival": {
+          "iataCode": "SGN",
+          "terminal": "2",
+          "at": "2025-07-02T00:30:00"
+        },
+        "carrierCode": "VJ",
+        "number": "861",
+        "aircraft": {
+          "code": "320"
+        },
+        "operating": {
+          "carrierCode": "VJ"
+        },
+        "duration": "PT5H15M",
+        "id": "7",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "SGN",
+          "terminal": "2",
+          "at": "2025-07-02T07:00:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-02T11:50:00"
+        },
+        "carrierCode": "VJ",
+        "number": "899",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "VJ"
+        },
+        "duration": "PT3H50M",
+        "id": "8",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-15T10:54:30.258Z"
+  },
+  {
+    "from": "TPE",
+    "to": "DPS",
+    "price": "148.21",
+    "airline": "VJ",
+    "departure": "2025-07-01T19:00:00",
+    "arrival": "2025-07-02T11:50:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "TPE",
+          "terminal": "1",
+          "at": "2025-07-01T19:00:00"
+        },
+        "arrival": {
+          "iataCode": "SGN",
+          "terminal": "2",
+          "at": "2025-07-01T21:25:00"
+        },
+        "carrierCode": "VJ",
+        "number": "843",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "VJ"
+        },
+        "duration": "PT3H25M",
+        "id": "5",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "SGN",
+          "terminal": "2",
+          "at": "2025-07-02T07:00:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-02T11:50:00"
+        },
+        "carrierCode": "VJ",
+        "number": "899",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "VJ"
+        },
+        "duration": "PT3H50M",
+        "id": "6",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-15T10:54:32.419Z"
+  },
+  {
+    "from": "MNL",
+    "to": "DPS",
+    "price": "144.30",
+    "airline": "PR",
+    "departure": "2025-07-01T20:00:00",
+    "arrival": "2025-07-01T23:55:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "MNL",
+          "terminal": "1",
+          "at": "2025-07-01T20:00:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T23:55:00"
+        },
+        "carrierCode": "PR",
+        "number": "537",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "PR"
+        },
+        "duration": "PT3H55M",
+        "id": "9",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-15T10:54:34.280Z"
+  },
+  {
+    "from": "KUL",
+    "to": "BKK",
+    "price": "67.89",
+    "airline": "OD",
+    "departure": "2025-07-01T07:05:00",
+    "arrival": "2025-07-01T08:15:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-07-01T07:05:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "0",
+          "at": "2025-07-01T08:15:00"
+        },
+        "carrierCode": "OD",
+        "number": "524",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT2H10M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-16T10:03:57.504Z"
+  },
+  {
+    "from": "SGN",
+    "to": "BKK",
+    "price": "105.04",
+    "airline": "H1",
+    "departure": "2025-07-01T08:35:00",
+    "arrival": "2025-07-01T10:05:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "SGN",
+          "terminal": "2",
+          "at": "2025-07-01T08:35:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-07-01T10:05:00"
+        },
+        "carrierCode": "H1",
+        "number": "4014",
+        "aircraft": {
+          "code": "32S"
+        },
+        "operating": {
+          "carrierCode": "VJ"
+        },
+        "duration": "PT1H30M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-16T10:03:57.506Z"
+  },
+  {
+    "from": "HKT",
+    "to": "BKK",
+    "price": "44.40",
+    "airline": "SL",
+    "departure": "2025-07-01T09:05:00",
+    "arrival": "2025-07-01T10:20:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "HKT",
+          "terminal": "D",
+          "at": "2025-07-01T09:05:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "2",
+          "at": "2025-07-01T10:20:00"
+        },
+        "carrierCode": "SL",
+        "number": "751",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT1H15M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-16T10:03:57.509Z"
+  },
+  {
+    "from": "HAN",
+    "to": "BKK",
+    "price": "99.80",
+    "airline": "VN",
+    "departure": "2025-07-01T19:00:00",
+    "arrival": "2025-07-01T21:05:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "HAN",
+          "terminal": "2",
+          "at": "2025-07-01T19:00:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-07-01T21:05:00"
+        },
+        "carrierCode": "VN",
+        "number": "617",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "VN"
+        },
+        "duration": "PT2H5M",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-16T10:03:57.511Z"
+  },
+  {
+    "from": "KTM",
+    "to": "BKK",
+    "price": "127.61",
+    "airline": "SL",
+    "departure": "2025-07-01T14:25:00",
+    "arrival": "2025-07-01T18:55:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "KTM",
+          "terminal": "I",
+          "at": "2025-07-01T14:25:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "1",
+          "at": "2025-07-01T18:55:00"
+        },
+        "carrierCode": "SL",
+        "number": "221",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT3H15M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-16T10:03:57.512Z"
+  },
+  {
+    "from": "RGN",
+    "to": "BKK",
+    "price": "107.69",
+    "airline": "TG",
+    "departure": "2025-07-01T11:25:00",
+    "arrival": "2025-07-01T13:25:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "RGN",
+          "terminal": "1",
+          "at": "2025-07-01T11:25:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-07-01T13:25:00"
+        },
+        "carrierCode": "TG",
+        "number": "302",
+        "aircraft": {
+          "code": "320"
+        },
+        "operating": {
+          "carrierCode": "TG"
+        },
+        "duration": "PT1H30M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-16T10:03:57.514Z"
+  },
+  {
+    "from": "TPE",
+    "to": "BKK",
+    "price": "78.30",
+    "airline": "SL",
+    "departure": "2025-07-01T10:45:00",
+    "arrival": "2025-07-01T13:35:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "TPE",
+          "terminal": "1",
+          "at": "2025-07-01T10:45:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "1",
+          "at": "2025-07-01T13:35:00"
+        },
+        "carrierCode": "SL",
+        "number": "399",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT3H50M",
+        "id": "4",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-16T10:03:57.515Z"
+  },
+  {
+    "from": "ICN",
+    "to": "BKK",
+    "price": "100.47",
+    "airline": "TW",
+    "departure": "2025-07-01T20:05:00",
+    "arrival": "2025-07-02T00:15:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "ICN",
+          "terminal": "1",
+          "at": "2025-07-01T20:05:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-07-02T00:15:00"
+        },
+        "carrierCode": "TW",
+        "number": "101",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "TW"
+        },
+        "duration": "PT6H10M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-16T10:03:57.517Z"
+  },
+  {
+    "from": "HKG",
+    "to": "BKK",
+    "price": "60.21",
+    "airline": "SL",
+    "departure": "2025-07-01T14:15:00",
+    "arrival": "2025-07-01T16:10:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "HKG",
+          "terminal": "1",
+          "at": "2025-07-01T14:15:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "1",
+          "at": "2025-07-01T16:10:00"
+        },
+        "carrierCode": "SL",
+        "number": "361",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT2H55M",
+        "id": "7",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-16T10:03:57.518Z"
+  },
+  {
+    "from": "MNL",
+    "to": "BKK",
+    "price": "123.63",
+    "airline": "HB",
+    "departure": "2025-07-01T03:10:00",
+    "arrival": "2025-07-01T10:10:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "MNL",
+          "terminal": "3",
+          "at": "2025-07-01T03:10:00"
+        },
+        "arrival": {
+          "iataCode": "HKG",
+          "terminal": "1",
+          "at": "2025-07-01T05:20:00"
+        },
+        "carrierCode": "HB",
+        "number": "232",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "HB"
+        },
+        "duration": "PT2H10M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "HKG",
+          "terminal": "1",
+          "at": "2025-07-01T08:00:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-07-01T10:10:00"
+        },
+        "carrierCode": "HB",
+        "number": "281",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "HB"
+        },
+        "duration": "PT3H10M",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-16T10:03:57.520Z"
+  },
+  {
+    "from": "CGK",
+    "to": "BKK",
+    "price": "60.20",
+    "airline": "SL",
+    "departure": "2025-07-01T05:00:00",
+    "arrival": "2025-07-01T08:25:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "CGK",
+          "terminal": "2",
+          "at": "2025-07-01T05:00:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "1",
+          "at": "2025-07-01T08:25:00"
+        },
+        "carrierCode": "SL",
+        "number": "117",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT3H25M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-16T10:03:57.521Z"
+  },
+  {
+    "from": "SIN",
+    "to": "BKK",
+    "price": "73.39",
+    "airline": "SL",
+    "departure": "2025-07-01T12:55:00",
+    "arrival": "2025-07-01T14:15:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "SIN",
+          "terminal": "3",
+          "at": "2025-07-01T12:55:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "1",
+          "at": "2025-07-01T14:15:00"
+        },
+        "carrierCode": "SL",
+        "number": "101",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT2H20M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-16T10:03:57.522Z"
+  },
+  {
+    "from": "DAC",
+    "to": "BKK",
+    "price": "196.01",
+    "airline": "AI",
+    "departure": "2025-07-01T21:00:00",
+    "arrival": "2025-07-02T07:40:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "DAC",
+          "terminal": "2",
+          "at": "2025-07-01T21:00:00"
+        },
+        "arrival": {
+          "iataCode": "DEL",
+          "terminal": "3",
+          "at": "2025-07-01T23:20:00"
+        },
+        "carrierCode": "AI",
+        "number": "238",
+        "aircraft": {
+          "code": "32A"
+        },
+        "operating": {
+          "carrierCode": "AI"
+        },
+        "duration": "PT2H50M",
+        "id": "7",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "DEL",
+          "terminal": "3",
+          "at": "2025-07-02T01:40:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-07-02T07:40:00"
+        },
+        "carrierCode": "AI",
+        "number": "336",
+        "aircraft": {
+          "code": "32N"
+        },
+        "operating": {
+          "carrierCode": "AI"
+        },
+        "duration": "PT4H30M",
+        "id": "8",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-16T10:03:57.524Z"
+  },
+  {
+    "from": "MAA",
+    "to": "BKK",
+    "price": "140.54",
+    "airline": "UL",
+    "departure": "2025-07-01T21:15:00",
+    "arrival": "2025-07-02T06:15:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "MAA",
+          "terminal": "2",
+          "at": "2025-07-01T21:15:00"
+        },
+        "arrival": {
+          "iataCode": "CMB",
+          "at": "2025-07-01T22:40:00"
+        },
+        "carrierCode": "UL",
+        "number": "124",
+        "aircraft": {
+          "code": "320"
+        },
+        "operating": {
+          "carrierCode": "UL"
+        },
+        "duration": "PT1H25M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "CMB",
+          "at": "2025-07-02T01:10:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-07-02T06:15:00"
+        },
+        "carrierCode": "UL",
+        "number": "402",
+        "aircraft": {
+          "code": "320"
+        },
+        "operating": {
+          "carrierCode": "UL"
+        },
+        "duration": "PT3H35M",
+        "id": "4",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-16T10:03:57.525Z"
+  },
+  {
+    "from": "CGK",
+    "to": "DPS",
+    "price": "98.56",
+    "airline": "ID",
+    "departure": "2025-07-01T20:00:00",
+    "arrival": "2025-07-02T08:20:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "CGK",
+          "terminal": "2",
+          "at": "2025-07-01T20:00:00"
+        },
+        "arrival": {
+          "iataCode": "SUB",
+          "terminal": "1",
+          "at": "2025-07-01T21:35:00"
+        },
+        "carrierCode": "ID",
+        "number": "6594",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "ID"
+        },
+        "duration": "PT1H35M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "SUB",
+          "terminal": "1",
+          "at": "2025-07-02T06:20:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "D",
+          "at": "2025-07-02T08:20:00"
+        },
+        "carrierCode": "ID",
+        "number": "6412",
+        "aircraft": {
+          "code": "32A"
+        },
+        "operating": {
+          "carrierCode": "ID"
+        },
+        "duration": "PT1H",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-16T10:03:57.528Z"
+  },
+  {
+    "from": "KUL",
+    "to": "DPS",
+    "price": "55.03",
+    "airline": "OD",
+    "departure": "2025-07-01T14:00:00",
+    "arrival": "2025-07-01T17:00:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-07-01T14:00:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T17:00:00"
+        },
+        "carrierCode": "OD",
+        "number": "193",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT3H",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-16T10:03:57.530Z"
+  },
+  {
+    "from": "SIN",
+    "to": "DPS",
+    "price": "126.14",
+    "airline": "3K",
+    "departure": "2025-07-01T15:45:00",
+    "arrival": "2025-07-01T18:35:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "SIN",
+          "terminal": "4",
+          "at": "2025-07-01T15:45:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T18:35:00"
+        },
+        "carrierCode": "3K",
+        "number": "245",
+        "aircraft": {
+          "code": "320"
+        },
+        "operating": {
+          "carrierCode": "3K"
+        },
+        "duration": "PT2H50M",
+        "id": "6",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-16T10:03:57.531Z"
+  },
+  {
+    "from": "PER",
+    "to": "DPS",
+    "price": "124.02",
+    "airline": "ID",
+    "departure": "2025-07-01T14:15:00",
+    "arrival": "2025-07-01T18:00:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "PER",
+          "terminal": "0",
+          "at": "2025-07-01T14:15:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "D",
+          "at": "2025-07-01T18:00:00"
+        },
+        "carrierCode": "ID",
+        "number": "6008",
+        "aircraft": {
+          "code": "32A"
+        },
+        "operating": {
+          "carrierCode": "ID"
+        },
+        "duration": "PT3H45M",
+        "id": "8",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-16T10:03:57.532Z"
+  },
+  {
+    "from": "MEL",
+    "to": "DPS",
+    "price": "170.14",
+    "airline": "OD",
+    "departure": "2025-07-01T07:00:00",
+    "arrival": "2025-07-01T11:25:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "MEL",
+          "terminal": "0",
+          "at": "2025-07-01T07:00:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T11:25:00"
+        },
+        "carrierCode": "OD",
+        "number": "178",
+        "aircraft": {
+          "code": "7M8"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT6H25M",
+        "id": "5",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-16T10:03:57.534Z"
+  },
+  {
+    "from": "SYD",
+    "to": "DPS",
+    "price": "272.00",
+    "airline": "JQ",
+    "departure": "2025-07-01T16:25:00",
+    "arrival": "2025-07-01T21:00:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "SYD",
+          "terminal": "1",
+          "at": "2025-07-01T16:25:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T21:00:00"
+        },
+        "carrierCode": "JQ",
+        "number": "37",
+        "aircraft": {
+          "code": "32Q"
+        },
+        "operating": {
+          "carrierCode": "JQ"
+        },
+        "duration": "PT6H35M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-16T10:03:57.535Z"
+  },
+  {
+    "from": "BNE",
+    "to": "DPS",
+    "price": "195.34",
+    "airline": "OD",
+    "departure": "2025-07-01T07:15:00",
+    "arrival": "2025-07-01T11:30:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "BNE",
+          "terminal": "I",
+          "at": "2025-07-01T07:15:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T11:30:00"
+        },
+        "carrierCode": "OD",
+        "number": "158",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT6H15M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-16T10:03:57.536Z"
+  },
+  {
+    "from": "ADL",
+    "to": "DPS",
+    "price": "286.65",
+    "airline": "JQ",
+    "departure": "2025-07-01T06:15:00",
+    "arrival": "2025-07-01T10:10:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "ADL",
+          "terminal": "I",
+          "at": "2025-07-01T06:15:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T10:10:00"
+        },
+        "carrierCode": "JQ",
+        "number": "125",
+        "aircraft": {
+          "code": "32Q"
+        },
+        "operating": {
+          "carrierCode": "JQ"
+        },
+        "duration": "PT5H25M",
+        "id": "7",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-16T10:03:57.538Z"
+  },
+  {
+    "from": "SGN",
+    "to": "DPS",
+    "price": "109.70",
+    "airline": "VJ",
+    "departure": "2025-07-01T09:45:00",
+    "arrival": "2025-07-01T14:30:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "SGN",
+          "terminal": "2",
+          "at": "2025-07-01T09:45:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T14:30:00"
+        },
+        "carrierCode": "VJ",
+        "number": "897",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "VJ"
+        },
+        "duration": "PT3H45M",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-16T10:03:57.539Z"
+  },
+  {
+    "from": "BKI",
+    "to": "DPS",
+    "price": "105.75",
+    "airline": "OD",
+    "departure": "2025-07-01T11:20:00",
+    "arrival": "2025-07-01T19:40:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "BKI",
+          "terminal": "1",
+          "at": "2025-07-01T11:20:00"
+        },
+        "arrival": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-07-01T13:50:00"
+        },
+        "carrierCode": "OD",
+        "number": "1003",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT2H30M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-07-01T16:30:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T19:40:00"
+        },
+        "carrierCode": "OD",
+        "number": "177",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT3H10M",
+        "id": "4",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-16T10:03:57.541Z"
+  },
+  {
+    "from": "DAD",
+    "to": "DPS",
+    "price": "110.17",
+    "airline": "OD",
+    "departure": "2025-07-01T12:50:00",
+    "arrival": "2025-07-01T21:00:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "DAD",
+          "terminal": "0",
+          "at": "2025-07-01T12:50:00"
+        },
+        "arrival": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-07-01T16:40:00"
+        },
+        "carrierCode": "OD",
+        "number": "503",
+        "aircraft": {
+          "code": "7M8"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT2H50M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-07-01T17:50:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T21:00:00"
+        },
+        "carrierCode": "OD",
+        "number": "171",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT3H10M",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-16T10:03:57.542Z"
+  },
+  {
+    "from": "HKG",
+    "to": "DPS",
+    "price": "157.15",
+    "airline": "OD",
+    "departure": "2025-07-01T15:15:00",
+    "arrival": "2025-07-02T10:25:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "HKG",
+          "terminal": "1",
+          "at": "2025-07-01T15:15:00"
+        },
+        "arrival": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-07-01T19:05:00"
+        },
+        "carrierCode": "OD",
+        "number": "606",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT3H50M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-07-02T07:15:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-02T10:25:00"
+        },
+        "carrierCode": "OD",
+        "number": "308",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT3H10M",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-16T10:03:57.543Z"
+  },
+  {
+    "from": "ICN",
+    "to": "DPS",
+    "price": "163.87",
+    "airline": "VJ",
+    "departure": "2025-07-01T21:15:00",
+    "arrival": "2025-07-02T11:50:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "ICN",
+          "terminal": "1",
+          "at": "2025-07-01T21:15:00"
+        },
+        "arrival": {
+          "iataCode": "SGN",
+          "terminal": "2",
+          "at": "2025-07-02T00:30:00"
+        },
+        "carrierCode": "VJ",
+        "number": "861",
+        "aircraft": {
+          "code": "320"
+        },
+        "operating": {
+          "carrierCode": "VJ"
+        },
+        "duration": "PT5H15M",
+        "id": "7",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "SGN",
+          "terminal": "2",
+          "at": "2025-07-02T07:00:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-02T11:50:00"
+        },
+        "carrierCode": "VJ",
+        "number": "899",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "VJ"
+        },
+        "duration": "PT3H50M",
+        "id": "8",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-16T10:03:57.545Z"
+  },
+  {
+    "from": "TPE",
+    "to": "DPS",
+    "price": "148.21",
+    "airline": "VJ",
+    "departure": "2025-07-01T19:00:00",
+    "arrival": "2025-07-02T11:50:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "TPE",
+          "terminal": "1",
+          "at": "2025-07-01T19:00:00"
+        },
+        "arrival": {
+          "iataCode": "SGN",
+          "terminal": "2",
+          "at": "2025-07-01T21:25:00"
+        },
+        "carrierCode": "VJ",
+        "number": "843",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "VJ"
+        },
+        "duration": "PT3H25M",
+        "id": "5",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "SGN",
+          "terminal": "2",
+          "at": "2025-07-02T07:00:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-02T11:50:00"
+        },
+        "carrierCode": "VJ",
+        "number": "899",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "VJ"
+        },
+        "duration": "PT3H50M",
+        "id": "6",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-16T10:03:57.546Z"
+  },
+  {
+    "from": "MNL",
+    "to": "DPS",
+    "price": "144.30",
+    "airline": "PR",
+    "departure": "2025-07-01T20:00:00",
+    "arrival": "2025-07-01T23:55:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "MNL",
+          "terminal": "1",
+          "at": "2025-07-01T20:00:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T23:55:00"
+        },
+        "carrierCode": "PR",
+        "number": "537",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "PR"
+        },
+        "duration": "PT3H55M",
+        "id": "9",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-16T10:03:57.548Z"
+  },
+  {
+    "from": "KUL",
+    "to": "BKK",
+    "price": "67.89",
+    "airline": "OD",
+    "departure": "2025-07-01T07:05:00",
+    "arrival": "2025-07-01T08:15:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-07-01T07:05:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "0",
+          "at": "2025-07-01T08:15:00"
+        },
+        "carrierCode": "OD",
+        "number": "524",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT2H10M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-17T12:06:35.541Z"
+  },
+  {
+    "from": "SGN",
+    "to": "BKK",
+    "price": "95.36",
+    "airline": "VN",
+    "departure": "2025-07-01T08:45:00",
+    "arrival": "2025-07-01T10:20:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "SGN",
+          "terminal": "2",
+          "at": "2025-07-01T08:45:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-07-01T10:20:00"
+        },
+        "carrierCode": "VN",
+        "number": "601",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "VN"
+        },
+        "duration": "PT1H35M",
+        "id": "4",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-17T12:06:37.887Z"
+  },
+  {
+    "from": "HKT",
+    "to": "BKK",
+    "price": "45.55",
+    "airline": "SL",
+    "departure": "2025-07-01T09:05:00",
+    "arrival": "2025-07-01T10:20:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "HKT",
+          "terminal": "D",
+          "at": "2025-07-01T09:05:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "2",
+          "at": "2025-07-01T10:20:00"
+        },
+        "carrierCode": "SL",
+        "number": "751",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT1H15M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-17T12:06:39.108Z"
+  },
+  {
+    "from": "HAN",
+    "to": "BKK",
+    "price": "99.80",
+    "airline": "VN",
+    "departure": "2025-07-01T08:50:00",
+    "arrival": "2025-07-01T10:50:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "HAN",
+          "terminal": "2",
+          "at": "2025-07-01T08:50:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-07-01T10:50:00"
+        },
+        "carrierCode": "VN",
+        "number": "611",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "VN"
+        },
+        "duration": "PT2H",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-17T12:06:43.708Z"
+  },
+  {
+    "from": "KTM",
+    "to": "BKK",
+    "price": "138.84",
+    "airline": "SL",
+    "departure": "2025-07-01T14:25:00",
+    "arrival": "2025-07-01T18:55:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "KTM",
+          "terminal": "I",
+          "at": "2025-07-01T14:25:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "1",
+          "at": "2025-07-01T18:55:00"
+        },
+        "carrierCode": "SL",
+        "number": "221",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT3H15M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-17T12:06:48.367Z"
+  },
+  {
+    "from": "RGN",
+    "to": "BKK",
+    "price": "107.69",
+    "airline": "TG",
+    "departure": "2025-07-01T11:25:00",
+    "arrival": "2025-07-01T13:25:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "RGN",
+          "terminal": "1",
+          "at": "2025-07-01T11:25:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-07-01T13:25:00"
+        },
+        "carrierCode": "TG",
+        "number": "302",
+        "aircraft": {
+          "code": "320"
+        },
+        "operating": {
+          "carrierCode": "TG"
+        },
+        "duration": "PT1H30M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-17T12:06:51.437Z"
+  },
+  {
+    "from": "TPE",
+    "to": "BKK",
+    "price": "78.30",
+    "airline": "SL",
+    "departure": "2025-07-01T10:45:00",
+    "arrival": "2025-07-01T13:35:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "TPE",
+          "terminal": "1",
+          "at": "2025-07-01T10:45:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "1",
+          "at": "2025-07-01T13:35:00"
+        },
+        "carrierCode": "SL",
+        "number": "399",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT3H50M",
+        "id": "4",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-17T12:06:55.071Z"
+  },
+  {
+    "from": "ICN",
+    "to": "BKK",
+    "price": "82.10",
+    "airline": "VN",
+    "departure": "2025-07-01T10:05:00",
+    "arrival": "2025-07-01T18:05:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "ICN",
+          "terminal": "1",
+          "at": "2025-07-01T10:05:00"
+        },
+        "arrival": {
+          "iataCode": "HAN",
+          "terminal": "2",
+          "at": "2025-07-01T12:30:00"
+        },
+        "carrierCode": "VN",
+        "number": "417",
+        "aircraft": {
+          "code": "787"
+        },
+        "operating": {
+          "carrierCode": "VN"
+        },
+        "duration": "PT4H25M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "HAN",
+          "terminal": "2",
+          "at": "2025-07-01T16:05:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-07-01T18:05:00"
+        },
+        "carrierCode": "VN",
+        "number": "619",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "VN"
+        },
+        "duration": "PT2H",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-17T12:06:59.513Z"
+  },
+  {
+    "from": "HKG",
+    "to": "BKK",
+    "price": "60.21",
+    "airline": "SL",
+    "departure": "2025-07-01T14:15:00",
+    "arrival": "2025-07-01T16:10:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "HKG",
+          "terminal": "1",
+          "at": "2025-07-01T14:15:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "1",
+          "at": "2025-07-01T16:10:00"
+        },
+        "carrierCode": "SL",
+        "number": "361",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT2H55M",
+        "id": "8",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-17T12:07:01.851Z"
+  },
+  {
+    "from": "MNL",
+    "to": "BKK",
+    "price": "123.63",
+    "airline": "HB",
+    "departure": "2025-07-01T03:10:00",
+    "arrival": "2025-07-01T17:45:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "MNL",
+          "terminal": "3",
+          "at": "2025-07-01T03:10:00"
+        },
+        "arrival": {
+          "iataCode": "HKG",
+          "terminal": "1",
+          "at": "2025-07-01T05:20:00"
+        },
+        "carrierCode": "HB",
+        "number": "232",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "HB"
+        },
+        "duration": "PT2H10M",
+        "id": "9",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "HKG",
+          "terminal": "1",
+          "at": "2025-07-01T15:40:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-07-01T17:45:00"
+        },
+        "carrierCode": "HB",
+        "number": "283",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "HB"
+        },
+        "duration": "PT3H5M",
+        "id": "10",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-17T12:07:03.994Z"
+  },
+  {
+    "from": "CGK",
+    "to": "BKK",
+    "price": "60.20",
+    "airline": "SL",
+    "departure": "2025-07-01T05:00:00",
+    "arrival": "2025-07-01T08:25:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "CGK",
+          "terminal": "2",
+          "at": "2025-07-01T05:00:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "1",
+          "at": "2025-07-01T08:25:00"
+        },
+        "carrierCode": "SL",
+        "number": "117",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT3H25M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-17T12:07:08.679Z"
+  },
+  {
+    "from": "SIN",
+    "to": "BKK",
+    "price": "73.39",
+    "airline": "SL",
+    "departure": "2025-07-01T12:55:00",
+    "arrival": "2025-07-01T14:15:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "SIN",
+          "terminal": "3",
+          "at": "2025-07-01T12:55:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "1",
+          "at": "2025-07-01T14:15:00"
+        },
+        "carrierCode": "SL",
+        "number": "101",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT2H20M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-17T12:07:11.499Z"
+  },
+  {
+    "from": "DAC",
+    "to": "BKK",
+    "price": "196.01",
+    "airline": "AI",
+    "departure": "2025-07-01T21:00:00",
+    "arrival": "2025-07-02T07:40:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "DAC",
+          "terminal": "2",
+          "at": "2025-07-01T21:00:00"
+        },
+        "arrival": {
+          "iataCode": "DEL",
+          "terminal": "3",
+          "at": "2025-07-01T23:20:00"
+        },
+        "carrierCode": "AI",
+        "number": "238",
+        "aircraft": {
+          "code": "32A"
+        },
+        "operating": {
+          "carrierCode": "AI"
+        },
+        "duration": "PT2H50M",
+        "id": "7",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "DEL",
+          "terminal": "3",
+          "at": "2025-07-02T01:40:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-07-02T07:40:00"
+        },
+        "carrierCode": "AI",
+        "number": "336",
+        "aircraft": {
+          "code": "32N"
+        },
+        "operating": {
+          "carrierCode": "AI"
+        },
+        "duration": "PT4H30M",
+        "id": "8",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-17T12:07:16.110Z"
+  },
+  {
+    "from": "MAA",
+    "to": "BKK",
+    "price": "140.54",
+    "airline": "UL",
+    "departure": "2025-07-01T21:15:00",
+    "arrival": "2025-07-02T06:15:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "MAA",
+          "terminal": "2",
+          "at": "2025-07-01T21:15:00"
+        },
+        "arrival": {
+          "iataCode": "CMB",
+          "at": "2025-07-01T22:40:00"
+        },
+        "carrierCode": "UL",
+        "number": "124",
+        "aircraft": {
+          "code": "320"
+        },
+        "operating": {
+          "carrierCode": "UL"
+        },
+        "duration": "PT1H25M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "CMB",
+          "at": "2025-07-02T01:10:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-07-02T06:15:00"
+        },
+        "carrierCode": "UL",
+        "number": "402",
+        "aircraft": {
+          "code": "320"
+        },
+        "operating": {
+          "carrierCode": "UL"
+        },
+        "duration": "PT3H35M",
+        "id": "4",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-17T12:07:18.488Z"
+  },
+  {
+    "from": "SYD",
+    "to": "DPS",
+    "price": "272.00",
+    "airline": "JQ",
+    "departure": "2025-07-01T16:25:00",
+    "arrival": "2025-07-01T21:00:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "SYD",
+          "terminal": "1",
+          "at": "2025-07-01T16:25:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T21:00:00"
+        },
+        "carrierCode": "JQ",
+        "number": "37",
+        "aircraft": {
+          "code": "32Q"
+        },
+        "operating": {
+          "carrierCode": "JQ"
+        },
+        "duration": "PT6H35M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-17T12:11:15.144Z"
+  },
+  {
+    "from": "BNE",
+    "to": "DPS",
+    "price": "195.34",
+    "airline": "OD",
+    "departure": "2025-07-01T07:15:00",
+    "arrival": "2025-07-01T11:30:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "BNE",
+          "terminal": "I",
+          "at": "2025-07-01T07:15:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T11:30:00"
+        },
+        "carrierCode": "OD",
+        "number": "158",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT6H15M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-17T12:11:19.029Z"
+  },
+  {
+    "from": "ADL",
+    "to": "DPS",
+    "price": "286.65",
+    "airline": "JQ",
+    "departure": "2025-07-01T06:15:00",
+    "arrival": "2025-07-01T10:10:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "ADL",
+          "terminal": "I",
+          "at": "2025-07-01T06:15:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T10:10:00"
+        },
+        "carrierCode": "JQ",
+        "number": "125",
+        "aircraft": {
+          "code": "32Q"
+        },
+        "operating": {
+          "carrierCode": "JQ"
+        },
+        "duration": "PT5H25M",
+        "id": "7",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-17T12:11:22.199Z"
+  },
+  {
+    "from": "SGN",
+    "to": "DPS",
+    "price": "109.70",
+    "airline": "VJ",
+    "departure": "2025-07-01T09:45:00",
+    "arrival": "2025-07-01T14:30:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "SGN",
+          "terminal": "2",
+          "at": "2025-07-01T09:45:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T14:30:00"
+        },
+        "carrierCode": "VJ",
+        "number": "897",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "VJ"
+        },
+        "duration": "PT3H45M",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-17T12:11:26.875Z"
+  },
+  {
+    "from": "BKI",
+    "to": "DPS",
+    "price": "105.75",
+    "airline": "OD",
+    "departure": "2025-07-01T11:20:00",
+    "arrival": "2025-07-01T19:40:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "BKI",
+          "terminal": "1",
+          "at": "2025-07-01T11:20:00"
+        },
+        "arrival": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-07-01T13:50:00"
+        },
+        "carrierCode": "OD",
+        "number": "1003",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT2H30M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-07-01T16:30:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T19:40:00"
+        },
+        "carrierCode": "OD",
+        "number": "177",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT3H10M",
+        "id": "4",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-17T12:11:30.241Z"
+  },
+  {
+    "from": "DAD",
+    "to": "DPS",
+    "price": "110.17",
+    "airline": "OD",
+    "departure": "2025-07-01T12:50:00",
+    "arrival": "2025-07-01T21:00:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "DAD",
+          "terminal": "0",
+          "at": "2025-07-01T12:50:00"
+        },
+        "arrival": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-07-01T16:40:00"
+        },
+        "carrierCode": "OD",
+        "number": "503",
+        "aircraft": {
+          "code": "7M8"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT2H50M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-07-01T17:50:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T21:00:00"
+        },
+        "carrierCode": "OD",
+        "number": "171",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT3H10M",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-17T12:11:31.988Z"
+  },
+  {
+    "from": "HKG",
+    "to": "DPS",
+    "price": "157.15",
+    "airline": "OD",
+    "departure": "2025-07-01T15:15:00",
+    "arrival": "2025-07-02T10:25:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "HKG",
+          "terminal": "1",
+          "at": "2025-07-01T15:15:00"
+        },
+        "arrival": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-07-01T19:05:00"
+        },
+        "carrierCode": "OD",
+        "number": "606",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT3H50M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-07-02T07:15:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-02T10:25:00"
+        },
+        "carrierCode": "OD",
+        "number": "308",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT3H10M",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-17T12:11:34.592Z"
+  },
+  {
+    "from": "ICN",
+    "to": "DPS",
+    "price": "163.87",
+    "airline": "VJ",
+    "departure": "2025-07-01T21:15:00",
+    "arrival": "2025-07-02T11:50:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "ICN",
+          "terminal": "1",
+          "at": "2025-07-01T21:15:00"
+        },
+        "arrival": {
+          "iataCode": "SGN",
+          "terminal": "2",
+          "at": "2025-07-02T00:30:00"
+        },
+        "carrierCode": "VJ",
+        "number": "861",
+        "aircraft": {
+          "code": "320"
+        },
+        "operating": {
+          "carrierCode": "VJ"
+        },
+        "duration": "PT5H15M",
+        "id": "7",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "SGN",
+          "terminal": "2",
+          "at": "2025-07-02T07:00:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-02T11:50:00"
+        },
+        "carrierCode": "VJ",
+        "number": "899",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "VJ"
+        },
+        "duration": "PT3H50M",
+        "id": "8",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-17T12:11:38.255Z"
+  },
+  {
+    "from": "TPE",
+    "to": "DPS",
+    "price": "148.21",
+    "airline": "VJ",
+    "departure": "2025-07-01T19:00:00",
+    "arrival": "2025-07-02T11:50:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "TPE",
+          "terminal": "1",
+          "at": "2025-07-01T19:00:00"
+        },
+        "arrival": {
+          "iataCode": "SGN",
+          "terminal": "2",
+          "at": "2025-07-01T21:25:00"
+        },
+        "carrierCode": "VJ",
+        "number": "843",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "VJ"
+        },
+        "duration": "PT3H25M",
+        "id": "5",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "SGN",
+          "terminal": "2",
+          "at": "2025-07-02T07:00:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-02T11:50:00"
+        },
+        "carrierCode": "VJ",
+        "number": "899",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "VJ"
+        },
+        "duration": "PT3H50M",
+        "id": "6",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-17T12:11:40.588Z"
+  },
+  {
+    "from": "MNL",
+    "to": "DPS",
+    "price": "144.30",
+    "airline": "PR",
+    "departure": "2025-07-01T20:00:00",
+    "arrival": "2025-07-01T23:55:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "MNL",
+          "terminal": "1",
+          "at": "2025-07-01T20:00:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T23:55:00"
+        },
+        "carrierCode": "PR",
+        "number": "537",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "PR"
+        },
+        "duration": "PT3H55M",
+        "id": "9",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-17T12:11:42.719Z"
+  },
+  {
+    "from": "KUL",
+    "to": "BKK",
+    "price": "68.00",
+    "airline": "OD",
+    "departure": "2025-07-01T07:05:00",
+    "arrival": "2025-07-01T08:15:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-07-01T07:05:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "0",
+          "at": "2025-07-01T08:15:00"
+        },
+        "carrierCode": "OD",
+        "number": "524",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT2H10M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-21T13:20:56.644Z"
+  },
+  {
+    "from": "SGN",
+    "to": "BKK",
+    "price": "96.76",
+    "airline": "VN",
+    "departure": "2025-07-01T11:35:00",
+    "arrival": "2025-07-01T13:10:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "SGN",
+          "terminal": "2",
+          "at": "2025-07-01T11:35:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-07-01T13:10:00"
+        },
+        "carrierCode": "VN",
+        "number": "605",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "VN"
+        },
+        "duration": "PT1H35M",
+        "id": "5",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-21T13:20:58.506Z"
+  },
+  {
+    "from": "HKT",
+    "to": "BKK",
+    "price": "44.32",
+    "airline": "SL",
+    "departure": "2025-07-01T09:05:00",
+    "arrival": "2025-07-01T10:20:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "HKT",
+          "terminal": "D",
+          "at": "2025-07-01T09:05:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "2",
+          "at": "2025-07-01T10:20:00"
+        },
+        "carrierCode": "SL",
+        "number": "751",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT1H15M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-21T13:21:00.739Z"
+  },
+  {
+    "from": "HAN",
+    "to": "BKK",
+    "price": "101.23",
+    "airline": "VN",
+    "departure": "2025-07-01T08:50:00",
+    "arrival": "2025-07-01T10:50:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "HAN",
+          "terminal": "2",
+          "at": "2025-07-01T08:50:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-07-01T10:50:00"
+        },
+        "carrierCode": "VN",
+        "number": "611",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "VN"
+        },
+        "duration": "PT2H",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-21T13:21:03.607Z"
+  },
+  {
+    "from": "KTM",
+    "to": "BKK",
+    "price": "140.16",
+    "airline": "SL",
+    "departure": "2025-07-01T14:25:00",
+    "arrival": "2025-07-01T18:55:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "KTM",
+          "terminal": "I",
+          "at": "2025-07-01T14:25:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "1",
+          "at": "2025-07-01T18:55:00"
+        },
+        "carrierCode": "SL",
+        "number": "221",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT3H15M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-21T13:21:07.325Z"
+  },
+  {
+    "from": "RGN",
+    "to": "BKK",
+    "price": "109.12",
+    "airline": "TG",
+    "departure": "2025-07-01T11:25:00",
+    "arrival": "2025-07-01T13:25:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "RGN",
+          "terminal": "1",
+          "at": "2025-07-01T11:25:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-07-01T13:25:00"
+        },
+        "carrierCode": "TG",
+        "number": "302",
+        "aircraft": {
+          "code": "320"
+        },
+        "operating": {
+          "carrierCode": "TG"
+        },
+        "duration": "PT1H30M",
+        "id": "5",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-21T13:21:11.470Z"
+  },
+  {
+    "from": "TPE",
+    "to": "BKK",
+    "price": "78.28",
+    "airline": "SL",
+    "departure": "2025-07-01T10:45:00",
+    "arrival": "2025-07-01T13:35:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "TPE",
+          "terminal": "1",
+          "at": "2025-07-01T10:45:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "1",
+          "at": "2025-07-01T13:35:00"
+        },
+        "carrierCode": "SL",
+        "number": "399",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT3H50M",
+        "id": "4",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-21T13:21:14.997Z"
+  },
+  {
+    "from": "ICN",
+    "to": "BKK",
+    "price": "101.72",
+    "airline": "TW",
+    "departure": "2025-07-01T20:05:00",
+    "arrival": "2025-07-02T00:15:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "ICN",
+          "terminal": "1",
+          "at": "2025-07-01T20:05:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-07-02T00:15:00"
+        },
+        "carrierCode": "TW",
+        "number": "101",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "TW"
+        },
+        "duration": "PT6H10M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-21T13:21:18.755Z"
+  },
+  {
+    "from": "HKG",
+    "to": "BKK",
+    "price": "60.24",
+    "airline": "SL",
+    "departure": "2025-07-01T14:15:00",
+    "arrival": "2025-07-01T16:10:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "HKG",
+          "terminal": "1",
+          "at": "2025-07-01T14:15:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "1",
+          "at": "2025-07-01T16:10:00"
+        },
+        "carrierCode": "SL",
+        "number": "361",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT2H55M",
+        "id": "7",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-21T13:21:23.815Z"
+  },
+  {
+    "from": "MNL",
+    "to": "BKK",
+    "price": "123.89",
+    "airline": "HB",
+    "departure": "2025-07-01T03:10:00",
+    "arrival": "2025-07-01T10:10:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "MNL",
+          "terminal": "3",
+          "at": "2025-07-01T03:10:00"
+        },
+        "arrival": {
+          "iataCode": "HKG",
+          "terminal": "1",
+          "at": "2025-07-01T05:20:00"
+        },
+        "carrierCode": "HB",
+        "number": "232",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "HB"
+        },
+        "duration": "PT2H10M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "HKG",
+          "terminal": "1",
+          "at": "2025-07-01T08:00:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-07-01T10:10:00"
+        },
+        "carrierCode": "HB",
+        "number": "281",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "HB"
+        },
+        "duration": "PT3H10M",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-21T13:21:27.453Z"
+  },
+  {
+    "from": "CGK",
+    "to": "BKK",
+    "price": "61.37",
+    "airline": "SL",
+    "departure": "2025-07-01T05:00:00",
+    "arrival": "2025-07-01T08:25:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "CGK",
+          "terminal": "2",
+          "at": "2025-07-01T05:00:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "1",
+          "at": "2025-07-01T08:25:00"
+        },
+        "carrierCode": "SL",
+        "number": "117",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT3H25M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-21T13:21:31.147Z"
+  },
+  {
+    "from": "SIN",
+    "to": "BKK",
+    "price": "73.65",
+    "airline": "SL",
+    "departure": "2025-07-01T12:55:00",
+    "arrival": "2025-07-01T14:15:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "SIN",
+          "terminal": "3",
+          "at": "2025-07-01T12:55:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "1",
+          "at": "2025-07-01T14:15:00"
+        },
+        "carrierCode": "SL",
+        "number": "101",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT2H20M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-21T13:21:34.866Z"
+  },
+  {
+    "from": "DAC",
+    "to": "BKK",
+    "price": "197.82",
+    "airline": "AI",
+    "departure": "2025-07-01T21:00:00",
+    "arrival": "2025-07-02T07:40:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "DAC",
+          "terminal": "2",
+          "at": "2025-07-01T21:00:00"
+        },
+        "arrival": {
+          "iataCode": "DEL",
+          "terminal": "3",
+          "at": "2025-07-01T23:20:00"
+        },
+        "carrierCode": "AI",
+        "number": "238",
+        "aircraft": {
+          "code": "32A"
+        },
+        "operating": {
+          "carrierCode": "AI"
+        },
+        "duration": "PT2H50M",
+        "id": "7",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "DEL",
+          "terminal": "3",
+          "at": "2025-07-02T01:40:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-07-02T07:40:00"
+        },
+        "carrierCode": "AI",
+        "number": "336",
+        "aircraft": {
+          "code": "32N"
+        },
+        "operating": {
+          "carrierCode": "AI"
+        },
+        "duration": "PT4H30M",
+        "id": "8",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-21T13:21:37.524Z"
+  },
+  {
+    "from": "MAA",
+    "to": "BKK",
+    "price": "141.21",
+    "airline": "UL",
+    "departure": "2025-07-01T21:15:00",
+    "arrival": "2025-07-02T06:15:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "MAA",
+          "terminal": "2",
+          "at": "2025-07-01T21:15:00"
+        },
+        "arrival": {
+          "iataCode": "CMB",
+          "at": "2025-07-01T22:40:00"
+        },
+        "carrierCode": "UL",
+        "number": "124",
+        "aircraft": {
+          "code": "320"
+        },
+        "operating": {
+          "carrierCode": "UL"
+        },
+        "duration": "PT1H25M",
+        "id": "5",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "CMB",
+          "at": "2025-07-02T01:10:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-07-02T06:15:00"
+        },
+        "carrierCode": "UL",
+        "number": "402",
+        "aircraft": {
+          "code": "320"
+        },
+        "operating": {
+          "carrierCode": "UL"
+        },
+        "duration": "PT3H35M",
+        "id": "6",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-21T13:21:43.836Z"
+  },
+  {
+    "from": "CGK",
+    "to": "DPS",
+    "price": "100.14",
+    "airline": "ID",
+    "departure": "2025-07-01T20:00:00",
+    "arrival": "2025-07-02T08:20:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "CGK",
+          "terminal": "2",
+          "at": "2025-07-01T20:00:00"
+        },
+        "arrival": {
+          "iataCode": "SUB",
+          "terminal": "1",
+          "at": "2025-07-01T21:35:00"
+        },
+        "carrierCode": "ID",
+        "number": "6594",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "ID"
+        },
+        "duration": "PT1H35M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "SUB",
+          "terminal": "1",
+          "at": "2025-07-02T06:20:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "D",
+          "at": "2025-07-02T08:20:00"
+        },
+        "carrierCode": "ID",
+        "number": "6412",
+        "aircraft": {
+          "code": "32A"
+        },
+        "operating": {
+          "carrierCode": "ID"
+        },
+        "duration": "PT1H",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-21T13:58:34.079Z"
+  },
+  {
+    "from": "KUL",
+    "to": "DPS",
+    "price": "55.15",
+    "airline": "OD",
+    "departure": "2025-07-01T14:00:00",
+    "arrival": "2025-07-01T17:00:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-07-01T14:00:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T17:00:00"
+        },
+        "carrierCode": "OD",
+        "number": "193",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT3H",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-21T13:58:36.127Z"
+  },
+  {
+    "from": "SIN",
+    "to": "DPS",
+    "price": "126.57",
+    "airline": "3K",
+    "departure": "2025-07-01T15:45:00",
+    "arrival": "2025-07-01T18:35:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "SIN",
+          "terminal": "4",
+          "at": "2025-07-01T15:45:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T18:35:00"
+        },
+        "carrierCode": "3K",
+        "number": "245",
+        "aircraft": {
+          "code": "320"
+        },
+        "operating": {
+          "carrierCode": "3K"
+        },
+        "duration": "PT2H50M",
+        "id": "6",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-21T13:58:39.384Z"
+  },
+  {
+    "from": "PER",
+    "to": "DPS",
+    "price": "124.47",
+    "airline": "ID",
+    "departure": "2025-07-01T14:15:00",
+    "arrival": "2025-07-01T18:00:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "PER",
+          "terminal": "0",
+          "at": "2025-07-01T14:15:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "D",
+          "at": "2025-07-01T18:00:00"
+        },
+        "carrierCode": "ID",
+        "number": "6008",
+        "aircraft": {
+          "code": "32A"
+        },
+        "operating": {
+          "carrierCode": "ID"
+        },
+        "duration": "PT3H45M",
+        "id": "8",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-21T13:58:41.433Z"
+  },
+  {
+    "from": "MEL",
+    "to": "DPS",
+    "price": "171.75",
+    "airline": "OD",
+    "departure": "2025-07-01T07:00:00",
+    "arrival": "2025-07-01T11:25:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "MEL",
+          "terminal": "0",
+          "at": "2025-07-01T07:00:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T11:25:00"
+        },
+        "carrierCode": "OD",
+        "number": "178",
+        "aircraft": {
+          "code": "7M8"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT6H25M",
+        "id": "5",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-21T13:58:43.528Z"
+  },
+  {
+    "from": "SYD",
+    "to": "DPS",
+    "price": "273.70",
+    "airline": "JQ",
+    "departure": "2025-07-01T16:25:00",
+    "arrival": "2025-07-01T21:00:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "SYD",
+          "terminal": "1",
+          "at": "2025-07-01T16:25:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T21:00:00"
+        },
+        "carrierCode": "JQ",
+        "number": "37",
+        "aircraft": {
+          "code": "32Q"
+        },
+        "operating": {
+          "carrierCode": "JQ"
+        },
+        "duration": "PT6H35M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-21T13:58:45.278Z"
+  },
+  {
+    "from": "BNE",
+    "to": "DPS",
+    "price": "196.99",
+    "airline": "OD",
+    "departure": "2025-07-01T07:15:00",
+    "arrival": "2025-07-01T11:30:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "BNE",
+          "terminal": "I",
+          "at": "2025-07-01T07:15:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T11:30:00"
+        },
+        "carrierCode": "OD",
+        "number": "158",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT6H15M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-21T13:58:47.650Z"
+  },
+  {
+    "from": "ADL",
+    "to": "DPS",
+    "price": "288.36",
+    "airline": "JQ",
+    "departure": "2025-07-01T06:15:00",
+    "arrival": "2025-07-01T10:10:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "ADL",
+          "terminal": "I",
+          "at": "2025-07-01T06:15:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T10:10:00"
+        },
+        "carrierCode": "JQ",
+        "number": "125",
+        "aircraft": {
+          "code": "32Q"
+        },
+        "operating": {
+          "carrierCode": "JQ"
+        },
+        "duration": "PT5H25M",
+        "id": "7",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-21T13:58:49.821Z"
+  },
+  {
+    "from": "SGN",
+    "to": "DPS",
+    "price": "110.00",
+    "airline": "VJ",
+    "departure": "2025-07-01T09:45:00",
+    "arrival": "2025-07-01T14:30:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "SGN",
+          "terminal": "2",
+          "at": "2025-07-01T09:45:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T14:30:00"
+        },
+        "carrierCode": "VJ",
+        "number": "897",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "VJ"
+        },
+        "duration": "PT3H45M",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-21T13:58:51.942Z"
+  },
+  {
+    "from": "BKI",
+    "to": "DPS",
+    "price": "105.88",
+    "airline": "OD",
+    "departure": "2025-07-01T11:20:00",
+    "arrival": "2025-07-01T19:40:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "BKI",
+          "terminal": "1",
+          "at": "2025-07-01T11:20:00"
+        },
+        "arrival": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-07-01T13:50:00"
+        },
+        "carrierCode": "OD",
+        "number": "1003",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT2H30M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-07-01T16:30:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T19:40:00"
+        },
+        "carrierCode": "OD",
+        "number": "177",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT3H10M",
+        "id": "4",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-21T13:58:54.313Z"
+  },
+  {
+    "from": "DAD",
+    "to": "DPS",
+    "price": "111.79",
+    "airline": "OD",
+    "departure": "2025-07-01T12:50:00",
+    "arrival": "2025-07-01T21:00:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "DAD",
+          "terminal": "0",
+          "at": "2025-07-01T12:50:00"
+        },
+        "arrival": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-07-01T16:40:00"
+        },
+        "carrierCode": "OD",
+        "number": "503",
+        "aircraft": {
+          "code": "7M8"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT2H50M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-07-01T17:50:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-01T21:00:00"
+        },
+        "carrierCode": "OD",
+        "number": "171",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT3H10M",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-21T13:58:55.920Z"
+  },
+  {
+    "from": "HKG",
+    "to": "DPS",
+    "price": "157.33",
+    "airline": "OD",
+    "departure": "2025-07-01T15:15:00",
+    "arrival": "2025-07-02T10:25:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "HKG",
+          "terminal": "1",
+          "at": "2025-07-01T15:15:00"
+        },
+        "arrival": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-07-01T19:05:00"
+        },
+        "carrierCode": "OD",
+        "number": "606",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT3H50M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-07-02T07:15:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-02T10:25:00"
+        },
+        "carrierCode": "OD",
+        "number": "308",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT3H10M",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-21T13:58:58.073Z"
+  },
+  {
+    "from": "ICN",
+    "to": "DPS",
+    "price": "165.44",
+    "airline": "VJ",
+    "departure": "2025-07-01T21:15:00",
+    "arrival": "2025-07-02T11:50:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "ICN",
+          "terminal": "1",
+          "at": "2025-07-01T21:15:00"
+        },
+        "arrival": {
+          "iataCode": "SGN",
+          "terminal": "2",
+          "at": "2025-07-02T00:30:00"
+        },
+        "carrierCode": "VJ",
+        "number": "861",
+        "aircraft": {
+          "code": "320"
+        },
+        "operating": {
+          "carrierCode": "VJ"
+        },
+        "duration": "PT5H15M",
+        "id": "7",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "SGN",
+          "terminal": "2",
+          "at": "2025-07-02T07:00:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-07-02T11:50:00"
+        },
+        "carrierCode": "VJ",
+        "number": "899",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "VJ"
+        },
+        "duration": "PT3H50M",
+        "id": "8",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-07-01",
+    "fetchedAt": "2025-05-21T13:59:00.282Z"
+  },
+  {
+    "from": "KUL",
+    "to": "BKK",
+    "price": "68.00",
+    "airline": "OD",
+    "departure": "2025-09-01T07:05:00",
+    "arrival": "2025-09-01T08:15:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-09-01T07:05:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "0",
+          "at": "2025-09-01T08:15:00"
+        },
+        "carrierCode": "OD",
+        "number": "524",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT2H10M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-21T13:59:23.282Z"
+  },
+  {
+    "from": "SGN",
+    "to": "BKK",
+    "price": "85.76",
+    "airline": "VN",
+    "departure": "2025-09-01T11:35:00",
+    "arrival": "2025-09-01T13:10:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "SGN",
+          "terminal": "2",
+          "at": "2025-09-01T11:35:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-09-01T13:10:00"
+        },
+        "carrierCode": "VN",
+        "number": "605",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "VN"
+        },
+        "duration": "PT1H35M",
+        "id": "4",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-21T13:59:25.321Z"
+  },
+  {
+    "from": "HKT",
+    "to": "BKK",
+    "price": "39.72",
+    "airline": "SL",
+    "departure": "2025-09-01T09:05:00",
+    "arrival": "2025-09-01T10:20:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "HKT",
+          "terminal": "D",
+          "at": "2025-09-01T09:05:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "2",
+          "at": "2025-09-01T10:20:00"
+        },
+        "carrierCode": "SL",
+        "number": "751",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT1H15M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-21T13:59:26.782Z"
+  },
+  {
+    "from": "HAN",
+    "to": "BKK",
+    "price": "90.23",
+    "airline": "VN",
+    "departure": "2025-09-01T08:50:00",
+    "arrival": "2025-09-01T10:50:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "HAN",
+          "terminal": "2",
+          "at": "2025-09-01T08:50:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-09-01T10:50:00"
+        },
+        "carrierCode": "VN",
+        "number": "611",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "VN"
+        },
+        "duration": "PT2H",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-21T13:59:29.339Z"
+  },
+  {
+    "from": "KTM",
+    "to": "BKK",
+    "price": "147.30",
+    "airline": "UL",
+    "departure": "2025-09-01T13:15:00",
+    "arrival": "2025-09-02T06:15:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "KTM",
+          "terminal": "I",
+          "at": "2025-09-01T13:15:00"
+        },
+        "arrival": {
+          "iataCode": "CMB",
+          "at": "2025-09-01T16:40:00"
+        },
+        "carrierCode": "UL",
+        "number": "182",
+        "aircraft": {
+          "code": "320"
+        },
+        "operating": {
+          "carrierCode": "UL"
+        },
+        "duration": "PT3H40M",
+        "id": "6",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "CMB",
+          "at": "2025-09-02T01:10:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-09-02T06:15:00"
+        },
+        "carrierCode": "UL",
+        "number": "402",
+        "aircraft": {
+          "code": "320"
+        },
+        "operating": {
+          "carrierCode": "UL"
+        },
+        "duration": "PT3H35M",
+        "id": "7",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-21T13:59:31.912Z"
+  },
+  {
+    "from": "RGN",
+    "to": "BKK",
+    "price": "109.12",
+    "airline": "TG",
+    "departure": "2025-09-01T11:25:00",
+    "arrival": "2025-09-01T13:25:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "RGN",
+          "terminal": "1",
+          "at": "2025-09-01T11:25:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-09-01T13:25:00"
+        },
+        "carrierCode": "TG",
+        "number": "302",
+        "aircraft": {
+          "code": "320"
+        },
+        "operating": {
+          "carrierCode": "TG"
+        },
+        "duration": "PT1H30M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-21T13:59:33.801Z"
+  },
+  {
+    "from": "TPE",
+    "to": "BKK",
+    "price": "78.28",
+    "airline": "SL",
+    "departure": "2025-09-01T10:45:00",
+    "arrival": "2025-09-01T13:35:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "TPE",
+          "terminal": "1",
+          "at": "2025-09-01T10:45:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "1",
+          "at": "2025-09-01T13:35:00"
+        },
+        "carrierCode": "SL",
+        "number": "399",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT3H50M",
+        "id": "7",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-21T13:59:36.334Z"
+  },
+  {
+    "from": "ICN",
+    "to": "BKK",
+    "price": "83.37",
+    "airline": "VN",
+    "departure": "2025-09-01T10:05:00",
+    "arrival": "2025-09-01T18:05:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "ICN",
+          "terminal": "1",
+          "at": "2025-09-01T10:05:00"
+        },
+        "arrival": {
+          "iataCode": "HAN",
+          "terminal": "2",
+          "at": "2025-09-01T12:30:00"
+        },
+        "carrierCode": "VN",
+        "number": "417",
+        "aircraft": {
+          "code": "787"
+        },
+        "operating": {
+          "carrierCode": "VN"
+        },
+        "duration": "PT4H25M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "HAN",
+          "terminal": "2",
+          "at": "2025-09-01T16:05:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-09-01T18:05:00"
+        },
+        "carrierCode": "VN",
+        "number": "619",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "VN"
+        },
+        "duration": "PT2H",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-21T13:59:41.677Z"
+  },
+  {
+    "from": "HKG",
+    "to": "BKK",
+    "price": "60.24",
+    "airline": "SL",
+    "departure": "2025-09-01T14:15:00",
+    "arrival": "2025-09-01T16:10:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "HKG",
+          "terminal": "1",
+          "at": "2025-09-01T14:15:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "1",
+          "at": "2025-09-01T16:10:00"
+        },
+        "carrierCode": "SL",
+        "number": "361",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT2H55M",
+        "id": "7",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-21T13:59:43.879Z"
+  },
+  {
+    "from": "MNL",
+    "to": "BKK",
+    "price": "152.95",
+    "airline": "PR",
+    "departure": "2025-09-01T19:25:00",
+    "arrival": "2025-09-01T21:55:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "MNL",
+          "terminal": "1",
+          "at": "2025-09-01T19:25:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-09-01T21:55:00"
+        },
+        "carrierCode": "PR",
+        "number": "732",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "PR"
+        },
+        "duration": "PT3H30M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-21T13:59:45.719Z"
+  },
+  {
+    "from": "CGK",
+    "to": "BKK",
+    "price": "61.37",
+    "airline": "SL",
+    "departure": "2025-09-01T05:00:00",
+    "arrival": "2025-09-01T08:25:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "CGK",
+          "terminal": "2",
+          "at": "2025-09-01T05:00:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "1",
+          "at": "2025-09-01T08:25:00"
+        },
+        "carrierCode": "SL",
+        "number": "117",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT3H25M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-21T13:59:49.145Z"
+  },
+  {
+    "from": "SIN",
+    "to": "BKK",
+    "price": "73.65",
+    "airline": "SL",
+    "departure": "2025-09-01T12:20:00",
+    "arrival": "2025-09-01T13:35:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "SIN",
+          "terminal": "3",
+          "at": "2025-09-01T12:20:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "1",
+          "at": "2025-09-01T13:35:00"
+        },
+        "carrierCode": "SL",
+        "number": "101",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT2H15M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-21T13:59:51.885Z"
+  },
+  {
+    "from": "DAC",
+    "to": "BKK",
+    "price": "197.82",
+    "airline": "AI",
+    "departure": "2025-09-01T21:00:00",
+    "arrival": "2025-09-02T07:40:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "DAC",
+          "terminal": "2",
+          "at": "2025-09-01T21:00:00"
+        },
+        "arrival": {
+          "iataCode": "DEL",
+          "terminal": "3",
+          "at": "2025-09-01T23:20:00"
+        },
+        "carrierCode": "AI",
+        "number": "238",
+        "aircraft": {
+          "code": "32A"
+        },
+        "operating": {
+          "carrierCode": "AI"
+        },
+        "duration": "PT2H50M",
+        "id": "5",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "DEL",
+          "terminal": "3",
+          "at": "2025-09-02T01:40:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-09-02T07:40:00"
+        },
+        "carrierCode": "AI",
+        "number": "336",
+        "aircraft": {
+          "code": "32N"
+        },
+        "operating": {
+          "carrierCode": "AI"
+        },
+        "duration": "PT4H30M",
+        "id": "6",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-21T13:59:56.715Z"
+  },
+  {
+    "from": "MAA",
+    "to": "BKK",
+    "price": "105.66",
+    "airline": "SL",
+    "departure": "2025-09-01T02:00:00",
+    "arrival": "2025-09-01T07:10:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "MAA",
+          "terminal": "2",
+          "at": "2025-09-01T02:00:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "1",
+          "at": "2025-09-01T07:10:00"
+        },
+        "carrierCode": "SL",
+        "number": "241",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT3H40M",
+        "id": "7",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-21T13:59:58.866Z"
+  },
+  {
+    "from": "CGK",
+    "to": "DPS",
+    "price": "100.14",
+    "airline": "ID",
+    "departure": "2025-09-01T20:00:00",
+    "arrival": "2025-09-02T08:20:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "CGK",
+          "terminal": "2",
+          "at": "2025-09-01T20:00:00"
+        },
+        "arrival": {
+          "iataCode": "SUB",
+          "terminal": "1",
+          "at": "2025-09-01T21:35:00"
+        },
+        "carrierCode": "ID",
+        "number": "6594",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "ID"
+        },
+        "duration": "PT1H35M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "SUB",
+          "terminal": "1",
+          "at": "2025-09-02T06:20:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "D",
+          "at": "2025-09-02T08:20:00"
+        },
+        "carrierCode": "ID",
+        "number": "6412",
+        "aircraft": {
+          "code": "32A"
+        },
+        "operating": {
+          "carrierCode": "ID"
+        },
+        "duration": "PT1H",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-21T14:00:00.485Z"
+  },
+  {
+    "from": "KUL",
+    "to": "DPS",
+    "price": "55.15",
+    "airline": "OD",
+    "departure": "2025-09-01T14:00:00",
+    "arrival": "2025-09-01T17:00:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-09-01T14:00:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-09-01T17:00:00"
+        },
+        "carrierCode": "OD",
+        "number": "193",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT3H",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-21T14:00:06.090Z"
+  },
+  {
+    "from": "SIN",
+    "to": "DPS",
+    "price": "87.44",
+    "airline": "ID",
+    "departure": "2025-09-01T16:10:00",
+    "arrival": "2025-09-01T19:00:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "SIN",
+          "terminal": "3",
+          "at": "2025-09-01T16:10:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "D",
+          "at": "2025-09-01T19:00:00"
+        },
+        "carrierCode": "ID",
+        "number": "7134",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "ID"
+        },
+        "duration": "PT2H50M",
+        "id": "6",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-21T14:00:10.211Z"
+  },
+  {
+    "from": "PER",
+    "to": "DPS",
+    "price": "124.47",
+    "airline": "ID",
+    "departure": "2025-09-01T14:15:00",
+    "arrival": "2025-09-01T18:00:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "PER",
+          "terminal": "0",
+          "at": "2025-09-01T14:15:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "D",
+          "at": "2025-09-01T18:00:00"
+        },
+        "carrierCode": "ID",
+        "number": "6008",
+        "aircraft": {
+          "code": "32A"
+        },
+        "operating": {
+          "carrierCode": "ID"
+        },
+        "duration": "PT3H45M",
+        "id": "8",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-21T14:00:12.916Z"
+  },
+  {
+    "from": "MEL",
+    "to": "DPS",
+    "price": "171.75",
+    "airline": "OD",
+    "departure": "2025-09-01T07:00:00",
+    "arrival": "2025-09-01T11:25:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "MEL",
+          "terminal": "0",
+          "at": "2025-09-01T07:00:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-09-01T11:25:00"
+        },
+        "carrierCode": "OD",
+        "number": "178",
+        "aircraft": {
+          "code": "7M8"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT6H25M",
+        "id": "6",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-21T14:00:15.704Z"
+  },
+  {
+    "from": "SYD",
+    "to": "DPS",
+    "price": "189.90",
+    "airline": "OD",
+    "departure": "2025-09-01T06:55:00",
+    "arrival": "2025-09-01T11:25:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "SYD",
+          "terminal": "0",
+          "at": "2025-09-01T06:55:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-09-01T11:25:00"
+        },
+        "carrierCode": "OD",
+        "number": "172",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT6H30M",
+        "id": "5",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-21T14:00:18.175Z"
+  },
+  {
+    "from": "BNE",
+    "to": "DPS",
+    "price": "196.99",
+    "airline": "OD",
+    "departure": "2025-09-01T07:15:00",
+    "arrival": "2025-09-01T11:30:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "BNE",
+          "terminal": "I",
+          "at": "2025-09-01T07:15:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-09-01T11:30:00"
+        },
+        "carrierCode": "OD",
+        "number": "158",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT6H15M",
+        "id": "5",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-21T14:00:21.573Z"
+  },
+  {
+    "from": "ADL",
+    "to": "DPS",
+    "price": "236.15",
+    "airline": "VA",
+    "departure": "2025-09-01T10:40:00",
+    "arrival": "2025-09-01T22:15:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "ADL",
+          "terminal": "1",
+          "at": "2025-09-01T10:40:00"
+        },
+        "arrival": {
+          "iataCode": "OOL",
+          "terminal": "1",
+          "at": "2025-09-01T13:30:00"
+        },
+        "carrierCode": "VA",
+        "number": "1449",
+        "aircraft": {
+          "code": "73H"
+        },
+        "duration": "PT2H20M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "OOL",
+          "terminal": "1",
+          "at": "2025-09-01T17:35:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-09-01T22:15:00"
+        },
+        "carrierCode": "VA",
+        "number": "83",
+        "aircraft": {
+          "code": "73H"
+        },
+        "duration": "PT6H40M",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-21T14:00:24.075Z"
+  },
+  {
+    "from": "SGN",
+    "to": "DPS",
+    "price": "110.00",
+    "airline": "VJ",
+    "departure": "2025-09-01T09:45:00",
+    "arrival": "2025-09-01T14:30:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "SGN",
+          "terminal": "2",
+          "at": "2025-09-01T09:45:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-09-01T14:30:00"
+        },
+        "carrierCode": "VJ",
+        "number": "897",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "VJ"
+        },
+        "duration": "PT3H45M",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-21T14:00:28.720Z"
+  },
+  {
+    "from": "BKI",
+    "to": "DPS",
+    "price": "105.88",
+    "airline": "OD",
+    "departure": "2025-09-01T11:20:00",
+    "arrival": "2025-09-01T19:40:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "BKI",
+          "terminal": "1",
+          "at": "2025-09-01T11:20:00"
+        },
+        "arrival": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-09-01T13:50:00"
+        },
+        "carrierCode": "OD",
+        "number": "1003",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT2H30M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-09-01T16:30:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-09-01T19:40:00"
+        },
+        "carrierCode": "OD",
+        "number": "177",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT3H10M",
+        "id": "4",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-21T14:00:33.520Z"
+  },
+  {
+    "from": "DAD",
+    "to": "DPS",
+    "price": "111.79",
+    "airline": "OD",
+    "departure": "2025-09-01T12:50:00",
+    "arrival": "2025-09-01T21:00:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "DAD",
+          "terminal": "0",
+          "at": "2025-09-01T12:50:00"
+        },
+        "arrival": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-09-01T16:40:00"
+        },
+        "carrierCode": "OD",
+        "number": "503",
+        "aircraft": {
+          "code": "7M8"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT2H50M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-09-01T17:50:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-09-01T21:00:00"
+        },
+        "carrierCode": "OD",
+        "number": "171",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT3H10M",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-21T14:00:34.940Z"
+  },
+  {
+    "from": "HKG",
+    "to": "DPS",
+    "price": "157.33",
+    "airline": "OD",
+    "departure": "2025-09-01T15:15:00",
+    "arrival": "2025-09-02T10:25:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "HKG",
+          "terminal": "1",
+          "at": "2025-09-01T15:15:00"
+        },
+        "arrival": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-09-01T19:05:00"
+        },
+        "carrierCode": "OD",
+        "number": "606",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT3H50M",
+        "id": "7",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-09-02T07:15:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-09-02T10:25:00"
+        },
+        "carrierCode": "OD",
+        "number": "308",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT3H10M",
+        "id": "8",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-21T14:00:38.426Z"
+  },
+  {
+    "from": "ICN",
+    "to": "DPS",
+    "price": "165.44",
+    "airline": "VJ",
+    "departure": "2025-09-01T21:15:00",
+    "arrival": "2025-09-02T11:50:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "ICN",
+          "terminal": "1",
+          "at": "2025-09-01T21:15:00"
+        },
+        "arrival": {
+          "iataCode": "SGN",
+          "terminal": "2",
+          "at": "2025-09-02T00:30:00"
+        },
+        "carrierCode": "VJ",
+        "number": "861",
+        "aircraft": {
+          "code": "320"
+        },
+        "operating": {
+          "carrierCode": "VJ"
+        },
+        "duration": "PT5H15M",
+        "id": "7",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "SGN",
+          "terminal": "2",
+          "at": "2025-09-02T07:00:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-09-02T11:50:00"
+        },
+        "carrierCode": "VJ",
+        "number": "899",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "VJ"
+        },
+        "duration": "PT3H50M",
+        "id": "8",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-21T14:00:41.273Z"
+  },
+  {
+    "from": "TPE",
+    "to": "DPS",
+    "price": "142.52",
+    "airline": "OD",
+    "departure": "2025-09-01T18:30:00",
+    "arrival": "2025-09-02T10:25:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "TPE",
+          "terminal": "1",
+          "at": "2025-09-01T18:30:00"
+        },
+        "arrival": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-09-01T23:25:00"
+        },
+        "carrierCode": "OD",
+        "number": "883",
+        "aircraft": {
+          "code": "7M8"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT4H55M",
+        "id": "7",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-09-02T07:15:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-09-02T10:25:00"
+        },
+        "carrierCode": "OD",
+        "number": "308",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT3H10M",
+        "id": "8",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-21T14:00:49.241Z"
+  },
+  {
+    "from": "MNL",
+    "to": "DPS",
+    "price": "171.49",
+    "airline": "PR",
+    "departure": "2025-09-01T20:00:00",
+    "arrival": "2025-09-01T23:55:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "MNL",
+          "terminal": "1",
+          "at": "2025-09-01T20:00:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-09-01T23:55:00"
+        },
+        "carrierCode": "PR",
+        "number": "537",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "PR"
+        },
+        "duration": "PT3H55M",
+        "id": "9",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-21T14:00:54.034Z"
+  },
+  {
+    "from": "KUL",
+    "to": "BKK",
+    "price": "68.00",
+    "airline": "OD",
+    "departure": "2025-09-01T07:05:00",
+    "arrival": "2025-09-01T08:15:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-09-01T07:05:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "0",
+          "at": "2025-09-01T08:15:00"
+        },
+        "carrierCode": "OD",
+        "number": "524",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT2H10M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-22T21:39:54.297Z"
+  },
+  {
+    "from": "SGN",
+    "to": "BKK",
+    "price": "85.76",
+    "airline": "VN",
+    "departure": "2025-09-01T08:45:00",
+    "arrival": "2025-09-01T10:20:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "SGN",
+          "terminal": "2",
+          "at": "2025-09-01T08:45:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-09-01T10:20:00"
+        },
+        "carrierCode": "VN",
+        "number": "601",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "VN"
+        },
+        "duration": "PT1H35M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-22T21:39:59.770Z"
+  },
+  {
+    "from": "HKT",
+    "to": "BKK",
+    "price": "39.72",
+    "airline": "SL",
+    "departure": "2025-09-01T09:05:00",
+    "arrival": "2025-09-01T10:20:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "HKT",
+          "terminal": "D",
+          "at": "2025-09-01T09:05:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "2",
+          "at": "2025-09-01T10:20:00"
+        },
+        "carrierCode": "SL",
+        "number": "751",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT1H15M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-22T21:40:01.551Z"
+  },
+  {
+    "from": "HAN",
+    "to": "BKK",
+    "price": "90.23",
+    "airline": "VN",
+    "departure": "2025-09-01T08:50:00",
+    "arrival": "2025-09-01T10:50:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "HAN",
+          "terminal": "2",
+          "at": "2025-09-01T08:50:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-09-01T10:50:00"
+        },
+        "carrierCode": "VN",
+        "number": "611",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "VN"
+        },
+        "duration": "PT2H",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-22T21:40:03.940Z"
+  },
+  {
+    "from": "KTM",
+    "to": "BKK",
+    "price": "147.30",
+    "airline": "UL",
+    "departure": "2025-09-01T13:15:00",
+    "arrival": "2025-09-02T06:15:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "KTM",
+          "terminal": "I",
+          "at": "2025-09-01T13:15:00"
+        },
+        "arrival": {
+          "iataCode": "CMB",
+          "at": "2025-09-01T16:40:00"
+        },
+        "carrierCode": "UL",
+        "number": "182",
+        "aircraft": {
+          "code": "320"
+        },
+        "operating": {
+          "carrierCode": "UL"
+        },
+        "duration": "PT3H40M",
+        "id": "6",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "CMB",
+          "at": "2025-09-02T01:10:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-09-02T06:15:00"
+        },
+        "carrierCode": "UL",
+        "number": "402",
+        "aircraft": {
+          "code": "320"
+        },
+        "operating": {
+          "carrierCode": "UL"
+        },
+        "duration": "PT3H35M",
+        "id": "7",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-22T21:40:06.208Z"
+  },
+  {
+    "from": "RGN",
+    "to": "BKK",
+    "price": "109.12",
+    "airline": "TG",
+    "departure": "2025-09-01T11:25:00",
+    "arrival": "2025-09-01T13:25:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "RGN",
+          "terminal": "1",
+          "at": "2025-09-01T11:25:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-09-01T13:25:00"
+        },
+        "carrierCode": "TG",
+        "number": "302",
+        "aircraft": {
+          "code": "320"
+        },
+        "operating": {
+          "carrierCode": "TG"
+        },
+        "duration": "PT1H30M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-22T21:40:08.812Z"
+  },
+  {
+    "from": "TPE",
+    "to": "BKK",
+    "price": "78.28",
+    "airline": "SL",
+    "departure": "2025-09-01T10:45:00",
+    "arrival": "2025-09-01T13:35:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "TPE",
+          "terminal": "1",
+          "at": "2025-09-01T10:45:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "1",
+          "at": "2025-09-01T13:35:00"
+        },
+        "carrierCode": "SL",
+        "number": "399",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT3H50M",
+        "id": "7",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-22T21:40:11.005Z"
+  },
+  {
+    "from": "ICN",
+    "to": "BKK",
+    "price": "83.37",
+    "airline": "VN",
+    "departure": "2025-09-01T10:05:00",
+    "arrival": "2025-09-01T18:05:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "ICN",
+          "terminal": "1",
+          "at": "2025-09-01T10:05:00"
+        },
+        "arrival": {
+          "iataCode": "HAN",
+          "terminal": "2",
+          "at": "2025-09-01T12:30:00"
+        },
+        "carrierCode": "VN",
+        "number": "417",
+        "aircraft": {
+          "code": "787"
+        },
+        "operating": {
+          "carrierCode": "VN"
+        },
+        "duration": "PT4H25M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "HAN",
+          "terminal": "2",
+          "at": "2025-09-01T16:05:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-09-01T18:05:00"
+        },
+        "carrierCode": "VN",
+        "number": "619",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "VN"
+        },
+        "duration": "PT2H",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-22T21:40:13.370Z"
+  },
+  {
+    "from": "HKG",
+    "to": "BKK",
+    "price": "60.24",
+    "airline": "SL",
+    "departure": "2025-09-01T14:15:00",
+    "arrival": "2025-09-01T16:10:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "HKG",
+          "terminal": "1",
+          "at": "2025-09-01T14:15:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "1",
+          "at": "2025-09-01T16:10:00"
+        },
+        "carrierCode": "SL",
+        "number": "361",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT2H55M",
+        "id": "7",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-22T21:40:15.426Z"
+  },
+  {
+    "from": "MNL",
+    "to": "BKK",
+    "price": "152.95",
+    "airline": "PR",
+    "departure": "2025-09-01T19:25:00",
+    "arrival": "2025-09-01T21:55:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "MNL",
+          "terminal": "1",
+          "at": "2025-09-01T19:25:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-09-01T21:55:00"
+        },
+        "carrierCode": "PR",
+        "number": "732",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "PR"
+        },
+        "duration": "PT3H30M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-22T21:40:17.510Z"
+  },
+  {
+    "from": "CGK",
+    "to": "BKK",
+    "price": "61.37",
+    "airline": "SL",
+    "departure": "2025-09-01T05:00:00",
+    "arrival": "2025-09-01T08:25:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "CGK",
+          "terminal": "2",
+          "at": "2025-09-01T05:00:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "1",
+          "at": "2025-09-01T08:25:00"
+        },
+        "carrierCode": "SL",
+        "number": "117",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT3H25M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-22T21:40:21.035Z"
+  },
+  {
+    "from": "SIN",
+    "to": "BKK",
+    "price": "73.65",
+    "airline": "SL",
+    "departure": "2025-09-01T12:20:00",
+    "arrival": "2025-09-01T13:35:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "SIN",
+          "terminal": "3",
+          "at": "2025-09-01T12:20:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "1",
+          "at": "2025-09-01T13:35:00"
+        },
+        "carrierCode": "SL",
+        "number": "101",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT2H15M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-22T21:40:23.742Z"
+  },
+  {
+    "from": "DAC",
+    "to": "BKK",
+    "price": "197.63",
+    "airline": "AI",
+    "departure": "2025-09-01T11:45:00",
+    "arrival": "2025-09-02T13:35:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "DAC",
+          "terminal": "2",
+          "at": "2025-09-01T11:45:00"
+        },
+        "arrival": {
+          "iataCode": "BOM",
+          "terminal": "2",
+          "at": "2025-09-01T14:35:00"
+        },
+        "carrierCode": "AI",
+        "number": "2184",
+        "aircraft": {
+          "code": "32N"
+        },
+        "operating": {
+          "carrierCode": "AI"
+        },
+        "duration": "PT3H20M",
+        "id": "9",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "BOM",
+          "terminal": "2",
+          "at": "2025-09-02T07:45:00"
+        },
+        "arrival": {
+          "iataCode": "BKK",
+          "at": "2025-09-02T13:35:00"
+        },
+        "carrierCode": "AI",
+        "number": "354",
+        "aircraft": {
+          "code": "32N"
+        },
+        "operating": {
+          "carrierCode": "AI"
+        },
+        "duration": "PT4H20M",
+        "id": "10",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-22T21:40:26.413Z"
+  },
+  {
+    "from": "MAA",
+    "to": "BKK",
+    "price": "105.66",
+    "airline": "SL",
+    "departure": "2025-09-01T02:00:00",
+    "arrival": "2025-09-01T07:10:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "MAA",
+          "terminal": "2",
+          "at": "2025-09-01T02:00:00"
+        },
+        "arrival": {
+          "iataCode": "DMK",
+          "terminal": "1",
+          "at": "2025-09-01T07:10:00"
+        },
+        "carrierCode": "SL",
+        "number": "241",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "SL"
+        },
+        "duration": "PT3H40M",
+        "id": "7",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-22T21:40:28.515Z"
+  },
+  {
+    "from": "CGK",
+    "to": "DPS",
+    "price": "100.14",
+    "airline": "ID",
+    "departure": "2025-09-01T20:00:00",
+    "arrival": "2025-09-02T08:20:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "CGK",
+          "terminal": "2",
+          "at": "2025-09-01T20:00:00"
+        },
+        "arrival": {
+          "iataCode": "SUB",
+          "terminal": "1",
+          "at": "2025-09-01T21:35:00"
+        },
+        "carrierCode": "ID",
+        "number": "6594",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "ID"
+        },
+        "duration": "PT1H35M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "SUB",
+          "terminal": "1",
+          "at": "2025-09-02T06:20:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "D",
+          "at": "2025-09-02T08:20:00"
+        },
+        "carrierCode": "ID",
+        "number": "6412",
+        "aircraft": {
+          "code": "32A"
+        },
+        "operating": {
+          "carrierCode": "ID"
+        },
+        "duration": "PT1H",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-22T21:40:29.524Z"
+  },
+  {
+    "from": "KUL",
+    "to": "DPS",
+    "price": "55.15",
+    "airline": "OD",
+    "departure": "2025-09-01T14:00:00",
+    "arrival": "2025-09-01T17:00:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-09-01T14:00:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-09-01T17:00:00"
+        },
+        "carrierCode": "OD",
+        "number": "193",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT3H",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-22T21:40:32.632Z"
+  },
+  {
+    "from": "SIN",
+    "to": "DPS",
+    "price": "87.44",
+    "airline": "ID",
+    "departure": "2025-09-01T16:10:00",
+    "arrival": "2025-09-01T19:00:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "SIN",
+          "terminal": "3",
+          "at": "2025-09-01T16:10:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "D",
+          "at": "2025-09-01T19:00:00"
+        },
+        "carrierCode": "ID",
+        "number": "7134",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "ID"
+        },
+        "duration": "PT2H50M",
+        "id": "6",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-22T21:40:37.762Z"
+  },
+  {
+    "from": "PER",
+    "to": "DPS",
+    "price": "124.47",
+    "airline": "ID",
+    "departure": "2025-09-01T14:15:00",
+    "arrival": "2025-09-01T18:00:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "PER",
+          "terminal": "0",
+          "at": "2025-09-01T14:15:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "D",
+          "at": "2025-09-01T18:00:00"
+        },
+        "carrierCode": "ID",
+        "number": "6008",
+        "aircraft": {
+          "code": "32A"
+        },
+        "operating": {
+          "carrierCode": "ID"
+        },
+        "duration": "PT3H45M",
+        "id": "8",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-22T21:40:40.490Z"
+  },
+  {
+    "from": "MEL",
+    "to": "DPS",
+    "price": "171.75",
+    "airline": "OD",
+    "departure": "2025-09-01T07:00:00",
+    "arrival": "2025-09-01T11:25:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "MEL",
+          "terminal": "0",
+          "at": "2025-09-01T07:00:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-09-01T11:25:00"
+        },
+        "carrierCode": "OD",
+        "number": "178",
+        "aircraft": {
+          "code": "7M8"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT6H25M",
+        "id": "4",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-22T21:40:43.394Z"
+  },
+  {
+    "from": "SYD",
+    "to": "DPS",
+    "price": "189.90",
+    "airline": "OD",
+    "departure": "2025-09-01T06:55:00",
+    "arrival": "2025-09-01T11:25:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "SYD",
+          "terminal": "0",
+          "at": "2025-09-01T06:55:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-09-01T11:25:00"
+        },
+        "carrierCode": "OD",
+        "number": "172",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT6H30M",
+        "id": "5",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-22T21:40:45.564Z"
+  },
+  {
+    "from": "BNE",
+    "to": "DPS",
+    "price": "196.99",
+    "airline": "OD",
+    "departure": "2025-09-01T07:15:00",
+    "arrival": "2025-09-01T11:30:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "BNE",
+          "terminal": "I",
+          "at": "2025-09-01T07:15:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-09-01T11:30:00"
+        },
+        "carrierCode": "OD",
+        "number": "158",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT6H15M",
+        "id": "5",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-22T21:40:48.238Z"
+  },
+  {
+    "from": "ADL",
+    "to": "DPS",
+    "price": "236.15",
+    "airline": "VA",
+    "departure": "2025-09-01T10:40:00",
+    "arrival": "2025-09-01T22:15:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "ADL",
+          "terminal": "1",
+          "at": "2025-09-01T10:40:00"
+        },
+        "arrival": {
+          "iataCode": "OOL",
+          "terminal": "1",
+          "at": "2025-09-01T13:30:00"
+        },
+        "carrierCode": "VA",
+        "number": "1449",
+        "aircraft": {
+          "code": "73H"
+        },
+        "duration": "PT2H20M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "OOL",
+          "terminal": "1",
+          "at": "2025-09-01T17:35:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-09-01T22:15:00"
+        },
+        "carrierCode": "VA",
+        "number": "83",
+        "aircraft": {
+          "code": "73H"
+        },
+        "duration": "PT6H40M",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-22T21:40:50.585Z"
+  },
+  {
+    "from": "SGN",
+    "to": "DPS",
+    "price": "110.00",
+    "airline": "VJ",
+    "departure": "2025-09-01T09:45:00",
+    "arrival": "2025-09-01T14:30:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "SGN",
+          "terminal": "2",
+          "at": "2025-09-01T09:45:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-09-01T14:30:00"
+        },
+        "carrierCode": "VJ",
+        "number": "897",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "VJ"
+        },
+        "duration": "PT3H45M",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-22T21:40:53.511Z"
+  },
+  {
+    "from": "BKI",
+    "to": "DPS",
+    "price": "105.88",
+    "airline": "OD",
+    "departure": "2025-09-01T11:20:00",
+    "arrival": "2025-09-01T19:40:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "BKI",
+          "terminal": "1",
+          "at": "2025-09-01T11:20:00"
+        },
+        "arrival": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-09-01T13:50:00"
+        },
+        "carrierCode": "OD",
+        "number": "1003",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT2H30M",
+        "id": "3",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-09-01T16:30:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-09-01T19:40:00"
+        },
+        "carrierCode": "OD",
+        "number": "177",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT3H10M",
+        "id": "4",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-22T21:40:56.407Z"
+  },
+  {
+    "from": "DAD",
+    "to": "DPS",
+    "price": "111.79",
+    "airline": "OD",
+    "departure": "2025-09-01T12:50:00",
+    "arrival": "2025-09-01T21:00:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "DAD",
+          "terminal": "0",
+          "at": "2025-09-01T12:50:00"
+        },
+        "arrival": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-09-01T16:40:00"
+        },
+        "carrierCode": "OD",
+        "number": "503",
+        "aircraft": {
+          "code": "7M8"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT2H50M",
+        "id": "1",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-09-01T17:50:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-09-01T21:00:00"
+        },
+        "carrierCode": "OD",
+        "number": "171",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT3H10M",
+        "id": "2",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-22T21:40:57.963Z"
+  },
+  {
+    "from": "HKG",
+    "to": "DPS",
+    "price": "157.33",
+    "airline": "OD",
+    "departure": "2025-09-01T15:15:00",
+    "arrival": "2025-09-02T10:25:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "HKG",
+          "terminal": "1",
+          "at": "2025-09-01T15:15:00"
+        },
+        "arrival": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-09-01T19:05:00"
+        },
+        "carrierCode": "OD",
+        "number": "606",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT3H50M",
+        "id": "7",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-09-02T07:15:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-09-02T10:25:00"
+        },
+        "carrierCode": "OD",
+        "number": "308",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT3H10M",
+        "id": "8",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-22T21:41:00.194Z"
+  },
+  {
+    "from": "ICN",
+    "to": "DPS",
+    "price": "165.44",
+    "airline": "VJ",
+    "departure": "2025-09-01T21:15:00",
+    "arrival": "2025-09-02T11:50:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "ICN",
+          "terminal": "1",
+          "at": "2025-09-01T21:15:00"
+        },
+        "arrival": {
+          "iataCode": "SGN",
+          "terminal": "2",
+          "at": "2025-09-02T00:30:00"
+        },
+        "carrierCode": "VJ",
+        "number": "861",
+        "aircraft": {
+          "code": "320"
+        },
+        "operating": {
+          "carrierCode": "VJ"
+        },
+        "duration": "PT5H15M",
+        "id": "7",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "SGN",
+          "terminal": "2",
+          "at": "2025-09-02T07:00:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-09-02T11:50:00"
+        },
+        "carrierCode": "VJ",
+        "number": "899",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "VJ"
+        },
+        "duration": "PT3H50M",
+        "id": "8",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-22T21:41:02.028Z"
+  },
+  {
+    "from": "TPE",
+    "to": "DPS",
+    "price": "142.52",
+    "airline": "OD",
+    "departure": "2025-09-01T18:30:00",
+    "arrival": "2025-09-02T10:25:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "TPE",
+          "terminal": "1",
+          "at": "2025-09-01T18:30:00"
+        },
+        "arrival": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-09-01T23:25:00"
+        },
+        "carrierCode": "OD",
+        "number": "883",
+        "aircraft": {
+          "code": "7M8"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT4H55M",
+        "id": "7",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      },
+      {
+        "departure": {
+          "iataCode": "KUL",
+          "terminal": "1",
+          "at": "2025-09-02T07:15:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-09-02T10:25:00"
+        },
+        "carrierCode": "OD",
+        "number": "308",
+        "aircraft": {
+          "code": "738"
+        },
+        "operating": {
+          "carrierCode": "OD"
+        },
+        "duration": "PT3H10M",
+        "id": "8",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-22T21:41:03.871Z"
+  },
+  {
+    "from": "MNL",
+    "to": "DPS",
+    "price": "171.49",
+    "airline": "PR",
+    "departure": "2025-09-01T20:00:00",
+    "arrival": "2025-09-01T23:55:00",
+    "segments": [
+      {
+        "departure": {
+          "iataCode": "MNL",
+          "terminal": "1",
+          "at": "2025-09-01T20:00:00"
+        },
+        "arrival": {
+          "iataCode": "DPS",
+          "terminal": "I",
+          "at": "2025-09-01T23:55:00"
+        },
+        "carrierCode": "PR",
+        "number": "537",
+        "aircraft": {
+          "code": "321"
+        },
+        "operating": {
+          "carrierCode": "PR"
+        },
+        "duration": "PT3H55M",
+        "id": "9",
+        "numberOfStops": 0,
+        "blacklistedInEU": false
+      }
+    ],
+    "date": "2025-09-01",
+    "fetchedAt": "2025-05-22T21:41:05.629Z"
+  }
+]

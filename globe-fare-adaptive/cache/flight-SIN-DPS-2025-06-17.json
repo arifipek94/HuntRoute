@@ -1,0 +1,688 @@
+{
+  "from": "SIN",
+  "to": "DPS",
+  "date": "2025-06-17",
+  "data": [
+    {
+      "type": "flight-offer",
+      "id": "1",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-17",
+      "lastTicketingDateTime": "2025-06-17",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT2H35M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "SIN",
+                "terminal": "1",
+                "at": "2025-06-17T16:50:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "I",
+                "at": "2025-06-17T19:25:00"
+              },
+              "carrierCode": "KL",
+              "number": "835",
+              "aircraft": {
+                "code": "77W"
+              },
+              "operating": {
+                "carrierCode": "KL"
+              },
+              "duration": "PT2H35M",
+              "id": "5",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "94.71",
+        "base": "26.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "94.71",
+        "additionalServices": [
+          {
+            "amount": "65.00",
+            "type": "CHECKED_BAGS"
+          }
+        ]
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": false
+      },
+      "validatingAirlineCodes": [
+        "AF"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "94.71",
+            "base": "26.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "5",
+              "cabin": "ECONOMY",
+              "fareBasis": "RGS0BBLA",
+              "brandedFare": "LIGHT",
+              "brandedFareLabel": "ECONOMY LIGHT",
+              "class": "R",
+              "includedCheckedBags": {
+                "quantity": 0
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              },
+              "amenities": [
+                {
+                  "description": "CHECKED BAG 1PC OF 23KG 158CM",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "SNACK",
+                  "isChargeable": false,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "BEVERAGE",
+                  "isChargeable": false,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "MEAL",
+                  "isChargeable": false,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "SEAT SELECTION",
+                  "isChargeable": true,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "MILEAGE ACCRUAL",
+                  "isChargeable": false,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "2",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-05-31",
+      "lastTicketingDateTime": "2025-05-31",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT14H5M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "SIN",
+                "terminal": "3",
+                "at": "2025-06-17T22:05:00"
+              },
+              "arrival": {
+                "iataCode": "CGK",
+                "terminal": "2",
+                "at": "2025-06-17T22:55:00"
+              },
+              "carrierCode": "ID",
+              "number": "7158",
+              "aircraft": {
+                "code": "32A"
+              },
+              "operating": {
+                "carrierCode": "ID"
+              },
+              "duration": "PT1H50M",
+              "id": "1",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "HLP",
+                "at": "2025-06-18T09:20:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "D",
+                "at": "2025-06-18T12:10:00"
+              },
+              "carrierCode": "ID",
+              "number": "7309",
+              "aircraft": {
+                "code": "32A"
+              },
+              "operating": {
+                "carrierCode": "ID"
+              },
+              "duration": "PT1H50M",
+              "id": "2",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "127.46",
+        "base": "50.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "127.46"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "GP"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "127.46",
+            "base": "50.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "1",
+              "cabin": "ECONOMY",
+              "fareBasis": "XOWSG",
+              "class": "X",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            },
+            {
+              "segmentId": "2",
+              "cabin": "ECONOMY",
+              "fareBasis": "RIDOW",
+              "class": "R",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "3",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-05-31",
+      "lastTicketingDateTime": "2025-05-31",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT14H50M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "SIN",
+                "terminal": "3",
+                "at": "2025-06-17T21:20:00"
+              },
+              "arrival": {
+                "iataCode": "CGK",
+                "terminal": "2",
+                "at": "2025-06-17T22:10:00"
+              },
+              "carrierCode": "ID",
+              "number": "7152",
+              "aircraft": {
+                "code": "32A"
+              },
+              "operating": {
+                "carrierCode": "ID"
+              },
+              "duration": "PT1H50M",
+              "id": "8",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "HLP",
+                "at": "2025-06-18T09:20:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "D",
+                "at": "2025-06-18T12:10:00"
+              },
+              "carrierCode": "ID",
+              "number": "7309",
+              "aircraft": {
+                "code": "32A"
+              },
+              "operating": {
+                "carrierCode": "ID"
+              },
+              "duration": "PT1H50M",
+              "id": "9",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "127.46",
+        "base": "50.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "127.46"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "GP"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "127.46",
+            "base": "50.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "8",
+              "cabin": "ECONOMY",
+              "fareBasis": "XOWSG",
+              "class": "X",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            },
+            {
+              "segmentId": "9",
+              "cabin": "ECONOMY",
+              "fareBasis": "RIDOW",
+              "class": "R",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "4",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-05-31",
+      "lastTicketingDateTime": "2025-05-31",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT20H35M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "SIN",
+                "terminal": "3",
+                "at": "2025-06-17T22:05:00"
+              },
+              "arrival": {
+                "iataCode": "CGK",
+                "terminal": "2",
+                "at": "2025-06-17T22:55:00"
+              },
+              "carrierCode": "ID",
+              "number": "7158",
+              "aircraft": {
+                "code": "32A"
+              },
+              "operating": {
+                "carrierCode": "ID"
+              },
+              "duration": "PT1H50M",
+              "id": "6",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "HLP",
+                "at": "2025-06-18T15:50:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "D",
+                "at": "2025-06-18T18:40:00"
+              },
+              "carrierCode": "ID",
+              "number": "7311",
+              "aircraft": {
+                "code": "32A"
+              },
+              "operating": {
+                "carrierCode": "ID"
+              },
+              "duration": "PT1H50M",
+              "id": "7",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "127.46",
+        "base": "50.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "127.46"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "GP"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "127.46",
+            "base": "50.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "6",
+              "cabin": "ECONOMY",
+              "fareBasis": "XOWSG",
+              "class": "X",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            },
+            {
+              "segmentId": "7",
+              "cabin": "ECONOMY",
+              "fareBasis": "RIDOW",
+              "class": "R",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "5",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-05-31",
+      "lastTicketingDateTime": "2025-05-31",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT21H20M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "SIN",
+                "terminal": "3",
+                "at": "2025-06-17T21:20:00"
+              },
+              "arrival": {
+                "iataCode": "CGK",
+                "terminal": "2",
+                "at": "2025-06-17T22:10:00"
+              },
+              "carrierCode": "ID",
+              "number": "7152",
+              "aircraft": {
+                "code": "32A"
+              },
+              "operating": {
+                "carrierCode": "ID"
+              },
+              "duration": "PT1H50M",
+              "id": "3",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "HLP",
+                "at": "2025-06-18T15:50:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "D",
+                "at": "2025-06-18T18:40:00"
+              },
+              "carrierCode": "ID",
+              "number": "7311",
+              "aircraft": {
+                "code": "32A"
+              },
+              "operating": {
+                "carrierCode": "ID"
+              },
+              "duration": "PT1H50M",
+              "id": "4",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "127.46",
+        "base": "50.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "127.46"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "GP"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "127.46",
+            "base": "50.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "3",
+              "cabin": "ECONOMY",
+              "fareBasis": "XOWSG",
+              "class": "X",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            },
+            {
+              "segmentId": "4",
+              "cabin": "ECONOMY",
+              "fareBasis": "RIDOW",
+              "class": "R",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "timestamp": 1748429239141,
+  "__timestamp": 1748429239141,
+  "__source": "amadeus-api",
+  "cached_at": "2025-05-28T10:47:19.141Z",
+  "expires_at": "2025-05-28T22:47:19.141Z"
+}

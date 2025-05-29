@@ -1,0 +1,122 @@
+[
+  {
+    "iata": "CGK",
+    "city": "Jakarta",
+    "country": "ID",
+    "reason": "Super Air Jet, Lion Air direct $38 USD - cheapest"
+  },
+  {
+    "iata": "KUL",
+    "city": "Kuala Lumpur",
+    "country": "MY",
+    "reason": "Batik Air direct $44 USD - extremely cheap"
+  },
+  {
+    "iata": "JHB",
+    "city": "Johor Bahru",
+    "country": "MY",
+    "reason": "AirAsia direct $87 USD"
+  },
+  {
+    "iata": "PEN",
+    "city": "George Town",
+    "country": "MY",
+    "reason": "AirAsia direct $88 USD"
+  },
+  {
+    "iata": "KBR",
+    "city": "Kota Bharu",
+    "country": "MY",
+    "reason": "AirAsia direct $96 USD"
+  },
+  {
+    "iata": "SIN",
+    "city": "Singapore",
+    "country": "SG",
+    "reason": "Scoot, Jetstar Asia direct $100-120 USD"
+  },
+  {
+    "iata": "LGK",
+    "city": "Langkawi",
+    "country": "MY",
+    "reason": "AirAsia direct $112 USD"
+  },
+  {
+    "iata": "BKI",
+    "city": "Kota Kinabalu",
+    "country": "MY",
+    "reason": "AirAsia direct $113 USD"
+  },
+  {
+    "iata": "ADL",
+    "city": "Adelaide",
+    "country": "AU",
+    "reason": "Indonesia AirAsia direct $135 USD"
+  },
+  {
+    "iata": "MNL",
+    "city": "Manila",
+    "country": "PH",
+    "reason": "Cebu Pacific direct $150-200 USD"
+  },
+  {
+    "iata": "BKK",
+    "city": "Bangkok",
+    "country": "TH",
+    "reason": "Thai AirAsia, Thai Lion Air direct $150-180 USD"
+  },
+  {
+    "iata": "SGN",
+    "city": "Ho Chi Minh City",
+    "country": "VN",
+    "reason": "VietJet Air direct $160-190 USD"
+  },
+  {
+    "iata": "PER",
+    "city": "Perth",
+    "country": "AU",
+    "reason": "Jetstar direct $180 USD"
+  },
+  {
+    "iata": "TPE",
+    "city": "Taipei",
+    "country": "TW",
+    "reason": "China Airlines direct $200-230 USD"
+  },
+  {
+    "iata": "HKG",
+    "city": "Hong Kong",
+    "country": "HK",
+    "reason": "Cathay Pacific direct $220-250 USD"
+  },
+  {
+    "iata": "DRW",
+    "city": "Darwin",
+    "country": "AU",
+    "reason": "Jetstar direct $225 USD"
+  },
+  {
+    "iata": "MEL",
+    "city": "Melbourne",
+    "country": "AU",
+    "reason": "Jetstar direct $290 USD"
+  },
+  {
+    "iata": "NRT",
+    "city": "Tokyo",
+    "country": "JP",
+    "reason": "Garuda Indonesia direct $300-350 USD"
+  },
+  {
+    "iata": "ICN",
+    "city": "Seoul",
+    "country": "KR",
+    "reason": "Korean Air direct $320-370 USD"
+  },
+  {
+    "iata": "SYD",
+    "city": "Sydney",
+    "country": "AU",
+    "reason": "Jetstar direct $335 USD"
+  }
+]
