@@ -18,7 +18,7 @@
 - **Reverse Flight Search**: Enter a destination and find the cheapest routes from anywhere
 - **Real-time Flight Data**: Live pricing from multiple sources
 - **Smart Caching**: Optimized performance with intelligent cache management
-- **Modern UI**: Split-flap display animation and responsive design
+- **Modern UI**: Minimal display animation and responsive design
 - **Multiple Destinations**: Support for popular worldwide destinations
 - **Date Flexibility**: Quick date selection or custom date picker
 - **Homepage Button**: Always-visible homepage button at the top right
