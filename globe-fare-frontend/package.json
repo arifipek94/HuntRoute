@@ -49,8 +49,6 @@
     "eslint-config-next": "^15.3.2",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-prettier": "^5.4.0",
-    "husky": "^9.1.7",
-    "lint-staged": "^16.1.0",
     "postcss": "^8",
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
@@ -59,10 +57,5 @@
     "tailwindcss": "^4.0.0",
     "typescript": "^5",
     "webpack-bundle-analyzer": "^4.10.2"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run pre-commit"
-    }
   }
 }
