@@ -1,0 +1,600 @@
+{
+  "meta": {
+    "count": 5,
+    "links": {
+      "self": "https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=TPE&destinationLocationCode=BKK&departureDate=2025-07-01&adults=1&max=5"
+    }
+  },
+  "data": [
+    {
+      "type": "flight-offer",
+      "id": "1",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-15",
+      "lastTicketingDateTime": "2025-06-15",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT3H50M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "TPE",
+                "terminal": "1",
+                "at": "2025-07-01T10:45:00"
+              },
+              "arrival": {
+                "iataCode": "DMK",
+                "terminal": "1",
+                "at": "2025-07-01T13:35:00"
+              },
+              "carrierCode": "SL",
+              "number": "399",
+              "aircraft": {
+                "code": "738"
+              },
+              "operating": {
+                "carrierCode": "SL"
+              },
+              "duration": "PT3H50M",
+              "id": "7",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "77.40",
+        "base": "25.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "77.40"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": false
+      },
+      "validatingAirlineCodes": [
+        "GP"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "77.40",
+            "base": "25.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "7",
+              "cabin": "ECONOMY",
+              "fareBasis": "OLTOW",
+              "class": "O",
+              "includedCheckedBags": {
+                "weight": 0,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "2",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-17",
+      "lastTicketingDateTime": "2025-06-17",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT8H10M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "TPE",
+                "terminal": "2",
+                "at": "2025-07-01T14:50:00"
+              },
+              "arrival": {
+                "iataCode": "CAN",
+                "terminal": "2",
+                "at": "2025-07-01T16:55:00"
+              },
+              "carrierCode": "CZ",
+              "number": "3098",
+              "aircraft": {
+                "code": "330"
+              },
+              "operating": {
+                "carrierCode": "CZ"
+              },
+              "duration": "PT2H5M",
+              "id": "2",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "CAN",
+                "terminal": "2",
+                "at": "2025-07-01T20:15:00"
+              },
+              "arrival": {
+                "iataCode": "BKK",
+                "at": "2025-07-01T22:00:00"
+              },
+              "carrierCode": "CZ",
+              "number": "361",
+              "aircraft": {
+                "code": "7M8"
+              },
+              "operating": {
+                "carrierCode": "CZ"
+              },
+              "duration": "PT2H45M",
+              "id": "3",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "129.19",
+        "base": "54.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "129.19",
+        "additionalServices": [
+          {
+            "amount": "128.20",
+            "type": "CHECKED_BAGS"
+          }
+        ]
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "CZ"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "129.19",
+            "base": "54.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "2",
+              "cabin": "ECONOMY",
+              "fareBasis": "Z2ASRSTS",
+              "class": "Z",
+              "includedCheckedBags": {
+                "quantity": 1
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            },
+            {
+              "segmentId": "3",
+              "cabin": "ECONOMY",
+              "fareBasis": "Z2ASRSTS",
+              "class": "Z",
+              "includedCheckedBags": {
+                "quantity": 1
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "3",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-17",
+      "lastTicketingDateTime": "2025-06-17",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT11H40M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "TPE",
+                "terminal": "2",
+                "at": "2025-07-01T14:50:00"
+              },
+              "arrival": {
+                "iataCode": "CAN",
+                "terminal": "2",
+                "at": "2025-07-01T16:55:00"
+              },
+              "carrierCode": "CZ",
+              "number": "3098",
+              "aircraft": {
+                "code": "330"
+              },
+              "operating": {
+                "carrierCode": "CZ"
+              },
+              "duration": "PT2H5M",
+              "id": "4",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "CAN",
+                "terminal": "2",
+                "at": "2025-07-01T23:35:00"
+              },
+              "arrival": {
+                "iataCode": "BKK",
+                "at": "2025-07-02T01:30:00"
+              },
+              "carrierCode": "CZ",
+              "number": "3035",
+              "aircraft": {
+                "code": "7M8"
+              },
+              "operating": {
+                "carrierCode": "CZ"
+              },
+              "duration": "PT2H55M",
+              "id": "5",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "129.19",
+        "base": "54.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "129.19",
+        "additionalServices": [
+          {
+            "amount": "128.20",
+            "type": "CHECKED_BAGS"
+          }
+        ]
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "CZ"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "129.19",
+            "base": "54.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "4",
+              "cabin": "ECONOMY",
+              "fareBasis": "Z2ASRSTS",
+              "class": "Z",
+              "includedCheckedBags": {
+                "quantity": 1
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            },
+            {
+              "segmentId": "5",
+              "cabin": "ECONOMY",
+              "fareBasis": "Z2ASRSTS",
+              "class": "Z",
+              "includedCheckedBags": {
+                "quantity": 1
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "4",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-11",
+      "lastTicketingDateTime": "2025-06-11",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT3H45M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "TPE",
+                "terminal": "0",
+                "at": "2025-07-01T21:10:00"
+              },
+              "arrival": {
+                "iataCode": "BKK",
+                "at": "2025-07-01T23:55:00"
+              },
+              "carrierCode": "VZ",
+              "number": "565",
+              "aircraft": {
+                "code": "320"
+              },
+              "operating": {
+                "carrierCode": "VZ"
+              },
+              "duration": "PT3H45M",
+              "id": "6",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "138.61",
+        "base": "110.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "138.61"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "GP"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "138.61",
+            "base": "110.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "6",
+              "cabin": "ECONOMY",
+              "fareBasis": "WOWVZ",
+              "class": "W",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "weight": 7,
+                "weightUnit": "KG"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "5",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-11",
+      "lastTicketingDateTime": "2025-06-11",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT4H",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "TPE",
+                "terminal": "0",
+                "at": "2025-07-01T15:15:00"
+              },
+              "arrival": {
+                "iataCode": "BKK",
+                "at": "2025-07-01T18:15:00"
+              },
+              "carrierCode": "VZ",
+              "number": "567",
+              "aircraft": {
+                "code": "321"
+              },
+              "operating": {
+                "carrierCode": "VZ"
+              },
+              "duration": "PT4H",
+              "id": "1",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "138.61",
+        "base": "110.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "138.61"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "GP"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "138.61",
+            "base": "110.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "1",
+              "cabin": "ECONOMY",
+              "fareBasis": "WOWVZ",
+              "class": "W",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "weight": 7,
+                "weightUnit": "KG"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dictionaries": {
+    "locations": {
+      "CAN": {
+        "cityCode": "CAN",
+        "countryCode": "CN"
+      },
+      "DMK": {
+        "cityCode": "BKK",
+        "countryCode": "TH"
+      },
+      "BKK": {
+        "cityCode": "BKK",
+        "countryCode": "TH"
+      },
+      "TPE": {
+        "cityCode": "TPE",
+        "countryCode": "TW"
+      }
+    },
+    "aircraft": {
+      "320": "AIRBUS A320",
+      "321": "AIRBUS A321",
+      "330": "AIRBUS INDUSTRIE A330",
+      "738": "BOEING 737-800",
+      "7M8": "BOEING 737 MAX 8"
+    },
+    "currencies": {
+      "EUR": "EURO"
+    },
+    "carriers": {
+      "VZ": "THAI VIETJET AIR",
+      "CZ": "CHINA SOUTHERN AIRLINES",
+      "SL": "THAI LION AIR"
+    }
+  }
+}

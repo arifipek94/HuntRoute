@@ -1,6 +1,6 @@
 'use client';
 
-import { Flight } from '@/types/flight';
+import type { Flight } from '@/types/flight';
 import FlightCard from './FlightCard';
 
 interface FlightListingProps {

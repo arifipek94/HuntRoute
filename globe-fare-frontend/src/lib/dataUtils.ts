@@ -3,7 +3,7 @@
  * Removed: getAirlineInfo, resolveCityName, validateFlightData, formatPrice, formatDate, logDataSource, debugDataLoading
  */
 
-import { Flight } from '../types/flight';
+import type { Flight } from '../types/flight';
 
 // ====================================
 // TYPE DEFINITIONS

@@ -3,6 +3,71 @@ import fs from 'fs';
 import { NextResponse } from 'next/server';
 import path from 'path';
 
+// Type definitions for flight data
+interface FlightSegment {
+  carrierCode?: string;
+  number?: string;
+  departure?: {
+    iataCode?: string;
+    at?: string;
+  };
+  arrival?: {
+    iataCode?: string;
+    at?: string;
+  };
+  aircraft?: {
+    code?: string;
+  };
+}
+
+interface RawFlightData {
+  id?: string;
+  airline?: string;
+  airlineCode?: string;
+  flightNumber?: string;
+  from?: string;
+  to?: string;
+  departure?: string;
+  arrival?: string;
+  duration?: string;
+  stops?: number;
+  price?: number | string;
+  currency?: string;
+  aircraft?: string;
+  availableSeats?: number;
+  segments?: FlightSegment[];
+  departure_airport?: string;
+  arrival_airport?: string;
+  departureAirport?: string;
+  arrivalAirport?: string;
+  departure_time?: string;
+  arrival_time?: string;
+  departureTime?: string;
+  arrivalTime?: string;
+  cabin_class?: string;
+  cabinClass?: string;
+  class?: string;
+  [key: string]: unknown;
+}
+
+interface StandardizedFlight {
+  id: string;
+  airline: string;
+  airlineCode: string;
+  flightNumber: string;
+  from: string;
+  to: string;
+  departure: string;
+  arrival: string;
+  duration?: string;
+  stops: number;
+  price: number;
+  currency: string;
+  aircraft?: string;
+  availableSeats?: number;
+  cabinClass?: string;
+}
+
 export const dynamic = 'force-dynamic';
 
 const CACHE_DIR = path.join(
@@ -76,32 +141,39 @@ function isCacheValid(to: string, date: string): boolean {
 }
 
 // Standardize flight data format from different sources
-function standardizeFlightData(rawFlight: any, source: string = 'api'): any {
+function standardizeFlightData(
+  rawFlight: RawFlightData,
+  source: string = 'api'
+): StandardizedFlight {
   // Handle different data structures from various sources
-  let standardized: any = {};
+  let standardized: Partial<StandardizedFlight> = {};
 
   if (source === 'cache' && rawFlight.segments) {
     // Handle cached Amadeus-style data
-    const segments = rawFlight.segments;
+    const segments = rawFlight.segments as FlightSegment[];
     standardized = {
       id:
         rawFlight.id ||
         `${rawFlight.airline || segments[0]?.carrierCode}-${rawFlight.flightNumber || segments[0]?.number}-${Date.now()}`,
-      airline: rawFlight.airline || segments[0]?.carrierCode,
-      airlineCode: rawFlight.airline || segments[0]?.carrierCode,
+      airline: rawFlight.airline || segments[0]?.carrierCode || '',
+      airlineCode: rawFlight.airline || segments[0]?.carrierCode || '',
       flightNumber:
         rawFlight.flightNumber ||
-        `${segments[0]?.carrierCode}${segments[0]?.number}`,
-      from: rawFlight.from || segments[0]?.departure?.iataCode,
-      to: rawFlight.to || segments[segments.length - 1]?.arrival?.iataCode,
-      departure: rawFlight.departure || segments[0]?.departure?.at,
-      arrival: rawFlight.arrival || segments[segments.length - 1]?.arrival?.at,
-      duration: rawFlight.duration,
-      stops: rawFlight.stops || segments.length - 1,
-      price: Number(rawFlight.price),
+        `${segments[0]?.carrierCode || ''}${segments[0]?.number || ''}`,
+      from: rawFlight.from || segments[0]?.departure?.iataCode || '',
+      to:
+        rawFlight.to || segments[segments.length - 1]?.arrival?.iataCode || '',
+      departure: rawFlight.departure || segments[0]?.departure?.at || '',
+      arrival:
+        rawFlight.arrival || segments[segments.length - 1]?.arrival?.at || '',
+      duration: rawFlight.duration as string | undefined,
+      stops: rawFlight.stops ?? segments.length - 1,
+      price: Number(rawFlight.price) || 0,
       currency: rawFlight.currency || 'EUR',
-      aircraft: rawFlight.aircraft || segments[0]?.aircraft?.code,
-      availableSeats: rawFlight.availableSeats,
+      aircraft:
+        (rawFlight.aircraft as string | undefined) ||
+        segments[0]?.aircraft?.code,
+      availableSeats: rawFlight.availableSeats as number | undefined,
     };
   } else {
     // Handle direct API response or already standardized data
@@ -109,68 +181,75 @@ function standardizeFlightData(rawFlight: any, source: string = 'api'): any {
       id:
         rawFlight.id ||
         `flight-${rawFlight.airline || rawFlight.airlineCode}-${rawFlight.flightNumber}-${Date.now()}`,
-      airline: rawFlight.airline || rawFlight.airlineCode,
-      airlineCode: rawFlight.airlineCode || rawFlight.airline,
-      flightNumber: rawFlight.flightNumber,
+      airline: ((rawFlight.airline || rawFlight.airlineCode) as string) || '',
+      airlineCode:
+        ((rawFlight.airlineCode || rawFlight.airline) as string) || '',
+      flightNumber: (rawFlight.flightNumber as string) || '',
       from:
-        rawFlight.from ||
-        rawFlight.departure_airport ||
-        rawFlight.departureAirport,
-      to: rawFlight.to || rawFlight.arrival_airport || rawFlight.arrivalAirport,
+        ((rawFlight.from ||
+          rawFlight.departure_airport ||
+          rawFlight.departureAirport) as string) || '',
+      to:
+        ((rawFlight.to ||
+          rawFlight.arrival_airport ||
+          rawFlight.arrivalAirport) as string) || '',
       departure:
-        rawFlight.departure ||
-        rawFlight.departure_time ||
-        rawFlight.departureTime,
+        ((rawFlight.departure ||
+          rawFlight.departure_time ||
+          rawFlight.departureTime) as string) || '',
       arrival:
-        rawFlight.arrival || rawFlight.arrival_time || rawFlight.arrivalTime,
-      duration:
-        rawFlight.duration ||
+        ((rawFlight.arrival ||
+          rawFlight.arrival_time ||
+          rawFlight.arrivalTime) as string) || '',
+      duration: (rawFlight.duration ||
         rawFlight.flight_duration ||
-        rawFlight.flightDuration,
+        rawFlight.flightDuration) as string | undefined,
       stops:
-        rawFlight.stops ||
-        rawFlight.number_of_stops ||
-        rawFlight.numberOfStops ||
-        0,
+        ((rawFlight.stops ||
+          rawFlight.number_of_stops ||
+          rawFlight.numberOfStops) as number) || 0,
       price: Number(
         rawFlight.price || rawFlight.total_price || rawFlight.totalPrice || 0
       ),
-      currency: rawFlight.currency || 'USD',
-      aircraft:
-        rawFlight.aircraft || rawFlight.airplane || rawFlight.aircraftType,
-      availableSeats:
-        rawFlight.availableSeats ||
+      currency: (rawFlight.currency as string) || 'USD',
+      aircraft: (rawFlight.aircraft ||
+        rawFlight.airplane ||
+        rawFlight.aircraftType) as string | undefined,
+      availableSeats: (rawFlight.availableSeats ||
         rawFlight.available_seats ||
-        rawFlight.seatsAvailable,
+        rawFlight.seatsAvailable) as number | undefined,
     };
   }
 
   // Validate required fields and provide defaults
-  if (!standardized.id) {
-    standardized.id = `flight-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
-  }
-  if (!standardized.airline && !standardized.airlineCode) {
-    standardized.airline = 'Unknown Airline';
-    standardized.airlineCode = 'XX';
-  }
-  if (!standardized.flightNumber) {
-    standardized.flightNumber = `${standardized.airlineCode}000`;
-  }
-  if (!standardized.duration) {
-    standardized.duration = 'N/A';
-  }
-  if (typeof standardized.stops !== 'number') {
-    standardized.stops = 0;
-  }
-  if (!standardized.currency) {
-    standardized.currency = 'USD';
-  }
+  const finalStandardized: StandardizedFlight = {
+    id:
+      standardized.id ||
+      `flight-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
+    airline: standardized.airline || 'Unknown Airline',
+    airlineCode: standardized.airlineCode || 'XX',
+    flightNumber:
+      standardized.flightNumber || `${standardized.airlineCode || 'XX'}000`,
+    from: standardized.from || '',
+    to: standardized.to || '',
+    departure: standardized.departure || '',
+    arrival: standardized.arrival || '',
+    duration: standardized.duration,
+    stops: typeof standardized.stops === 'number' ? standardized.stops : 0,
+    price: standardized.price || 0,
+    currency: standardized.currency || 'USD',
+    aircraft: standardized.aircraft,
+    availableSeats: standardized.availableSeats,
+  };
 
-  return standardized;
+  return finalStandardized;
 }
 
 // Enhanced flight data processing with consistent formatting
-function processFlightData(flights: any[], source: string = 'api'): any[] {
+function processFlightData(
+  flights: RawFlightData[],
+  source: string = 'api'
+): StandardizedFlight[] {
   if (!Array.isArray(flights)) {
     console.warn('[DATA PROCESSING] Expected array, got:', typeof flights);
     return [];
@@ -180,14 +259,6 @@ function processFlightData(flights: any[], source: string = 'api'): any[] {
     .map((flight, index) => {
       try {
         const standardized = standardizeFlightData(flight, source);
-
-        // Add metadata for tracking
-        standardized._metadata = {
-          source,
-          processed_at: new Date().toISOString(),
-          original_index: index,
-        };
-
         return standardized;
       } catch (error) {
         console.error(
@@ -198,14 +269,14 @@ function processFlightData(flights: any[], source: string = 'api'): any[] {
         return null;
       }
     })
-    .filter(Boolean); // Remove null entries
+    .filter((flight): flight is StandardizedFlight => flight !== null);
 }
 
 // Read cache data for specific destination and date
 function readCache(
   to: string,
   date: string
-): { flights: any[]; meta: any } | null {
+): { flights: StandardizedFlight[]; meta: Record<string, unknown> } | null {
   const cacheFile = path.join(
     CACHE_DIR,
     `flight-cache-${to.toUpperCase()}-${date}.json`
@@ -243,32 +314,33 @@ function readCache(
 }
 
 // Save flights to cache with standardized format
-function saveToCache(destination: string, date: string, flights: any[]): void {
+function saveToCache(
+  destination: string,
+  date: string,
+  flights: StandardizedFlight[]
+): void {
   try {
     ensureCacheDir();
 
     const fileName = getCacheFileName(destination, date);
     const filePath = path.join(CACHE_DIR, fileName);
 
-    // Ensure flights are in standardized format before caching
-    const standardizedFlights = processFlightData(flights, 'api');
-
     const cacheData = {
       destination,
       date,
-      flights: standardizedFlights,
+      flights: flights, // flights are already standardized
       timestamp: Date.now(),
       cached_at: new Date().toISOString(),
       expires_at: new Date(
         Date.now() + CACHE_REFRESH_HOURS * 60 * 60 * 1000
       ).toISOString(),
       format_version: '1.0',
-      total_flights: standardizedFlights.length,
+      total_flights: flights.length,
     };
 
     fs.writeFileSync(filePath, JSON.stringify(cacheData, null, 2));
     console.log(
-      `[CACHE SAVE] Saved ${standardizedFlights.length} standardized flights for ${destination} on ${date}`
+      `[CACHE SAVE] Saved ${flights.length} standardized flights for ${destination} on ${date}`
     );
   } catch (error) {
     console.error('[CACHE SAVE] Error saving to cache:', error);
@@ -321,7 +393,7 @@ async function fetchFlightsFromBackend(
   destination: string,
   date: string,
   requestId: string = 'unknown'
-): Promise<any[]> {
+): Promise<StandardizedFlight[]> {
   try {
     // Enhanced backend URL detection and validation
     const backendUrl =
@@ -604,7 +676,9 @@ async function fetchFlightsFromBackend(
 
 // Simple pass-through format function to replace the removed flightFormatter
 // This function can be enhanced later if any formatting is actually needed
-async function formatFlightData(flights: any[]): Promise<any[]> {
+async function formatFlightData(
+  flights: StandardizedFlight[]
+): Promise<StandardizedFlight[]> {
   if (!Array.isArray(flights)) {
     console.warn(
       '[API] formatFlightData: Expected array, got:',
@@ -745,7 +819,7 @@ export async function GET(request: Request) {
     } catch (apiError) {
       console.error(
         `❌ [REQUEST:${requestId}] Backend API failed:`,
-        apiError.message
+        apiError instanceof Error ? apiError.message : 'Unknown error'
       );
     }
 
@@ -793,7 +867,10 @@ export async function GET(request: Request) {
       },
     });
   } catch (error) {
-    console.error(`❌ [REQUEST:${requestId}] SYSTEM ERROR:`, error.message);
+    console.error(
+      `❌ [REQUEST:${requestId}] SYSTEM ERROR:`,
+      error instanceof Error ? error.message : 'Unknown error'
+    );
 
     return NextResponse.json(
       {

@@ -94,7 +94,7 @@ export async function lookupAirline(
   airlineCode: string
 ): Promise<AirlineLookupResult> {
   if (!airlineCode) {
-    return { found: false };
+    return { found: false, code: airlineCode };
   }
 
   try {
@@ -106,6 +106,7 @@ export async function lookupAirline(
       return {
         found: true,
         airline,
+        code,
         fallback: false,
       };
     }
@@ -119,11 +120,12 @@ export async function lookupAirline(
         code,
         logo: `https://images.kiwi.com/airlines/64/${code}.png`,
       },
+      code,
       fallback: true,
     };
   } catch (error) {
     console.warn(`Airline lookup failed for ${airlineCode}:`, error);
-    return { found: false };
+    return { found: false, code: airlineCode };
   }
 }
 

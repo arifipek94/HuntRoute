@@ -25,3 +25,11 @@ export interface RawAirlineData {
   country?: string;
   logo?: string;
 }
+
+// For airline lookup results
+export interface AirlineLookupResult {
+  found: boolean;
+  airline?: Airline;
+  code?: string;
+  fallback?: boolean;
+}

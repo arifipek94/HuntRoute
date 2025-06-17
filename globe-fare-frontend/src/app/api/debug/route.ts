@@ -60,7 +60,8 @@ export async function GET(request: Request) {
       data: await healthResponse.json().catch(() => null),
     });
   } catch (error: unknown) {
-    const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+    const errorMessage =
+      error instanceof Error ? error.message : 'Unknown error';
     debugInfo.tests.push({
       name: 'Backend Health Check',
       success: false,
@@ -100,7 +101,8 @@ export async function GET(request: Request) {
       sampleData: responseData,
     });
   } catch (error: unknown) {
-    const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+    const errorMessage =
+      error instanceof Error ? error.message : 'Unknown error';
     debugInfo.tests.push({
       name: 'Flight API Test',
       success: false,

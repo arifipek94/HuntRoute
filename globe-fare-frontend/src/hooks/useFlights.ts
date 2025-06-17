@@ -1,5 +1,5 @@
 import { prepareFlightsForDisplay } from '@/lib/dataUtils';
-import { Flight } from '@/types/flight';
+import type { Flight } from '@/types/flight';
 import { useQuery } from '@tanstack/react-query';
 
 interface FlightParams {
@@ -121,7 +121,7 @@ export async function clearFlightCache(): Promise<boolean> {
   }
 }
 
-export async function getFlightCacheStatus(): Promise<any> {
+export async function getFlightCacheStatus(): Promise<unknown> {
   try {
     const response = await fetch('/api/flights?action=cache-status', {
       method: 'POST',

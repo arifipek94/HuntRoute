@@ -1,0 +1,767 @@
+{
+  "meta": {
+    "count": 5,
+    "links": {
+      "self": "https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=MFM&destinationLocationCode=BKK&departureDate=2025-07-01&adults=1&max=5"
+    }
+  },
+  "data": [
+    {
+      "type": "flight-offer",
+      "id": "1",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-15",
+      "lastTicketingDateTime": "2025-06-15",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT2H45M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "MFM",
+                "at": "2025-07-01T14:10:00"
+              },
+              "arrival": {
+                "iataCode": "DMK",
+                "terminal": "1",
+                "at": "2025-07-01T15:55:00"
+              },
+              "carrierCode": "SL",
+              "number": "373",
+              "aircraft": {
+                "code": "738"
+              },
+              "operating": {
+                "carrierCode": "SL"
+              },
+              "duration": "PT2H45M",
+              "id": "5",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "72.92",
+        "base": "43.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "72.92"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": false
+      },
+      "validatingAirlineCodes": [
+        "GP"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "72.92",
+            "base": "43.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "5",
+              "cabin": "ECONOMY",
+              "fareBasis": "USLSTAFF",
+              "class": "U",
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "2",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-15",
+      "lastTicketingDateTime": "2025-06-15",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT2H45M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "MFM",
+                "at": "2025-07-01T22:05:00"
+              },
+              "arrival": {
+                "iataCode": "DMK",
+                "terminal": "1",
+                "at": "2025-07-01T23:50:00"
+              },
+              "carrierCode": "SL",
+              "number": "371",
+              "aircraft": {
+                "code": "738"
+              },
+              "operating": {
+                "carrierCode": "SL"
+              },
+              "duration": "PT2H45M",
+              "id": "6",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "72.92",
+        "base": "43.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "72.92"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": false
+      },
+      "validatingAirlineCodes": [
+        "GP"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "72.92",
+            "base": "43.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "6",
+              "cabin": "ECONOMY",
+              "fareBasis": "USLSTAFF",
+              "class": "U",
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "3",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-07-01",
+      "lastTicketingDateTime": "2025-07-01",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT10H50M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "MFM",
+                "at": "2025-07-01T15:00:00"
+              },
+              "arrival": {
+                "iataCode": "XMN",
+                "terminal": "3",
+                "at": "2025-07-01T16:20:00"
+              },
+              "carrierCode": "MF",
+              "number": "8682",
+              "aircraft": {
+                "code": "738"
+              },
+              "operating": {
+                "carrierCode": "MF"
+              },
+              "duration": "PT1H20M",
+              "id": "7",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "XMN",
+                "terminal": "3",
+                "at": "2025-07-01T22:20:00"
+              },
+              "arrival": {
+                "iataCode": "BKK",
+                "at": "2025-07-02T00:50:00"
+              },
+              "carrierCode": "MF",
+              "number": "843",
+              "aircraft": {
+                "code": "738"
+              },
+              "operating": {
+                "carrierCode": "MF"
+              },
+              "duration": "PT3H30M",
+              "id": "8",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "128.17",
+        "base": "60.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "128.17",
+        "additionalServices": [
+          {
+            "amount": "98.30",
+            "type": "CHECKED_BAGS"
+          }
+        ]
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "MF"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "128.17",
+            "base": "60.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "7",
+              "cabin": "ECONOMY",
+              "fareBasis": "SOW6DASS",
+              "brandedFare": "YSTANDARD",
+              "brandedFareLabel": "ECONOMY STANDARD",
+              "class": "S",
+              "includedCheckedBags": {
+                "quantity": 1
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              },
+              "amenities": [
+                {
+                  "description": "CHECKED BAG 1PC OF 23KG 158CM",
+                  "isChargeable": false,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "PRE RESERVED SEAT ASSIGNMENT",
+                  "isChargeable": true,
+                  "amenityType": "PRE_RESERVED_SEAT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "REFUNDABLE  TICKET",
+                  "isChargeable": true,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "CHANGEABLE  TICKET",
+                  "isChargeable": true,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            },
+            {
+              "segmentId": "8",
+              "cabin": "ECONOMY",
+              "fareBasis": "SOW6DASS",
+              "brandedFare": "YSTANDARD",
+              "brandedFareLabel": "ECONOMY STANDARD",
+              "class": "S",
+              "includedCheckedBags": {
+                "quantity": 1
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              },
+              "amenities": [
+                {
+                  "description": "CHECKED BAG 1PC OF 23KG 158CM",
+                  "isChargeable": false,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "PRE RESERVED SEAT ASSIGNMENT",
+                  "isChargeable": true,
+                  "amenityType": "PRE_RESERVED_SEAT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "REFUNDABLE  TICKET",
+                  "isChargeable": true,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "CHANGEABLE  TICKET",
+                  "isChargeable": true,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "4",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-07-01",
+      "lastTicketingDateTime": "2025-07-01",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT21H15M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "MFM",
+                "at": "2025-07-01T15:00:00"
+              },
+              "arrival": {
+                "iataCode": "XMN",
+                "terminal": "3",
+                "at": "2025-07-01T16:20:00"
+              },
+              "carrierCode": "MF",
+              "number": "8682",
+              "aircraft": {
+                "code": "738"
+              },
+              "operating": {
+                "carrierCode": "MF"
+              },
+              "duration": "PT1H20M",
+              "id": "3",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "XMN",
+                "terminal": "3",
+                "at": "2025-07-02T08:50:00"
+              },
+              "arrival": {
+                "iataCode": "BKK",
+                "at": "2025-07-02T11:15:00"
+              },
+              "carrierCode": "MF",
+              "number": "853",
+              "aircraft": {
+                "code": "738"
+              },
+              "operating": {
+                "carrierCode": "MF"
+              },
+              "duration": "PT3H25M",
+              "id": "4",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "128.17",
+        "base": "60.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "128.17",
+        "additionalServices": [
+          {
+            "amount": "98.30",
+            "type": "CHECKED_BAGS"
+          }
+        ]
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "MF"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "128.17",
+            "base": "60.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "3",
+              "cabin": "ECONOMY",
+              "fareBasis": "SOW6DASS",
+              "brandedFare": "YSTANDARD",
+              "brandedFareLabel": "ECONOMY STANDARD",
+              "class": "S",
+              "includedCheckedBags": {
+                "quantity": 1
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              },
+              "amenities": [
+                {
+                  "description": "CHECKED BAG 1PC OF 23KG 158CM",
+                  "isChargeable": false,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "PRE RESERVED SEAT ASSIGNMENT",
+                  "isChargeable": true,
+                  "amenityType": "PRE_RESERVED_SEAT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "REFUNDABLE  TICKET",
+                  "isChargeable": true,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "CHANGEABLE  TICKET",
+                  "isChargeable": true,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            },
+            {
+              "segmentId": "4",
+              "cabin": "ECONOMY",
+              "fareBasis": "SOW6DASS",
+              "brandedFare": "YSTANDARD",
+              "brandedFareLabel": "ECONOMY STANDARD",
+              "class": "S",
+              "includedCheckedBags": {
+                "quantity": 1
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              },
+              "amenities": [
+                {
+                  "description": "CHECKED BAG 1PC OF 23KG 158CM",
+                  "isChargeable": false,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "PRE RESERVED SEAT ASSIGNMENT",
+                  "isChargeable": true,
+                  "amenityType": "PRE_RESERVED_SEAT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "REFUNDABLE  TICKET",
+                  "isChargeable": true,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "CHANGEABLE  TICKET",
+                  "isChargeable": true,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "5",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-07-01",
+      "lastTicketingDateTime": "2025-07-01",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT11H15M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "MFM",
+                "at": "2025-07-01T13:15:00"
+              },
+              "arrival": {
+                "iataCode": "TPE",
+                "terminal": "2",
+                "at": "2025-07-01T15:00:00"
+              },
+              "carrierCode": "BR",
+              "number": "802",
+              "aircraft": {
+                "code": "333"
+              },
+              "operating": {
+                "carrierCode": "BR"
+              },
+              "duration": "PT1H45M",
+              "id": "1",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "TPE",
+                "terminal": "2",
+                "at": "2025-07-01T20:45:00"
+              },
+              "arrival": {
+                "iataCode": "BKK",
+                "at": "2025-07-01T23:30:00"
+              },
+              "carrierCode": "BR",
+              "number": "205",
+              "aircraft": {
+                "code": "781"
+              },
+              "operating": {
+                "carrierCode": "BR"
+              },
+              "duration": "PT3H45M",
+              "id": "2",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "149.00",
+        "base": "83.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "149.00"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "BR"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "149.00",
+            "base": "83.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "1",
+              "cabin": "ECONOMY",
+              "fareBasis": "VOWMO",
+              "class": "V",
+              "includedCheckedBags": {
+                "quantity": 1
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            },
+            {
+              "segmentId": "2",
+              "cabin": "ECONOMY",
+              "fareBasis": "VOWMO",
+              "class": "V",
+              "includedCheckedBags": {
+                "quantity": 1
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dictionaries": {
+    "locations": {
+      "DMK": {
+        "cityCode": "BKK",
+        "countryCode": "TH"
+      },
+      "BKK": {
+        "cityCode": "BKK",
+        "countryCode": "TH"
+      },
+      "MFM": {
+        "cityCode": "MFM",
+        "countryCode": "MO"
+      },
+      "TPE": {
+        "cityCode": "TPE",
+        "countryCode": "TW"
+      },
+      "XMN": {
+        "cityCode": "XMN",
+        "countryCode": "CN"
+      }
+    },
+    "aircraft": {
+      "333": "AIRBUS A330-300",
+      "738": "BOEING 737-800",
+      "781": "BOEING 787-10"
+    },
+    "currencies": {
+      "EUR": "EURO"
+    },
+    "carriers": {
+      "BR": "EVA AIR",
+      "SL": "THAI LION AIR",
+      "MF": "XIAMEN AIRLINES"
+    }
+  }
+}

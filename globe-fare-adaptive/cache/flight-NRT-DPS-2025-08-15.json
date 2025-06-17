@@ -1,0 +1,695 @@
+{
+  "meta": {
+    "count": 5,
+    "links": {
+      "self": "https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=NRT&destinationLocationCode=DPS&departureDate=2025-08-15&adults=1&max=5"
+    }
+  },
+  "data": [
+    {
+      "type": "flight-offer",
+      "id": "1",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-08-15",
+      "lastTicketingDateTime": "2025-08-15",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT31H55M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "NRT",
+                "terminal": "2",
+                "at": "2025-08-15T09:30:00"
+              },
+              "arrival": {
+                "iataCode": "HAN",
+                "terminal": "2",
+                "at": "2025-08-15T13:05:00"
+              },
+              "carrierCode": "VJ",
+              "number": "933",
+              "aircraft": {
+                "code": "321"
+              },
+              "operating": {
+                "carrierCode": "VJ"
+              },
+              "duration": "PT5H35M",
+              "id": "7",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "HAN",
+                "terminal": "2",
+                "at": "2025-08-16T10:05:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "I",
+                "at": "2025-08-16T16:25:00"
+              },
+              "carrierCode": "VJ",
+              "number": "997",
+              "aircraft": {
+                "code": "321"
+              },
+              "operating": {
+                "carrierCode": "VJ"
+              },
+              "duration": "PT5H20M",
+              "id": "8",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "181.27",
+        "base": "92.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "181.27"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "GP"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "181.27",
+            "base": "92.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "7",
+              "cabin": "ECONOMY",
+              "fareBasis": "ESP",
+              "class": "E",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "weight": 7,
+                "weightUnit": "KG"
+              }
+            },
+            {
+              "segmentId": "8",
+              "cabin": "ECONOMY",
+              "fareBasis": "ESP",
+              "class": "E",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "weight": 7,
+                "weightUnit": "KG"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "2",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-11",
+      "lastTicketingDateTime": "2025-06-11",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT24H55M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "NRT",
+                "terminal": "2",
+                "at": "2025-08-15T16:30:00"
+              },
+              "arrival": {
+                "iataCode": "HAN",
+                "terminal": "2",
+                "at": "2025-08-15T20:05:00"
+              },
+              "carrierCode": "H1",
+              "number": "5186",
+              "aircraft": {
+                "code": "32S"
+              },
+              "operating": {
+                "carrierCode": "VJ"
+              },
+              "duration": "PT5H35M",
+              "id": "3",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "HAN",
+                "terminal": "2",
+                "at": "2025-08-16T10:05:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "1",
+                "at": "2025-08-16T16:25:00"
+              },
+              "carrierCode": "H1",
+              "number": "4154",
+              "aircraft": {
+                "code": "32S"
+              },
+              "operating": {
+                "carrierCode": "VJ"
+              },
+              "duration": "PT5H20M",
+              "id": "4",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "209.77",
+        "base": "82.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "209.77"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "HR"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "209.77",
+            "base": "82.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "3",
+              "cabin": "ECONOMY",
+              "fareBasis": "VOWVJ",
+              "class": "V",
+              "includedCheckedBags": {
+                "quantity": 1
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            },
+            {
+              "segmentId": "4",
+              "cabin": "ECONOMY",
+              "fareBasis": "VOWVJ",
+              "class": "V",
+              "includedCheckedBags": {
+                "quantity": 1
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "3",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-11",
+      "lastTicketingDateTime": "2025-06-11",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT27H55M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "NRT",
+                "terminal": "2",
+                "at": "2025-08-15T08:55:00"
+              },
+              "arrival": {
+                "iataCode": "SGN",
+                "terminal": "2",
+                "at": "2025-08-15T12:55:00"
+              },
+              "carrierCode": "H1",
+              "number": "4125",
+              "aircraft": {
+                "code": "32S"
+              },
+              "operating": {
+                "carrierCode": "VJ"
+              },
+              "duration": "PT6H",
+              "id": "5",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "SGN",
+                "terminal": "2",
+                "at": "2025-08-16T07:00:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "1",
+                "at": "2025-08-16T11:50:00"
+              },
+              "carrierCode": "H1",
+              "number": "4292",
+              "aircraft": {
+                "code": "32S"
+              },
+              "operating": {
+                "carrierCode": "VJ"
+              },
+              "duration": "PT3H50M",
+              "id": "6",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "209.77",
+        "base": "82.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "209.77"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "HR"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "209.77",
+            "base": "82.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "5",
+              "cabin": "ECONOMY",
+              "fareBasis": "VOWVJ",
+              "class": "V",
+              "includedCheckedBags": {
+                "quantity": 1
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            },
+            {
+              "segmentId": "6",
+              "cabin": "ECONOMY",
+              "fareBasis": "VOWVJ",
+              "class": "V",
+              "includedCheckedBags": {
+                "quantity": 1
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "4",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-11",
+      "lastTicketingDateTime": "2025-06-11",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT29H",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "NRT",
+                "terminal": "2",
+                "at": "2025-08-15T08:55:00"
+              },
+              "arrival": {
+                "iataCode": "SGN",
+                "terminal": "2",
+                "at": "2025-08-15T12:55:00"
+              },
+              "carrierCode": "H1",
+              "number": "4125",
+              "aircraft": {
+                "code": "32S"
+              },
+              "operating": {
+                "carrierCode": "VJ"
+              },
+              "duration": "PT6H",
+              "id": "1",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "SGN",
+                "terminal": "2",
+                "at": "2025-08-16T07:55:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "1",
+                "at": "2025-08-16T12:55:00"
+              },
+              "carrierCode": "H1",
+              "number": "5180",
+              "aircraft": {
+                "code": "32S"
+              },
+              "operating": {
+                "carrierCode": "VJ"
+              },
+              "duration": "PT4H",
+              "id": "2",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "209.77",
+        "base": "82.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "209.77"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "HR"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "209.77",
+            "base": "82.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "1",
+              "cabin": "ECONOMY",
+              "fareBasis": "VOWVJ",
+              "class": "V",
+              "includedCheckedBags": {
+                "quantity": 1
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            },
+            {
+              "segmentId": "2",
+              "cabin": "ECONOMY",
+              "fareBasis": "VOWVJ",
+              "class": "V",
+              "includedCheckedBags": {
+                "quantity": 1
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "5",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-11",
+      "lastTicketingDateTime": "2025-06-11",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT31H55M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "NRT",
+                "terminal": "2",
+                "at": "2025-08-15T09:30:00"
+              },
+              "arrival": {
+                "iataCode": "HAN",
+                "terminal": "2",
+                "at": "2025-08-15T13:05:00"
+              },
+              "carrierCode": "H1",
+              "number": "4165",
+              "aircraft": {
+                "code": "32S"
+              },
+              "operating": {
+                "carrierCode": "VJ"
+              },
+              "duration": "PT5H35M",
+              "id": "9",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "HAN",
+                "terminal": "2",
+                "at": "2025-08-16T10:05:00"
+              },
+              "arrival": {
+                "iataCode": "DPS",
+                "terminal": "1",
+                "at": "2025-08-16T16:25:00"
+              },
+              "carrierCode": "H1",
+              "number": "4154",
+              "aircraft": {
+                "code": "32S"
+              },
+              "operating": {
+                "carrierCode": "VJ"
+              },
+              "duration": "PT5H20M",
+              "id": "10",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "209.77",
+        "base": "82.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "209.77"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "HR"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "209.77",
+            "base": "82.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "9",
+              "cabin": "ECONOMY",
+              "fareBasis": "VOWVJ",
+              "class": "V",
+              "includedCheckedBags": {
+                "quantity": 1
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            },
+            {
+              "segmentId": "10",
+              "cabin": "ECONOMY",
+              "fareBasis": "VOWVJ",
+              "class": "V",
+              "includedCheckedBags": {
+                "quantity": 1
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dictionaries": {
+    "locations": {
+      "NRT": {
+        "cityCode": "TYO",
+        "countryCode": "JP"
+      },
+      "HAN": {
+        "cityCode": "HAN",
+        "countryCode": "VN"
+      },
+      "DPS": {
+        "cityCode": "DPS",
+        "countryCode": "ID"
+      },
+      "SGN": {
+        "cityCode": "SGN",
+        "countryCode": "VN"
+      }
+    },
+    "aircraft": {
+      "321": "AIRBUS A321",
+      "32S": "AIRBUS INDUSTRIE A318/A319/A320/A321"
+    },
+    "currencies": {
+      "EUR": "EURO"
+    },
+    "carriers": {
+      "VJ": "VIETJET AVIATION",
+      "H1": "HAHN AIR SYSTEMS"
+    }
+  }
+}

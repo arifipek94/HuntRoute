@@ -1,0 +1,326 @@
+{
+  "destination": "BKK",
+  "date": "2025-07-01",
+  "flights": [
+    {
+      "id": "1-BKK-1749539406607-0-0-ge9mo",
+      "airline": "MH",
+      "airlineCode": "MH",
+      "flightNumber": "MH4690",
+      "from": "PEN",
+      "to": "BKK",
+      "departure": "2025-07-01T09:55:00",
+      "arrival": "2025-07-01T10:45:00",
+      "duration": "PT1H50M",
+      "stops": 0,
+      "price": 53.93,
+      "currency": "EUR",
+      "aircraft": "738",
+      "availableSeats": 45,
+      "_metadata": {
+        "source": "api",
+        "processed_at": "2025-06-10T07:10:10.037Z",
+        "original_index": 0
+      }
+    },
+    {
+      "id": "1-BKK-1749539405020-11-0-i73ee",
+      "airline": "SL",
+      "airlineCode": "SL",
+      "flightNumber": "SL361",
+      "from": "HKG",
+      "to": "DMK",
+      "departure": "2025-07-01T14:15:00",
+      "arrival": "2025-07-01T16:10:00",
+      "duration": "PT2H55M",
+      "stops": 0,
+      "price": 58.7,
+      "currency": "EUR",
+      "aircraft": "738",
+      "availableSeats": 48,
+      "_metadata": {
+        "source": "api",
+        "processed_at": "2025-06-10T07:10:10.037Z",
+        "original_index": 1
+      }
+    },
+    {
+      "id": "1-BKK-1749539410030-1-0-puk55",
+      "airline": "OD",
+      "airlineCode": "OD",
+      "flightNumber": "OD524",
+      "from": "KUL",
+      "to": "DMK",
+      "departure": "2025-07-01T07:05:00",
+      "arrival": "2025-07-01T08:15:00",
+      "duration": "PT2H10M",
+      "stops": 0,
+      "price": 67.99,
+      "currency": "EUR",
+      "aircraft": "738",
+      "availableSeats": 27,
+      "_metadata": {
+        "source": "api",
+        "processed_at": "2025-06-10T07:10:10.037Z",
+        "original_index": 2
+      }
+    },
+    {
+      "id": "2-BKK-1749539410031-1-1-kgkmk",
+      "airline": "OD",
+      "airlineCode": "OD",
+      "flightNumber": "OD520",
+      "from": "KUL",
+      "to": "DMK",
+      "departure": "2025-07-01T09:55:00",
+      "arrival": "2025-07-01T11:05:00",
+      "duration": "PT2H10M",
+      "stops": 0,
+      "price": 67.99,
+      "currency": "EUR",
+      "aircraft": "738",
+      "availableSeats": 51,
+      "_metadata": {
+        "source": "api",
+        "processed_at": "2025-06-10T07:10:10.037Z",
+        "original_index": 3
+      }
+    },
+    {
+      "id": "1-BKK-1749539405380-10-0-xeb38",
+      "airline": "SL",
+      "airlineCode": "SL",
+      "flightNumber": "SL373",
+      "from": "MFM",
+      "to": "DMK",
+      "departure": "2025-07-01T14:10:00",
+      "arrival": "2025-07-01T15:55:00",
+      "duration": "PT2H45M",
+      "stops": 0,
+      "price": 72.92,
+      "currency": "EUR",
+      "aircraft": "738",
+      "availableSeats": 29,
+      "_metadata": {
+        "source": "api",
+        "processed_at": "2025-06-10T07:10:10.037Z",
+        "original_index": 4
+      }
+    },
+    {
+      "id": "2-BKK-1749539405380-10-1-7urwo",
+      "airline": "SL",
+      "airlineCode": "SL",
+      "flightNumber": "SL371",
+      "from": "MFM",
+      "to": "DMK",
+      "departure": "2025-07-01T22:05:00",
+      "arrival": "2025-07-01T23:50:00",
+      "duration": "PT2H45M",
+      "stops": 0,
+      "price": 72.92,
+      "currency": "EUR",
+      "aircraft": "738",
+      "availableSeats": 53,
+      "_metadata": {
+        "source": "api",
+        "processed_at": "2025-06-10T07:10:10.037Z",
+        "original_index": 5
+      }
+    },
+    {
+      "id": "1-BKK-1749539407254-12-0-kbljr",
+      "airline": "SL",
+      "airlineCode": "SL",
+      "flightNumber": "SL399",
+      "from": "TPE",
+      "to": "DMK",
+      "departure": "2025-07-01T10:45:00",
+      "arrival": "2025-07-01T13:35:00",
+      "duration": "PT3H50M",
+      "stops": 0,
+      "price": 77.4,
+      "currency": "EUR",
+      "aircraft": "738",
+      "availableSeats": 54,
+      "_metadata": {
+        "source": "api",
+        "processed_at": "2025-06-10T07:10:10.037Z",
+        "original_index": 6
+      }
+    },
+    {
+      "id": "2-BKK-1749539405020-11-1-urnne",
+      "airline": "HB",
+      "airlineCode": "HB",
+      "flightNumber": "HB283",
+      "from": "HKG",
+      "to": "BKK",
+      "departure": "2025-07-01T15:40:00",
+      "arrival": "2025-07-01T17:45:00",
+      "duration": "PT3H5M",
+      "stops": 0,
+      "price": 93.58,
+      "currency": "EUR",
+      "aircraft": "738",
+      "availableSeats": 51,
+      "_metadata": {
+        "source": "api",
+        "processed_at": "2025-06-10T07:10:10.037Z",
+        "original_index": 7
+      }
+    },
+    {
+      "id": "2-BKK-1749539406607-0-1-vbiyy",
+      "airline": "TG",
+      "airlineCode": "TG",
+      "flightNumber": "TG426",
+      "from": "PEN",
+      "to": "BKK",
+      "departure": "2025-07-01T08:05:00",
+      "arrival": "2025-07-01T08:55:00",
+      "duration": "PT1H50M",
+      "stops": 0,
+      "price": 94.84,
+      "currency": "EUR",
+      "aircraft": "320",
+      "availableSeats": 14,
+      "_metadata": {
+        "source": "api",
+        "processed_at": "2025-06-10T07:10:10.037Z",
+        "original_index": 8
+      }
+    },
+    {
+      "id": "1-BKK-1749539406230-2-0-7nh7n",
+      "airline": "VN",
+      "airlineCode": "VN",
+      "flightNumber": "VN605",
+      "from": "SGN",
+      "to": "BKK",
+      "departure": "2025-07-01T11:35:00",
+      "arrival": "2025-07-01T13:10:00",
+      "duration": "PT1H35M",
+      "stops": 0,
+      "price": 95.19,
+      "currency": "EUR",
+      "aircraft": "321",
+      "availableSeats": 32,
+      "_metadata": {
+        "source": "api",
+        "processed_at": "2025-06-10T07:10:10.037Z",
+        "original_index": 9
+      }
+    },
+    {
+      "id": "2-BKK-1749539406230-2-1-wsa5l",
+      "airline": "H1",
+      "airlineCode": "H1",
+      "flightNumber": "H14014",
+      "from": "SGN",
+      "to": "BKK",
+      "departure": "2025-07-01T08:35:00",
+      "arrival": "2025-07-01T10:05:00",
+      "duration": "PT1H30M",
+      "stops": 0,
+      "price": 103.88,
+      "currency": "EUR",
+      "aircraft": "32S",
+      "availableSeats": 48,
+      "_metadata": {
+        "source": "api",
+        "processed_at": "2025-06-10T07:10:10.037Z",
+        "original_index": 10
+      }
+    },
+    {
+      "id": "1-BKK-1749539404936-7-0-57xbg",
+      "airline": "TG",
+      "airlineCode": "TG",
+      "flightNumber": "TG302",
+      "from": "RGN",
+      "to": "BKK",
+      "departure": "2025-07-01T11:25:00",
+      "arrival": "2025-07-01T13:25:00",
+      "duration": "PT1H30M",
+      "stops": 0,
+      "price": 107.52,
+      "currency": "EUR",
+      "aircraft": "320",
+      "availableSeats": 19,
+      "_metadata": {
+        "source": "api",
+        "processed_at": "2025-06-10T07:10:10.037Z",
+        "original_index": 11
+      }
+    },
+    {
+      "id": "2-BKK-1749539404936-7-1-upvp9",
+      "airline": "UB",
+      "airlineCode": "UB",
+      "flightNumber": "UB19",
+      "from": "RGN",
+      "to": "BKK",
+      "departure": "2025-07-01T07:45:00",
+      "arrival": "2025-07-01T09:40:00",
+      "duration": "PT1H25M",
+      "stops": 0,
+      "price": 141.35,
+      "currency": "EUR",
+      "aircraft": "738",
+      "availableSeats": 34,
+      "_metadata": {
+        "source": "api",
+        "processed_at": "2025-06-10T07:10:10.037Z",
+        "original_index": 12
+      }
+    },
+    {
+      "id": "1-BKK-1749539407337-16-0-m8joj",
+      "airline": "VN",
+      "airlineCode": "VN",
+      "flightNumber": "VN417",
+      "from": "ICN",
+      "to": "BKK",
+      "departure": "2025-07-01T10:05:00",
+      "arrival": "2025-07-01T21:05:00",
+      "duration": "PT13H",
+      "stops": 1,
+      "price": 90.73,
+      "currency": "EUR",
+      "aircraft": "787",
+      "availableSeats": 17,
+      "_metadata": {
+        "source": "api",
+        "processed_at": "2025-06-10T07:10:10.037Z",
+        "original_index": 13
+      }
+    },
+    {
+      "id": "2-BKK-1749539407338-16-1-j91yi",
+      "airline": "VN",
+      "airlineCode": "VN",
+      "flightNumber": "VN415",
+      "from": "ICN",
+      "to": "BKK",
+      "departure": "2025-07-01T18:05:00",
+      "arrival": "2025-07-02T10:50:00",
+      "duration": "PT18H45M",
+      "stops": 1,
+      "price": 90.73,
+      "currency": "EUR",
+      "aircraft": "359",
+      "availableSeats": 37,
+      "_metadata": {
+        "source": "api",
+        "processed_at": "2025-06-10T07:10:10.037Z",
+        "original_index": 14
+      }
+    }
+  ],
+  "timestamp": 1749539410037,
+  "cached_at": "2025-06-10T07:10:10.037Z",
+  "expires_at": "2025-06-10T19:10:10.037Z",
+  "format_version": "1.0",
+  "total_flights": 15
+}

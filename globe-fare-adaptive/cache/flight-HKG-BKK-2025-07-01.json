@@ -1,0 +1,668 @@
+{
+  "meta": {
+    "count": 5,
+    "links": {
+      "self": "https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=HKG&destinationLocationCode=BKK&departureDate=2025-07-01&adults=1&max=5"
+    }
+  },
+  "data": [
+    {
+      "type": "flight-offer",
+      "id": "1",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-06-15",
+      "lastTicketingDateTime": "2025-06-15",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT2H55M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "HKG",
+                "terminal": "1",
+                "at": "2025-07-01T14:15:00"
+              },
+              "arrival": {
+                "iataCode": "DMK",
+                "terminal": "1",
+                "at": "2025-07-01T16:10:00"
+              },
+              "carrierCode": "SL",
+              "number": "361",
+              "aircraft": {
+                "code": "738"
+              },
+              "operating": {
+                "carrierCode": "SL"
+              },
+              "duration": "PT2H55M",
+              "id": "7",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "58.70",
+        "base": "17.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "58.70"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": false
+      },
+      "validatingAirlineCodes": [
+        "GP"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "58.70",
+            "base": "17.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "7",
+              "cabin": "ECONOMY",
+              "fareBasis": "USLSTAFF",
+              "class": "U",
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "2",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-07-01",
+      "lastTicketingDateTime": "2025-07-01",
+      "numberOfBookableSeats": 3,
+      "itineraries": [
+        {
+          "duration": "PT3H5M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "HKG",
+                "terminal": "1",
+                "at": "2025-07-01T15:40:00"
+              },
+              "arrival": {
+                "iataCode": "BKK",
+                "at": "2025-07-01T17:45:00"
+              },
+              "carrierCode": "HB",
+              "number": "283",
+              "aircraft": {
+                "code": "738"
+              },
+              "operating": {
+                "carrierCode": "HB"
+              },
+              "duration": "PT3H5M",
+              "id": "3",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "93.58",
+        "base": "26.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "93.58"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "HR"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "93.58",
+            "base": "26.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "3",
+              "cabin": "ECONOMY",
+              "fareBasis": "OLGGF1",
+              "brandedFare": "GOGO",
+              "brandedFareLabel": "ECONOMY GO",
+              "class": "O",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "weight": 7,
+                "weightUnit": "KG"
+              },
+              "amenities": [
+                {
+                  "description": "PRE PAID BAGGAGE",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "CARRY7KG 15LB UPTO45LI 115LCM",
+                  "isChargeable": false,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "SEAT SELECTION",
+                  "isChargeable": true,
+                  "amenityType": "PRE_RESERVED_SEAT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "MEALS AND DRINKS",
+                  "isChargeable": true,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "CHANGE BEFORE DEPARTURE",
+                  "isChargeable": true,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "3",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-07-01",
+      "lastTicketingDateTime": "2025-07-01",
+      "numberOfBookableSeats": 3,
+      "itineraries": [
+        {
+          "duration": "PT3H10M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "HKG",
+                "terminal": "1",
+                "at": "2025-07-01T08:00:00"
+              },
+              "arrival": {
+                "iataCode": "BKK",
+                "at": "2025-07-01T10:10:00"
+              },
+              "carrierCode": "HB",
+              "number": "281",
+              "aircraft": {
+                "code": "738"
+              },
+              "operating": {
+                "carrierCode": "HB"
+              },
+              "duration": "PT3H10M",
+              "id": "4",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "93.58",
+        "base": "26.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "93.58"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "HR"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "93.58",
+            "base": "26.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "4",
+              "cabin": "ECONOMY",
+              "fareBasis": "OLGGF1",
+              "brandedFare": "GOGO",
+              "brandedFareLabel": "ECONOMY GO",
+              "class": "O",
+              "includedCheckedBags": {
+                "weight": 20,
+                "weightUnit": "KG"
+              },
+              "includedCabinBags": {
+                "weight": 7,
+                "weightUnit": "KG"
+              },
+              "amenities": [
+                {
+                  "description": "PRE PAID BAGGAGE",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "CARRY7KG 15LB UPTO45LI 115LCM",
+                  "isChargeable": false,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "SEAT SELECTION",
+                  "isChargeable": true,
+                  "amenityType": "PRE_RESERVED_SEAT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "MEALS AND DRINKS",
+                  "isChargeable": true,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "CHANGE BEFORE DEPARTURE",
+                  "isChargeable": true,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "4",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-07-01",
+      "lastTicketingDateTime": "2025-07-01",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT8H25M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "HKG",
+                "terminal": "1",
+                "at": "2025-07-01T16:55:00"
+              },
+              "arrival": {
+                "iataCode": "HAK",
+                "terminal": "2",
+                "at": "2025-07-01T18:30:00"
+              },
+              "carrierCode": "HU",
+              "number": "708",
+              "aircraft": {
+                "code": "738"
+              },
+              "operating": {
+                "carrierCode": "HU"
+              },
+              "duration": "PT1H35M",
+              "id": "5",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "HAK",
+                "terminal": "2",
+                "at": "2025-07-01T23:00:00"
+              },
+              "arrival": {
+                "iataCode": "BKK",
+                "at": "2025-07-02T00:20:00"
+              },
+              "carrierCode": "HU",
+              "number": "7917",
+              "aircraft": {
+                "code": "738"
+              },
+              "operating": {
+                "carrierCode": "HU"
+              },
+              "duration": "PT2H20M",
+              "id": "6",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "100.35",
+        "base": "13.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "100.35"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "HU"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "100.35",
+            "base": "13.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "5",
+              "cabin": "ECONOMY",
+              "fareBasis": "TO779JX",
+              "class": "T",
+              "includedCheckedBags": {
+                "quantity": 2
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            },
+            {
+              "segmentId": "6",
+              "cabin": "ECONOMY",
+              "fareBasis": "TO779JX",
+              "class": "T",
+              "includedCheckedBags": {
+                "quantity": 2
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "5",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-07-01",
+      "lastTicketingDateTime": "2025-07-01",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT9H",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "HKG",
+                "terminal": "1",
+                "at": "2025-07-01T10:15:00"
+              },
+              "arrival": {
+                "iataCode": "HAK",
+                "terminal": "2",
+                "at": "2025-07-01T11:35:00"
+              },
+              "carrierCode": "HU",
+              "number": "706",
+              "aircraft": {
+                "code": "738"
+              },
+              "operating": {
+                "carrierCode": "HU"
+              },
+              "duration": "PT1H20M",
+              "id": "1",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "HAK",
+                "terminal": "2",
+                "at": "2025-07-01T16:45:00"
+              },
+              "arrival": {
+                "iataCode": "BKK",
+                "at": "2025-07-01T18:15:00"
+              },
+              "carrierCode": "HU",
+              "number": "721",
+              "aircraft": {
+                "code": "738"
+              },
+              "operating": {
+                "carrierCode": "HU"
+              },
+              "duration": "PT2H30M",
+              "id": "2",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "EUR",
+        "total": "100.35",
+        "base": "13.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "100.35"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "HU"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "EUR",
+            "total": "100.35",
+            "base": "13.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "1",
+              "cabin": "ECONOMY",
+              "fareBasis": "TO779JX",
+              "class": "T",
+              "includedCheckedBags": {
+                "quantity": 2
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            },
+            {
+              "segmentId": "2",
+              "cabin": "ECONOMY",
+              "fareBasis": "TO779JX",
+              "class": "T",
+              "includedCheckedBags": {
+                "quantity": 2
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dictionaries": {
+    "locations": {
+      "HAK": {
+        "cityCode": "HAK",
+        "countryCode": "CN"
+      },
+      "DMK": {
+        "cityCode": "BKK",
+        "countryCode": "TH"
+      },
+      "BKK": {
+        "cityCode": "BKK",
+        "countryCode": "TH"
+      },
+      "HKG": {
+        "cityCode": "HKG",
+        "countryCode": "HK"
+      }
+    },
+    "aircraft": {
+      "738": "BOEING 737-800"
+    },
+    "currencies": {
+      "EUR": "EURO"
+    },
+    "carriers": {
+      "SL": "THAI LION AIR",
+      "HB": "GREATER BAY AIRLINES",
+      "HU": "HAINAN AIRLINES"
+    }
+  }
+}
