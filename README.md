@@ -173,7 +173,7 @@ Please make sure to update tests as appropriate.
 
 ## 📜 License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details (you'll need to create this file).
+This project is licensed under the GNU Affero General Public License v3.0 - see the [LICENSE](LICENSE) file for details (you'll need to create this file).
 
 ## 🙏 Acknowledgements
 
