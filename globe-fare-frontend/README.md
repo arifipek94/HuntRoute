@@ -1,114 +1,155 @@
 <div align="center">
-  <h1>Globe Fare - Flight Search Application</h1>
+  <h1>🌍 Hunt Route - Smart Flight Search</h1>
   <p>
-    A modern flight search application that helps users find the cheapest flights to their desired destinations with real-time pricing and intelligent caching.
+    A modern flight search application that helps users find the cheapest flights with intelligent reverse search and real-time pricing.
   </p>
-  <p><b>Demo Notice:</b> Currently, only Bali and Bangkok are available as destinations. We are waiting for unlimited API access; once obtained, the full version will support all destinations worldwide.</p>
+  <p><b>Live Demo:</b> <a href="https://huntroute.vercel.app">huntroute.vercel.app</a></p>
 </div>
 
-## Features
+## ✨ Features
 
-- Reverse Flight Search: Enter a destination and find the cheapest routes from anywhere
-- Real-time Flight Data: Live pricing from multiple data sources
-- Smart Caching: Optimized performance with intelligent cache management
-- Interactive 3D Globe: Engaging destination visualization
-- Modern UI: Responsive design with smooth animations
-- Flexible Date Selection: Quick date options and custom date picker
+- **🔄 Reverse Flight Search**: Enter a destination and find the cheapest routes from anywhere
+- **💰 Real-time Pricing**: Live flight data with intelligent caching
+- **🌐 Interactive 3D Globe**: Engaging destination visualization
+- **📱 Responsive Design**: Modern UI that works on all devices
+- **⚡ Smart Caching**: Optimized performance with 12-hour cache expiry
+- **📅 Flexible Dates**: Quick date selection and custom date picker
 
-## Architecture
+## 🏗️ Architecture
 
 ### Frontend
-
-- Framework: Next.js 15 with TypeScript
-- Styling: Tailwind CSS v4
-- State Management: TanStack React Query
-- UI Components: Headless UI, Lucide React
-- Animations: Framer Motion
-- 3D Graphics: React Three Fiber
+- **Framework**: Next.js 15 with TypeScript
+- **Styling**: Tailwind CSS v4
+- **State Management**: TanStack React Query
+- **UI Components**: Headless UI, Lucide React
+- **Animations**: Framer Motion
+- **3D Graphics**: React Three Fiber
 
 ### Backend
+- **Runtime**: Node.js with Express.js
+- **Caching**: File-based caching system
+- **Data Sources**: Amadeus API integration
 
-- Runtime: Node.js with Express.js
-- Caching: File-based caching with 12-hour expiry
-- Data Sources: Amadeus API integration
+## 📁 Project Structure
 
-## Project Structure
-
-globe-fare/
-├── globe-fare-frontend/ # Next.js frontend application
-│ ├── src/
-│ │ ├── app/ # Next.js app router
-│ │ ├── components/ # React components
-│ │ ├── hooks/ # Custom React hooks
-│ │ ├── lib/ # Utility libraries
-│ │ └── types/ # TypeScript type definitions
-│ ├── public/ # Static assets
-│ └── ...
-└── globe-fare-adaptive/ # Node.js backend API
-├── api/ # API endpoints
-├── cache/ # Flight data cache
-├── data/ # Static data files
-└── ...
-
-## Getting Started
+```
+hunt-route/
+├── globe-fare-frontend/          # Next.js frontend application
+│   ├── src/
+│   │   ├── app/                  # Next.js app router
+│   │   │   ├── api/              # API routes
+│   │   │   │   ├── flights/      # Flight search endpoints
+│   │   │   │   └── debug/        # Debug utilities
+│   │   │   └── results/          # Results pages
+│   │   ├── components/           # React components
+│   │   │   ├── search/           # Search-related components
+│   │   │   └── ui/               # Reusable UI components
+│   │   ├── hooks/                # Custom React hooks
+│   │   ├── lib/                  # Utility libraries
+│   │   └── types/                # TypeScript definitions
+│   └── public/                   # Static assets & data
+└── globe-fare-adaptive/          # Node.js backend API
+    ├── api/                      # API endpoints
+    ├── cache/                    # Flight data cache
+    ├── data/                     # Static data files
+    └── services/                 # Business logic
+```
+## 🚀 Getting Started
 
 ### Prerequisites
 
-- Node.js (v18.x or later)
-- npm (v9.x or later)
-- Git
+Before you begin, ensure you have the following installed:
+- **Node.js** (v18.x or later recommended)
+- **npm** (v9.x or later) or **yarn** (v1.22.x or later)
+- **Git**
 
 ### Installation
 
-1. Clone the repository:
-   git clone <your-repository-url>
-   cd globe-fare
-2. Install Frontend Dependencies:
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/arifipek94/HuntRoute.git
+   cd HuntRoute
+   ```
+
+2. **Install Frontend Dependencies:**
+   ```bash
    cd globe-fare-frontend
    npm install
-3. Install Backend Dependencies:
+   ```
+
+3. **Install Backend Dependencies:**
+   ```bash
    cd ../globe-fare-adaptive
    npm install
+   ```
 
 ### Environment Setup
 
-Frontend (.env.local):
-NEXT_PUBLIC_API_BASE_URL=http://localhost:8000/api
+**Frontend (.env.local):**
+```env
+NEXT_PUBLIC_API_BASE_URL=http://localhost:8000
+```
 
-Backend (.env):
+**Backend (.env):**
+```env
 PORT=8000
 AMADEUS_CLIENT_ID=your_amadeus_client_id
 AMADEUS_CLIENT_SECRET=your_amadeus_client_secret
+```
 
-## Usage
+## 💻 Usage
 
-### Development
+### Development Mode
 
-Start the Backend:
-cd globe-fare-adaptive
-npm start
+1. **Start the Backend Server:**
+   ```bash
+   cd globe-fare-adaptive
+   npm start
+   ```
+   Backend will run on `http://localhost:8000`
 
-Start the Frontend:
-cd globe-fare-frontend
-npm run dev
-
-The application will be available at http://localhost:3000
+2. **Start the Frontend Development Server:**
+   ```bash
+   cd globe-fare-frontend
+   npm run dev
+   ```
+   Frontend will be available at `http://localhost:3000`
 
 ### Production Build
 
+```bash
 cd globe-fare-frontend
 npm run build
 npm start
+```
 
-## Deployment
+## 🚀 Deployment
 
-- Frontend: Deploy to Vercel, Netlify, or any static hosting provider that supports Next.js
-- Backend: Deploy to Heroku, AWS, DigitalOcean, or any Node.js hosting platform
+- **Frontend**: Deployed on Vercel at [huntroute.vercel.app](https://huntroute.vercel.app)
+- **Backend**: Deploy to Heroku, Railway, or any Node.js hosting platform
 
-## License
+## 🛠️ Development
+
+### Available Scripts
+
+**Frontend:**
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+- `npm run type-check` - Run TypeScript checks
+
+**Backend:**
+- `npm start` - Start the API server
+- `npm run dev` - Start with nodemon (if configured)
+
+## 📝 License
 
 This project is licensed under the MIT License.
 
 ---
 
-<p align="center">Happy Route Hunting! ✈️</p>
+<p align="center">
+  <b>Happy Route Hunting! ✈️🌍</b><br>
+  <i>Find your next adventure at the best price</i>
+</p>
