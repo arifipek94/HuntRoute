@@ -19,13 +19,5 @@
   "env": {
     "NODE_ENV": "production"
   },
-  "functions": {
-    "src/app/api/flights/route.ts": {
-      "maxDuration": 30
-    },
-    "src/app/api/debug/route.ts": {
-      "maxDuration": 10
-    }
-  },
   "buildCommand": "npm run build"
 }

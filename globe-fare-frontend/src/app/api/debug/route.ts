@@ -32,7 +32,7 @@ export async function GET(request: Request) {
   const backendUrl =
     process.env.BACKEND_URL ||
     process.env.NEXT_PUBLIC_BACKEND_URL ||
-    'http://localhost:5000';
+    'https://huntroute.onrender.com/';
 
   const debugInfo = {
     timestamp: new Date().toISOString(),
