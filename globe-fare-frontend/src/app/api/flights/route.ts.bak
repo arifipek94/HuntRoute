@@ -259,7 +259,7 @@ function cleanupOldCache(): void {
 async function fetchFlightsFromBackend(destination: string, date: string, requestId: string = 'unknown'): Promise<any[]> {
   try {
     // Fix: Use environment variable for backend URL with fallback
-    const backendUrl = process.env.BACKEND_URL || 'http://localhost:5000';
+    const backendUrl = process.env.BACKEND_URL || 'https://huntroute.onrender.com';
     const apiUrl = `${backendUrl}/api/flights?to=${encodeURIComponent(destination)}&date=${encodeURIComponent(date)}`;
     
     console.log(`🌐 [REQUEST:${requestId}] Fetching flights from backend: ${apiUrl}`);
@@ -329,7 +329,7 @@ async function fetchFlightsFromBackend(destination: string, date: string, reques
     // Only trigger refresh if backend is reachable but returned no data
     if (!error.message.includes('Backend not available') && !error.message.includes('ECONNREFUSED')) {
       try {
-        const backendUrl = process.env.BACKEND_URL || 'http://localhost:5000';
+        const backendUrl = process.env.BACKEND_URL || 'https://huntroute.onrender.com';
         const refreshUrl = `${backendUrl}/api/refresh?to=${destination}&date=${date}`;
         
         console.log(`🔄 [REQUEST:${requestId}] Requesting cache refresh: ${refreshUrl}`);
@@ -475,7 +475,7 @@ export async function GET(request: Request) {
       // Trigger background refresh for future requests
       setImmediate(async () => {
         try {
-          await fetch(`http://localhost:5000/api/refresh?to=${to}&date=${date}`, {
+          await fetch(`https://huntroute.onrender.com`, {
             method: 'POST',
             signal: AbortSignal.timeout(5000)
           });
