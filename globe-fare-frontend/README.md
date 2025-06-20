@@ -54,7 +54,7 @@ hunt-route/
     ├── data/                     # Static data files
     └── services/                 # Business logic
 ```
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
