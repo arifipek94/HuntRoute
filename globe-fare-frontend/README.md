@@ -150,6 +150,6 @@ This project is licensed under the MIT License.
 ---
 
 <p align="center">
-  <b>Happy Route Hunting! ✈️🌍</b><br>
+  <b>Happy Route Hunting! ✈️</b><br>
   <i>Find your next adventure at the best price</i>
 </p>
