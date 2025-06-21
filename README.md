@@ -1,7 +1,7 @@
 HuntRoute - Flight Search Application
-  
-    A modern flight search application that helps users find the cheapest flights to their desired destinations with real-time pricing and multiple data sources.
-  
+      <p>
+ A modern flight search application that helps users find the cheapest flights to their desired destinations with real-time pricing and multiple data sources.
+</p>
 ## 🚀 Features
 
 - **Reverse Flight Search**: Enter a destination and find the cheapest routes from anywhere
