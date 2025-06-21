@@ -1,161 +1,55 @@
-HuntRoute - Flight Search Application
-      <p>
- A modern flight search application that helps users find the cheapest flights to their desired destinations with real-time pricing and multiple data sources.
-</p>
-## 🚀 Features
+# HuntRoute
 
-- **Reverse Flight Search**: Enter a destination and find the cheapest routes from anywhere
-- **Real-time Flight Data**: Live pricing from multiple sources
-- **Smart Caching**: Optimized performance with intelligent cache management
-- **Modern UI**: Minimal display animation and responsive design
-- **Multiple Destinations**: Support for popular worldwide destinations
-- **Date Flexibility**: Quick date selection or custom date picker
-- **Homepage Button**: Always-visible homepage button at the top right
-- **Consistent UI**: Search bar and input heights aligned across all components
-- **Alt Info Placement**: Destination code/country info now directly below the input
-- **Container Tweaks**: Fine-tuned paddings and heights for pixel-perfect alignment
+HuntRoute is a modern flight search app designed to help users find the most affordable one-way flights to selected destinations so they could make smarter travelling routes. Built with a clean UI and real-time API integration, it delivers fast and accurate results with minimal interaction.
 
-## 🏗️ Architecture
+> ⚠️ **Demo Version** – Currently supports flights **only to Bali (DPS)** and **Bangkok (BKK)**.  
+> Full destination support will be added once API partnership is established.
 
-### Frontend (`huntroute-frontend/`)
-
-- **Framework**: Next.js 14 with TypeScript
-- **Styling**: Tailwind CSS
-- **State Management**: React Query (TanStack Query)
-- **Components**: Modern React with hooks
-- **Data Fetching**: Custom service layer with caching
-- **Image Optimization**: Next.js remotePatterns for airline logos (Kiwi.com)
-- **UI Consistency**: Search bar height and container spacing precisely controlled
-
-### Backend (`huntroute-adaptive/`)
-
-- **Runtime**: Node.js
-- **Framework**: Express.js
-- **Caching**: File-based caching with 12-hour expiry
-- **Data Sources**: Amadeus API integration
-- **Utilities**: Flight data processing and formatting
-
-## 📁 Project Structure
-
-
-
-````
-## 🛠️ Getting Started
-
-### Prerequisites
-
-Before you begin, ensure you have the following installed:
-- Node.js (v18.x or later recommended)
-- npm (v9.x or later) or yarn (v1.22.x or later)
-- Git
-
-### Installation
-
-1.  **Clone the repository (if applicable, or describe setup for separate repos):**
-    ```bash
-    git clone https://github.com/yourusername/huntroute.git
-    cd huntroute
-    ```
-
-2.  **Install Frontend Dependencies:**
-    ```bash
-    cd huntroute-frontend
-    npm install
-    # or
-    # yarn install
-    ```
-
-3.  **Install Backend Dependencies:**
-    ```bash
-    cd ../huntroute-adaptive
-    npm install
-    # or
-    # yarn install
-    ```
-
-## 💻 Usage
-
-### Running the Frontend
-
-From the `huntroute-frontend` directory:
-```bash
-npm run dev
-# or
-# yarn dev
-````
-
-The application will be available at `http://localhost:3000`.
-
-### Running the Backend
-
-From the `huntroute-adaptive` directory:
-
-```bash
-npm run start # Or your specific command to start the backend server
-# or
-# yarn start
-```
-
-The backend API will typically be available at `http://localhost:PORT` (e.g., `http://localhost:3001` or `http://localhost:8000` - specify your backend port).
-
-## 🔑 Environment Variables
-
-Both frontend and backend applications may require environment variables.
-
-**Frontend (`huntroute-frontend/`):**
-Create a `.env.local` file in the `huntroute-frontend` directory:
-
-```env
-# Example:
-# NEXT_PUBLIC_API_BASE_URL=http://localhost:8000/api
-# Add other frontend-specific environment variables here
-```
-
-**Backend (`huntroute-adaptive/`):**
-Create a `.env` file in the `huntroute-adaptive` directory:
-
-```env
-# Example:
-# PORT=8000
-# AMADEUS_CLIENT_ID=your_amadeus_client_id
-# AMADEUS_CLIENT_SECRET=your_amadeus_client_secret
-# Add other backend-specific environment variables here
-```
-
-Refer to `.env.example` files in each project (if you create them) for a full list of required variables.
-
-## 🚀 Deployment
-
-(Instructions on how to deploy the application. Mention platforms like Vercel for Next.js, and Heroku/AWS/DigitalOcean for the backend, or your specific deployment strategy.)
-
-Example:
-
-- **Frontend**: Can be deployed to Vercel, Netlify, or any static hosting provider that supports Next.js.
-- **Backend**: Can be deployed to platforms like Heroku, AWS Elastic Beanstalk, DigitalOcean App Platform, or a traditional VPS.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/your-feature-name`).
-3. Make your changes.
-4. Commit your changes (`git commit -m 'Add some feature'`).
-5. Push to the branch (`git push origin feature/your-feature-name`).
-6. Open a Pull Request.
-
-Please make sure to update tests as appropriate.
-
-## 📜 License
-
-This project is licensed under the GNU Affero General Public License v3.0 - see the [LICENSE](LICENSE) file for details (you'll need to create this file).
-
-## 🙏 Acknowledgements
-
-- Hat tip to anyone whose code was used.
-- Inspiration
-- etc.
+🌐 [Live Frontend](https://hunt-route.vercel.app/)  
+🔗 [API Backend](https://huntroute.onrender.com/)
 
 ---
 
-<p align="center">Happy Route Hunting!</p>
+## 📸 Screenshots
+
+**Search Page**
+> _Insert screenshot of the landing/search interface here_  
+![Search Page](https://raw.githubusercontent.com/arifipek94/HuntRoute/refs/heads/main/Screenshot%202025-06-21%20014125.png)
+
+**Results Page**
+> _Insert screenshot of the flight results page here_  
+![Results Page](https://raw.githubusercontent.com/arifipek94/HuntRoute/refs/heads/main/Screenshot%202025-06-21%20014145.png)
+
+---
+
+---
+## ✈️ Features
+
+- **Reverse Search** – Find the cheapest routes *to* Bali or Bangkok from anywhere
+- **Date Picker** – Choose flexible departure dates with quick or custom selection
+- **Live Results** – Flight data fetched on demand from integrated APIs
+- **Smart Caching** – 12-hour cache layer improves performance and reduces API load
+- **Responsive Design** – Mobile-friendly UI with pixel-precise alignment
+- **Destination Info** – Airport codes and countries shown clearly in input UI
+
+---
+
+## 🧱 Tech Stack
+
+### Frontend (`huntroute-frontend/`)
+- **Framework:** Next.js 14 (React + TypeScript)
+- **Styling:** Tailwind CSS
+- **State/Data:** TanStack Query (React Query)
+- **Assets:** Remote image optimization for airline logos
+
+### Backend (`huntroute-adaptive/`)
+- **Runtime:** Node.js
+- **Framework:** Express.js
+- **API Integration:** Amadeus Flights API
+- **Caching:** File-based with 12-hour expiry
+- **Utilities:** Flight data formatting & validation
+
+
+## 🪪 License
+
+Licensed under the **GNU Affero General Public License v3.0**.
