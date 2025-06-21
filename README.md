@@ -1,6 +1,5 @@
-<div align="center">
-  <h1>HuntRoute - Flight Search Application</h1>
-  <p>
+HuntRoute - Flight Search Application
+  
     A modern flight search application that helps users find the cheapest flights to their desired destinations with real-time pricing and multiple data sources.
   
 ## 🚀 Features
@@ -38,23 +37,9 @@
 
 ## 📁 Project Structure
 
-<!--
-  Provide a brief overview of the main directories and their purpose.
-  Example:
-  huntroute/
-  ├── huntroute-frontend/      # Next.js frontend application
-  │   ├── src/
-  │   ├── public/
-  │   └── ...
-  ├── huntroute-adaptive/      # Node.js/Express.js backend API
-  │   ├── src/
-  │   └── ...
-  └── README.md
--->
+
 
 ````
-(Provide a tree structure of your project here if desired, or a brief explanation)
-
 ## 🛠️ Getting Started
 
 ### Prerequisites
