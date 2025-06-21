@@ -2,17 +2,7 @@
   <h1>HuntRoute - Flight Search Application</h1>
   <p>
     A modern flight search application that helps users find the cheapest flights to their desired destinations with real-time pricing and multiple data sources.
-  </p>
-  <!-- Optional: Add badges here (e.g., build status, license, version) -->
-  <!--
-    <a href="https://github.com/yourusername/huntroute/actions"><img src="https://github.com/yourusername/huntroute/actions/workflows/main.yml/badge.svg" alt="Build Status"></a>
-    <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
-    <a href="https://www.npmjs.com/package/your-package-name"><img src="https://img.shields.io/npm/v/your-package-name.svg" alt="NPM Version"></a>
-  -->
-</div>
-
----
-
+  
 ## 🚀 Features
 
 - **Reverse Flight Search**: Enter a destination and find the cheapest routes from anywhere
