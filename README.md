@@ -13,12 +13,10 @@ HuntRoute is a modern flight search app designed to help users find the most aff
 ## 📸 Screenshots
 
 **Search Page**
-> _Insert screenshot of the landing/search interface here_  
-![Search Page](https://raw.githubusercontent.com/arifipek94/HuntRoute/refs/heads/main/Screenshot%202025-06-21%20014125.png)
+>  [Search Page](https://raw.githubusercontent.com/arifipek94/HuntRoute/refs/heads/main/Screenshot%202025-06-21%20014125.png)
 
 **Results Page**
-> _Insert screenshot of the flight results page here_  
-![Results Page](https://raw.githubusercontent.com/arifipek94/HuntRoute/refs/heads/main/Screenshot%202025-06-21%20014145.png)
+>  [Results Page](https://raw.githubusercontent.com/arifipek94/HuntRoute/refs/heads/main/Screenshot%202025-06-21%20014145.png)
 
 ---
 
