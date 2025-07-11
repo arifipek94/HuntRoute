@@ -1,0 +1,80 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Next.js: debug server-side",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/globe-fare-frontend/node_modules/next/dist/bin/next-dev",
+      "args": ["dev"],
+      "cwd": "${workspaceFolder}/globe-fare-frontend",
+      "env": {
+        "NODE_OPTIONS": "--inspect"
+      },
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"],
+      "serverReadyAction": {
+        "pattern": "ready - started server on .+, url: (https?://.+)",
+        "uriFormat": "%s",
+        "action": "debugWithChrome"
+      }
+    },
+    {
+      "name": "Next.js: debug client-side",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/globe-fare-frontend",
+      "sourceMapPathOverrides": {
+        "webpack:///./*": "${webRoot}/*"
+      }
+    },
+    {
+      "name": "Debug Backend API",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/globe-fare-adaptive/index.js",
+      "cwd": "${workspaceFolder}/globe-fare-adaptive",
+      "console": "integratedTerminal",
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      "name": "TypeScript Type Check",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/globe-fare-frontend/node_modules/typescript/bin/tsc",
+      "cwd": "${workspaceFolder}/globe-fare-frontend",
+      "args": ["--noEmit", "--watch"],
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      "name": "ESLint Fix All",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/globe-fare-frontend/node_modules/eslint/bin/eslint.js",
+      "cwd": "${workspaceFolder}/globe-fare-frontend",
+      "args": ["src/**/*.{ts,tsx,js,jsx}", "--fix", "--format", "pretty"],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Launch Full Stack",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/globe-fare-backend/index.js",
+      "cwd": "${workspaceFolder}/globe-fare-backend",
+      "console": "integratedTerminal",
+      "preLaunchTask": "npm: dev - globe-fare-frontend"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Launch Frontend & Backend",
+      "configurations": ["Next.js: debug server-side", "Debug Backend API"],
+      "stopAll": true
+    }
+  ]
+}

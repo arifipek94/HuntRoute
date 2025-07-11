@@ -1,0 +1,194 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Smart Dev: Full Stack",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-Command",
+        "Write-Host 'Starting intelligent development environment...' -ForegroundColor Green; Start-Process powershell -ArgumentList '-NoExit', '-Command', 'cd \"${workspaceFolder}/globe-fare-adaptive\"; Write-Host \"Starting Backend API...\" -ForegroundColor Blue; node index.js' -WindowStyle Normal; Start-Sleep 3; cd \"${workspaceFolder}/globe-fare-frontend\"; Write-Host \"Starting Frontend with HMR...\" -ForegroundColor Blue; npm run dev"
+      ],
+      "group": "build",
+      "isBackground": true,
+      "problemMatcher": ["$tsc-watch", "$eslint-compact"],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "new",
+        "showReuseMessage": false,
+        "clear": true
+      }
+    },
+    {
+      "label": "Start Frontend Dev Server",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "dev"],
+      "options": {
+        "cwd": "${workspaceFolder}/globe-fare-frontend"
+      },
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "new",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "typescript",
+        "source": "ts",
+        "fileLocation": ["relative", "${workspaceFolder}/globe-fare-frontend"],
+        "pattern": "$tsc",
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": ".*",
+          "endsPattern": ".*ready.*"
+        }
+      }
+    },
+    {
+      "label": "Start Backend Dev Server",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "dev"],
+      "options": {
+        "cwd": "${workspaceFolder}/globe-fare-adaptive"
+      },
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "new",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      "isBackground": true
+    },
+    {
+      "label": "Build Frontend",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "build"],
+      "options": {
+        "cwd": "${workspaceFolder}/globe-fare-frontend"
+      },
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      "problemMatcher": ["$tsc", "$eslint-stylish"]
+    },
+    {
+      "label": "Type Check",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "type-check"],
+      "options": {
+        "cwd": "${workspaceFolder}/globe-fare-frontend"
+      },
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      "problemMatcher": "$tsc"
+    },
+    {
+      "label": "Lint & Fix",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "lint"],
+      "options": {
+        "cwd": "${workspaceFolder}/globe-fare-frontend"
+      },
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      "problemMatcher": "$eslint-stylish"
+    },
+    {
+      "label": "Install Dependencies (Frontend)",
+      "type": "shell",
+      "command": "npm",
+      "args": ["install"],
+      "options": {
+        "cwd": "${workspaceFolder}/globe-fare-frontend"
+      },
+      "group": "build"
+    },
+    {
+      "label": "Install Dependencies (Backend)",
+      "type": "shell",
+      "command": "npm",
+      "args": ["install"],
+      "options": {
+        "cwd": "${workspaceFolder}/globe-fare-adaptive"
+      },
+      "group": "build"
+    },
+    {
+      "label": "Clean All",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "clean:all"],
+      "options": {
+        "cwd": "${workspaceFolder}/globe-fare-frontend"
+      },
+      "group": "build"
+    },
+    {
+      "label": "Smart Code Quality Check",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-Command",
+        "cd '${workspaceFolder}/globe-fare-frontend'; Write-Host 'Running intelligent code quality checks...' -ForegroundColor Yellow; Write-Host '1. TypeScript Type Check...' -ForegroundColor Cyan; npx tsc --noEmit; Write-Host '2. ESLint Analysis...' -ForegroundColor Cyan; npx eslint src/**/*.{ts,tsx,js,jsx} --format pretty; Write-Host 'Code quality check completed!' -ForegroundColor Green"
+      ],
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "new"
+      },
+      "problemMatcher": ["$tsc", "$eslint-compact"]
+    },
+    {
+      "label": "Smart Auto Fix",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-Command",
+        "cd '${workspaceFolder}/globe-fare-frontend'; Write-Host 'Running intelligent auto-fixes...' -ForegroundColor Yellow; Write-Host '1. ESLint Auto-Fix...' -ForegroundColor Cyan; npx eslint src/**/*.{ts,tsx,js,jsx} --fix; Write-Host '2. Prettier Auto-Format...' -ForegroundColor Cyan; npx prettier --write src/**/*.{ts,tsx,js,jsx,css}; Write-Host 'Auto-fix completed!' -ForegroundColor Green"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "new"
+      }
+    }
+  ]
+}

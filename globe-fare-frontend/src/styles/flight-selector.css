@@ -1,0 +1,62 @@
+/* Flight Selector Component Styles */
+
+.flight-selector-container {
+  width: 1100px;
+  min-height: 100px;
+  max-width: calc(100vw - 48px);
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.flight-selector-grid {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.destination-input-container {
+  min-height: 70px;
+}
+
+.destination-input {
+  caret-color: transparent;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 32px;
+}
+
+.destination-input:focus,
+.destination-input[data-has-value='true'] {
+  caret-color: #fff;
+}
+
+.cursor-animation {
+  margin-left: 2px;
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 1;
+}
+
+/* Date picker custom styles */
+.date-picker-container {
+  min-height: 70px;
+}
+
+/* People selector styles */
+.people-selector-container {
+  min-height: 70px;
+}
+
+/* Button styles */
+.search-button {
+  min-height: 70px;
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+}
+
+.search-button:hover {
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+}
+
+.search-button:disabled {
+  background: #6b7280;
+  cursor: not-allowed;
+}

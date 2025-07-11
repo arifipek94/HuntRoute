@@ -1,0 +1,644 @@
+import { NextRequest, NextResponse } from 'next/server';
+import fs from 'fs';
+import path from 'path';
+import { formatFlightData } from '@/lib/flightFormatter';
+import { validateDestination, validateDate } from '@/lib/validation';
+
+export const dynamic = 'force-dynamic';
+
+const CACHE_DIR = path.join(process.cwd(), '..', 'globe-fare-adaptive', 'cache');
+const CACHE_REFRESH_HOURS = 12; // Refresh every 12 hours (twice a day)
+const CACHE_DELETE_HOURS = 24; // Delete files older than 24 hours
+
+// Ensure cache directory exists
+function ensureCacheDir() {
+  if (!fs.existsSync(CACHE_DIR)) {
+    fs.mkdirSync(CACHE_DIR, { recursive: true });
+  }
+}
+
+// Generate cache filename for specific destination and date
+function getCacheFileName(destination: string, date: string): string {
+  return `flight-cache-${destination}-${date}.json`;
+}
+
+// Check if cache file exists and is still valid (within 12 hours)
+function isCacheValid(destination: string, date: string): boolean {
+  try {
+    const fileName = getCacheFileName(destination, date);
+    const filePath = path.join(CACHE_DIR, fileName);
+    
+    if (!fs.existsSync(filePath)) {
+      console.log(`⚠️ [CACHE VALIDATION] No cache file exists for ${destination} on ${date}`);
+      return false;
+    }
+    
+    // Check both file modification time and internal timestamp if available
+    const stat = fs.statSync(filePath);
+    const ageInHours = (Date.now() - stat.mtime.getTime()) / (1000 * 60 * 60);
+    
+    // Try to read internal timestamp too for more accurate age
+    try {
+      const cacheData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+      const internalTimestamp = cacheData.timestamp || Date.now();
+      const internalAgeInHours = (Date.now() - internalTimestamp) / (1000 * 60 * 60);
+      
+      const isValid = internalAgeInHours < CACHE_REFRESH_HOURS;
+      
+      console.log(`ℹ️ [CACHE VALIDATION] Cache for ${destination} on ${date}: ${isValid ? 'VALID' : 'EXPIRED'}`);
+      console.log(`ℹ️ [CACHE AGE] ${internalAgeInHours.toFixed(2)} hours old (internal), ${ageInHours.toFixed(2)} hours old (file)`);
+      
+      return isValid;
+    } catch (parseError) {
+      // Fallback to file modification time if can't parse file
+      const isValid = ageInHours < CACHE_REFRESH_HOURS;
+      console.log(`⚠️ [CACHE VALIDATION] Falling back to file timestamp, cache is ${isValid ? 'VALID' : 'EXPIRED'}`);
+      
+      return isValid;
+    }
+  } catch (error) {
+    console.warn('❌ [CACHE ERROR] Error checking cache validity:', error);
+    return false;
+  }
+}
+
+// Standardize flight data format from different sources
+function standardizeFlightData(rawFlight: any, source: string = 'api'): any {
+  // Handle different data structures from various sources
+  let standardized: any = {};
+
+  if (source === 'cache' && rawFlight.segments) {
+    // Handle cached Amadeus-style data
+    const segments = rawFlight.segments;
+    standardized = {
+      id: rawFlight.id || `${rawFlight.airline || segments[0]?.carrierCode}-${rawFlight.flightNumber || segments[0]?.number}-${Date.now()}`,
+      airline: rawFlight.airline || segments[0]?.carrierCode,
+      airlineCode: rawFlight.airline || segments[0]?.carrierCode,
+      flightNumber: rawFlight.flightNumber || `${segments[0]?.carrierCode}${segments[0]?.number}`,
+      from: rawFlight.from || segments[0]?.departure?.iataCode,
+      to: rawFlight.to || segments[segments.length - 1]?.arrival?.iataCode,
+      departure: rawFlight.departure || segments[0]?.departure?.at,
+      arrival: rawFlight.arrival || segments[segments.length - 1]?.arrival?.at,
+      duration: rawFlight.duration,
+      stops: rawFlight.stops || (segments.length - 1),
+      price: Number(rawFlight.price),
+      currency: rawFlight.currency || 'EUR',
+      aircraft: rawFlight.aircraft || segments[0]?.aircraft?.code,
+      availableSeats: rawFlight.availableSeats
+    };
+  } else {
+    // Handle direct API response or already standardized data
+    standardized = {
+      id: rawFlight.id || `flight-${rawFlight.airline || rawFlight.airlineCode}-${rawFlight.flightNumber}-${Date.now()}`,
+      airline: rawFlight.airline || rawFlight.airlineCode,
+      airlineCode: rawFlight.airlineCode || rawFlight.airline,
+      flightNumber: rawFlight.flightNumber,
+      from: rawFlight.from || rawFlight.departure_airport || rawFlight.departureAirport,
+      to: rawFlight.to || rawFlight.arrival_airport || rawFlight.arrivalAirport,
+      departure: rawFlight.departure || rawFlight.departure_time || rawFlight.departureTime,
+      arrival: rawFlight.arrival || rawFlight.arrival_time || rawFlight.arrivalTime,
+      duration: rawFlight.duration || rawFlight.flight_duration || rawFlight.flightDuration,
+      stops: rawFlight.stops || rawFlight.number_of_stops || rawFlight.numberOfStops || 0,
+      price: Number(rawFlight.price || rawFlight.total_price || rawFlight.totalPrice || 0),
+      currency: rawFlight.currency || 'USD',
+      aircraft: rawFlight.aircraft || rawFlight.airplane || rawFlight.aircraftType,
+      availableSeats: rawFlight.availableSeats || rawFlight.available_seats || rawFlight.seatsAvailable
+    };
+  }
+
+  // Validate required fields and provide defaults
+  if (!standardized.id) {
+    standardized.id = `flight-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+  }
+  if (!standardized.airline && !standardized.airlineCode) {
+    standardized.airline = 'Unknown Airline';
+    standardized.airlineCode = 'XX';
+  }
+  if (!standardized.flightNumber) {
+    standardized.flightNumber = `${standardized.airlineCode}000`;
+  }
+  if (!standardized.duration) {
+    standardized.duration = 'N/A';
+  }
+  if (typeof standardized.stops !== 'number') {
+    standardized.stops = 0;
+  }
+  if (!standardized.currency) {
+    standardized.currency = 'USD';
+  }
+
+  return standardized;
+}
+
+// Enhanced flight data processing with consistent formatting
+function processFlightData(flights: any[], source: string = 'api'): any[] {
+  if (!Array.isArray(flights)) {
+    console.warn('[DATA PROCESSING] Expected array, got:', typeof flights);
+    return [];
+  }
+
+  return flights.map((flight, index) => {
+    try {
+      const standardized = standardizeFlightData(flight, source);
+      
+      // Add metadata for tracking
+      standardized._metadata = {
+        source,
+        processed_at: new Date().toISOString(),
+        original_index: index
+      };
+
+      return standardized;
+    } catch (error) {
+      console.error(`[DATA PROCESSING] Error processing flight ${index}:`, error, flight);
+      return null;
+    }
+  }).filter(Boolean); // Remove null entries
+}
+
+// Read cache data for specific destination and date
+function readCache(destination: string, date: string): any[] | null {
+  try {
+    const fileName = getCacheFileName(destination, date);
+    const filePath = path.join(CACHE_DIR, fileName);
+    
+    if (!fs.existsSync(filePath)) {
+      console.log(`❌ [CACHE MISS] No cache file found for ${destination} on ${date}`);
+      return null;
+    }
+    
+    const cacheContent = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+    
+    if (cacheContent?.flights && Array.isArray(cacheContent.flights)) {
+      const cacheAge = cacheContent.timestamp 
+        ? ((Date.now() - cacheContent.timestamp) / (1000 * 60 * 60)).toFixed(2) 
+        : 'unknown';
+      
+      console.log(`✅ [CACHE READ] Found ${cacheContent.flights.length} flights for ${destination} on ${date}`);
+      console.log(`ℹ️ [CACHE INFO] Cache age: ${cacheAge} hours, last refresh: ${cacheContent.last_refresh || cacheContent.cached_at || 'unknown'}`);
+      
+      // Process cached data to ensure consistent format
+      const processedFlights = processFlightData(cacheContent.flights, 'cache');
+      return processedFlights;
+    }
+    
+    console.log(`⚠️ [CACHE INVALID] Cache file exists but contains no valid flights for ${destination} on ${date}`);
+    return null;
+  } catch (error) {
+    console.warn('❌ [CACHE ERROR] Error reading cache:', error);
+    return null;
+  }
+}
+
+// Save flights to cache with standardized format
+function saveToCache(destination: string, date: string, flights: any[]): void {
+  try {
+    ensureCacheDir();
+    
+    const fileName = getCacheFileName(destination, date);
+    const filePath = path.join(CACHE_DIR, fileName);
+    
+    // Ensure flights are in standardized format before caching
+    const standardizedFlights = processFlightData(flights, 'api');
+    
+    const cacheData = {
+      destination,
+      date,
+      flights: standardizedFlights,
+      timestamp: Date.now(),
+      cached_at: new Date().toISOString(),
+      expires_at: new Date(Date.now() + CACHE_REFRESH_HOURS * 60 * 60 * 1000).toISOString(),
+      format_version: '1.0',
+      total_flights: standardizedFlights.length
+    };
+    
+    fs.writeFileSync(filePath, JSON.stringify(cacheData, null, 2));
+    console.log(`[CACHE SAVE] Saved ${standardizedFlights.length} standardized flights for ${destination} on ${date}`);
+  } catch (error) {
+    console.error('[CACHE SAVE] Error saving to cache:', error);
+  }
+}
+
+// Clean up old cache files (older than 24 hours)
+function cleanupOldCache(): void {
+  try {
+    ensureCacheDir();
+    
+    const files = fs.readdirSync(CACHE_DIR);
+    const now = Date.now();
+    let deletedCount = 0;
+    
+    for (const file of files) {
+      if (file.startsWith('flight-cache-') && file.endsWith('.json')) {
+        const filePath = path.join(CACHE_DIR, file);
+        
+        try {
+          const stat = fs.statSync(filePath);
+          const ageInHours = (now - stat.mtime.getTime()) / (1000 * 60 * 60);
+          
+          if (ageInHours > CACHE_DELETE_HOURS) {
+            fs.unlinkSync(filePath);
+            deletedCount++;
+            console.log(`🧹 [CACHE CLEANUP] Deleted old cache file: ${file} (${ageInHours.toFixed(1)}h old)`);
+          }
+        } catch (fileError: any) {
+          console.warn(`⚠️ [CACHE CLEANUP] Error processing file ${file}:`, fileError.message);
+        }
+      }
+    }
+    
+    if (deletedCount > 0) {
+      console.log(`🧹 [CACHE CLEANUP] Deleted ${deletedCount} old cache files`);
+    }
+  } catch (error: any) {
+    console.error(`❌ [CACHE CLEANUP] Error during cleanup:`, error.message);
+  }
+}
+
+// Fetch flights from your backend API with enhanced error handling
+async function fetchFlightsFromBackend(destination: string, date: string, requestId: string = 'unknown'): Promise<any[]> {
+  try {
+    // Fix: Use environment variable for backend URL with fallback
+    const backendUrl = process.env.BACKEND_URL || 'https://huntroute.onrender.com';
+    const apiUrl = `${backendUrl}/api/flights?to=${encodeURIComponent(destination)}&date=${encodeURIComponent(date)}`;
+    
+    console.log(`🌐 [REQUEST:${requestId}] Fetching flights from backend: ${apiUrl}`);
+    
+    // First, check if backend is running
+    try {
+      const healthCheck = await fetch(`${backendUrl}/health`, {
+        method: 'GET',
+        signal: AbortSignal.timeout(5000)
+      });
+      
+      if (!healthCheck.ok) {
+        throw new Error(`Backend health check failed: ${healthCheck.status}`);
+      }
+    } catch (healthError: any) {
+      throw new Error(`Backend not available: ${healthError.message}. Make sure the backend is running on ${backendUrl}`);
+    }
+    
+    const response = await fetch(apiUrl, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        'User-Agent': 'Globe-Fare-Frontend/1.0',
+        'Accept': 'application/json',
+      },
+      signal: AbortSignal.timeout(30000)
+    });
+    
+    if (!response.ok) {
+      const errorText = await response.text().catch(() => 'Unable to read error response');
+      throw new Error(`Backend API returned ${response.status}: ${response.statusText}. Response: ${errorText}`);
+    }
+    
+    const backendData = await response.json();
+    console.log(`✅ [REQUEST:${requestId}] Backend response:`, {
+      success: backendData.success,
+      count: backendData.count || backendData.flights?.length || 0,
+      source: backendData.source,
+      hasFlights: !!(backendData.flights && backendData.flights.length > 0)
+    });
+    
+    // Extract flights from the standardized backend response
+    let rawFlights = [];
+    if (backendData.success && backendData.flights && Array.isArray(backendData.flights)) {
+      rawFlights = backendData.flights;
+    } else if (Array.isArray(backendData)) {
+      rawFlights = backendData;
+    } else {
+      console.warn(`⚠️ [REQUEST:${requestId}] No flights in backend response`);
+      return [];
+    }
+    
+    // Process and standardize the flight data
+    const processedFlights = processFlightData(rawFlights, 'api');
+    
+    console.log(`✅ [REQUEST:${requestId}] Processed ${processedFlights.length} flights from backend`);
+    return processedFlights;
+    
+  } catch (error: any) {
+    console.error(`❌ [REQUEST:${requestId}] Failed to fetch from backend:`, {
+      destination,
+      date,
+      error: error.message,
+      cause: error.cause
+    });
+    
+    // Only trigger refresh if backend is reachable but returned no data
+    if (!error.message.includes('Backend not available') && !error.message.includes('ECONNREFUSED')) {
+      try {
+        const backendUrl = process.env.BACKEND_URL || 'https://huntroute.onrender.com';
+        const refreshUrl = `${backendUrl}/api/refresh?to=${destination}&date=${date}`;
+        
+        console.log(`🔄 [REQUEST:${requestId}] Requesting cache refresh: ${refreshUrl}`);
+        
+        const refreshResponse = await fetch(refreshUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'User-Agent': 'Globe-Fare-Frontend/1.0',
+          },
+          signal: AbortSignal.timeout(10000)
+        });
+        
+        if (refreshResponse.ok) {
+          const refreshData = await refreshResponse.json();
+          console.log(`✅ [REQUEST:${requestId}] Cache refresh completed successfully`);
+        } else {
+          console.warn(`⚠️ [REQUEST:${requestId}] Backend refresh failed with status ${refreshResponse.status}`);
+        }      } catch (refreshError: any) {
+        console.warn(`⚠️ [REQUEST:${requestId}] Could not trigger refresh: ${refreshError.message}`);
+      }
+    }
+    
+    throw error;
+  }
+}
+      } catch (refreshError) {
+        console.warn('[REFRESH FAILED] Could not trigger refresh:', refreshError.message);
+      }
+    }
+    
+    throw error;
+  }
+}
+
+export async function GET(request: Request) {
+  const { searchParams } = new URL(request.url);
+  const to = searchParams.get('to');
+  const date = searchParams.get('date');
+  const requestId = `${to}-${date}-${Date.now().toString(36).substring(0, 8)}`;
+
+  // Add request ID for better tracking in logs
+  console.log(`🔍 [REQUEST:${requestId}] Flight search for ${to} on ${date}`);
+
+  // Validate required parameters
+  if (!to || !date) {
+    console.log(`❌ [REQUEST:${requestId}] Missing required parameters`);
+    return NextResponse.json(
+      { 
+        success: false,
+        error: 'Missing required parameters: to and date',
+        data: [],
+        meta: {
+          destination: to || 'unknown',
+          date: date || 'unknown',
+          count: 0,
+          source: 'validation-error'
+        }
+      },
+      { status: 400 }
+    );
+  }
+
+  // Validate destination and date format
+  const destValidation = validateDestination(to);
+  const dateValidation = validateDate(date);
+
+  if (!destValidation.isValid) {
+    return NextResponse.json(
+      { 
+        success: false,
+        error: 'Invalid destination', 
+        details: destValidation.errors,
+        data: [],
+        meta: {
+          destination: to,
+          date: date,
+          count: 0,
+          source: 'validation-error'
+        }
+      },
+      { status: 400 }
+    );
+  }
+
+  if (!dateValidation.isValid) {
+    return NextResponse.json(
+      { 
+        success: false,
+        error: 'Invalid date', 
+        details: dateValidation.errors,
+        data: [],
+        meta: {
+          destination: to,
+          date: date,
+          count: 0,
+          source: 'validation-error'
+        }
+      },
+      { status: 400 }
+    );
+  }
+
+  try {
+    // Clean up old cache files first (async, don't wait)
+    setImmediate(() => cleanupOldCache());
+
+    // STEP 1: Check if we have valid cache for this specific destination and date
+    if (isCacheValid(to, date)) {
+      const cachedFlights = readCache(to, date);
+      
+      if (cachedFlights && cachedFlights.length > 0) {
+        console.log(`✅ CACHE HIT: Using cached data for ${to} on ${date} with ${cachedFlights.length} flights`);
+        console.log(`💾 Cache file: ${path.join(CACHE_DIR, getCacheFileName(to, date))}`);
+        
+        // Format the cached data with airline information
+        const formattedFlights = await formatFlightData(cachedFlights);
+        
+        return NextResponse.json({
+          success: true,
+          data: formattedFlights,
+          meta: {
+            destination: to,
+            date: date,
+            count: formattedFlights.length,
+            source: 'cache',
+            cached: true,
+            format_version: '1.0'
+          }
+        }, {
+          headers: {
+            'Cache-Control': 'public, max-age=300',
+            'X-Data-Source': 'cache',
+            'X-Data-Format': 'standardized'
+          }
+        });
+      }    }    // STEP 2: Cache miss or expired - fetch from backend API
+    console.log(`❌ [REQUEST:${requestId}] CACHE MISS - No valid cache for ${to} on ${date}`);
+    console.log(`🔄 [REQUEST:${requestId}] Fetching fresh data from backend API`);
+    
+    const freshFlights = await fetchFlightsFromBackend(to, date, requestId);
+      if (!freshFlights || freshFlights.length === 0) {
+      // Trigger background refresh for future requests
+      setImmediate(async () => {
+        try {
+          await fetch(`https://huntroute.onrender.com`, {
+            method: 'POST',
+            signal: AbortSignal.timeout(5000)
+          });
+          console.log(`🔄 [REQUEST:${requestId}] Background refresh triggered for ${to} on ${date}`);
+        } catch (error: any) {
+          console.warn(`⚠️ [REQUEST:${requestId}] Background refresh failed: ${error.message}`);
+        }
+      });
+      
+      return NextResponse.json({
+        success: true,
+        data: [],
+        meta: {
+          destination: to,
+          date: date,
+          count: 0,
+          source: 'api',
+          message: 'No flights found - refresh triggered for future requests',
+          format_version: '1.0'
+        }
+      });
+    }
+
+    // STEP 3: Save fresh data to cache (already standardized)
+    saveToCache(to, date, freshFlights);
+
+    // STEP 4: Format and return fresh data
+    const formattedFlights = await formatFlightData(freshFlights);
+
+    return NextResponse.json({
+      success: true,
+      data: formattedFlights,
+      meta: {
+        destination: to,
+        date: date,
+        count: formattedFlights.length,
+        source: 'api',
+        cached: false,
+        fresh: true,
+        format_version: '1.0'
+      }
+    }, {
+      headers: {
+        'Cache-Control': 'public, max-age=300',
+        'X-Data-Source': 'api',
+        'X-Data-Format': 'standardized'
+      }
+    });
+  } catch (error: any) {
+    console.error(`❌ [REQUEST:${requestId}] Error processing request:`, error);
+
+    // Try to return stale cache as fallback
+    try {
+      const staleFlights = readCache(to, date);
+      if (staleFlights && staleFlights.length > 0) {
+        console.log(`⚠️ [REQUEST:${requestId}] Returning stale data as fallback for ${to} on ${date}`);
+        
+        const formattedFlights = await formatFlightData(staleFlights);
+        
+        return NextResponse.json({
+          success: true,
+          data: formattedFlights,
+          meta: {
+            destination: to,
+            date: date,
+            count: formattedFlights.length,
+            source: 'stale-cache',
+            warning: 'Using stale data due to API error',
+            format_version: '1.0'
+          }
+        }, {
+          headers: {
+            'Cache-Control': 'public, max-age=60',
+            'X-Data-Source': 'stale-cache',
+            'X-Data-Format': 'standardized'
+          }        });
+      }
+    } catch (fallbackError: any) {
+      console.error(`❌ [REQUEST:${requestId}] Failed to read stale cache:`, fallbackError.message);
+    }
+
+    return NextResponse.json({
+      success: false,
+      error: 'Failed to fetch flight data',
+      message: error instanceof Error ? error.message : 'Unknown error',
+      data: [],
+      meta: {
+        destination: to,
+        date: date,
+        count: 0,
+        source: 'error',
+        format_version: '1.0'
+      }
+    }, { status: 500 });
+  }
+}
+
+// Optional: Add cache status endpoint for debugging
+export async function POST(request: Request) {
+  const { searchParams } = new URL(request.url);
+  const action = searchParams.get('action');
+  
+  if (action === 'clear-cache') {
+    try {
+      ensureCacheDir();
+      const files = fs.readdirSync(CACHE_DIR);
+      let deletedCount = 0;
+      
+      for (const file of files) {
+        if (file.startsWith('flight-cache-') && file.endsWith('.json')) {
+          fs.unlinkSync(path.join(CACHE_DIR, file));
+          deletedCount++;
+        }
+      }
+      
+      return NextResponse.json({
+        success: true,
+        message: `Cleared ${deletedCount} cache files`
+      });
+    } catch (error) {
+      return NextResponse.json({
+        success: false,
+        error: 'Failed to clear cache'
+      }, { status: 500 });
+    }
+  }
+  
+  if (action === 'cache-status') {
+    try {
+      ensureCacheDir();
+      const files = fs.readdirSync(CACHE_DIR);
+      const cacheFiles = files.filter(f => f.startsWith('flight-cache-') && f.endsWith('.json'));
+      
+      const status = cacheFiles.map(file => {
+        const stat = fs.statSync(path.join(CACHE_DIR, file));
+        const ageInHours = (Date.now() - stat.mtime.getTime()) / (1000 * 60 * 60);
+        
+        return {
+          file,
+          age_hours: ageInHours,
+          valid: ageInHours < CACHE_REFRESH_HOURS,
+          expires_in_hours: CACHE_REFRESH_HOURS - ageInHours
+        };
+      });
+      
+      return NextResponse.json({
+        success: true,
+        cache_files: status,
+        total_files: cacheFiles.length,
+        cache_settings: {
+          refresh_hours: CACHE_REFRESH_HOURS,
+          delete_hours: CACHE_DELETE_HOURS
+        }
+      });
+    } catch (error) {
+      return NextResponse.json({
+        success: false,
+        error: 'Failed to get cache status'
+      }, { status: 500 });
+    }
+  }
+  
+  return NextResponse.json({
+    error: 'Invalid action'
+  }, { status: 400 });
+}

@@ -1,0 +1,39 @@
+{
+  "name": "globe-fare-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Globe Fare flight search",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "dev:debug": "nodemon --inspect index.js",
+    "prod": "NODE_ENV=production node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint *.js **/*.js",
+    "format": "prettier --write \"**/*.{js,json,md}\"",
+    "clean-cache": "node -e \"const fs=require('fs'),path=require('path'); fs.rmSync(path.join(__dirname,'cache'), {recursive:true,force:true}); console.log('Cache cleared');\"",
+    "smart:dev": "npm run clean-cache && npm run dev",
+    "smart:prod": "npm run format && npm run lint && npm run prod",
+    "smart:restart": "npm run clean-cache && npm start",
+    "health": "node -e \"fetch('http://localhost:3001/health').then(r=>r.json()).then(console.log).catch(()=>console.log('Server not running'))\""
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "compression": "^1.7.4",
+    "morgan": "^1.10.0",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}

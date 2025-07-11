@@ -1,0 +1,35 @@
+{
+  "recommendations": [
+    // Essential for React/Next.js development
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "bradlc.vscode-tailwindcss",
+    "ms-vscode.vscode-typescript-next",
+
+    // React specific
+    "dsznajder.es7-react-js-snippets",
+    "formulahendry.auto-rename-tag",
+    "christian-kohler.path-intellisense",
+
+    // Developer experience
+    "ms-vscode.vscode-json",
+    "yzhang.markdown-all-in-one",
+    "streetsidesoftware.code-spell-checker",
+    "usernamehw.errorlens",
+    "aaron-bond.better-comments",
+
+    // Git
+    "eamodio.gitlens",
+    "mhutchie.git-graph",
+
+    // Theme and icons
+    "pkief.material-icon-theme",
+    "zhuangtongfa.material-theme",
+
+    // Productivity
+    "ms-vscode.live-server",
+    "ritwickdey.liveserver",
+    "formulahendry.auto-close-tag",
+    "ms-vscode.powershell"
+  ]
+}

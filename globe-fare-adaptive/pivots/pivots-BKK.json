@@ -1,0 +1,116 @@
+[
+  {
+    "iata": "PEN",
+    "city": "George Town",
+    "country": "MY",
+    "reason": "Thai AirAsia direct $40 USD - cheapest found"
+  },
+  {
+    "iata": "KUL",
+    "city": "Kuala Lumpur",
+    "country": "MY",
+    "reason": "Thai AirAsia direct $38 USD - extremely cheap"
+  },
+  {
+    "iata": "SGN",
+    "city": "Ho Chi Minh City",
+    "country": "VN",
+    "reason": "Thai VietJet Air direct $50-70 USD"
+  },
+  {
+    "iata": "SIN",
+    "city": "Singapore",
+    "country": "SG",
+    "reason": "Scoot direct $60-80 USD"
+  },
+  {
+    "iata": "HAN",
+    "city": "Hanoi",
+    "country": "VN",
+    "reason": "Thai AirAsia direct $60-80 USD"
+  },
+  {
+    "iata": "PNH",
+    "city": "Phnom Penh",
+    "country": "KH",
+    "reason": "Thai AirAsia direct $70-90 USD"
+  },
+  {
+    "iata": "CGK",
+    "city": "Jakarta",
+    "country": "ID",
+    "reason": "Thai Lion Air direct $80-100 USD"
+  },
+  {
+    "iata": "RGN",
+    "city": "Yangon",
+    "country": "MM",
+    "reason": "Myanmar Airways direct $90-110 USD"
+  },
+  {
+    "iata": "BOM",
+    "city": "Mumbai",
+    "country": "IN",
+    "reason": "Thai AirAsia direct $100-120 USD"
+  },
+  {
+    "iata": "MAA",
+    "city": "Chennai",
+    "country": "IN",
+    "reason": "Thai AirAsia direct $100-120 USD"
+  },
+  {
+    "iata": "MFM",
+    "city": "Macau",
+    "country": "MO",
+    "reason": "Air Macau direct $100-130 USD"
+  },
+  {
+    "iata": "HKG",
+    "city": "Hong Kong",
+    "country": "HK",
+    "reason": "HK Express direct $110-140 USD"
+  },
+  {
+    "iata": "TPE",
+    "city": "Taipei",
+    "country": "TW",
+    "reason": "Tigerair Taiwan direct $120-150 USD"
+  },
+  {
+    "iata": "KHH",
+    "city": "Kaohsiung",
+    "country": "TW",
+    "reason": "Tigerair Taiwan direct $130-160 USD"
+  },
+  {
+    "iata": "PER",
+    "city": "Perth",
+    "country": "AU",
+    "reason": "Jetstar direct $130 USD"
+  },
+  {
+    "iata": "CMB",
+    "city": "Colombo",
+    "country": "LK",
+    "reason": "Thai AirAsia direct $138 USD"
+  },
+  {
+    "iata": "ICN",
+    "city": "Seoul",
+    "country": "KR",
+    "reason": "Jeju Air direct $150-180 USD"
+  },
+  {
+    "iata": "KIX",
+    "city": "Osaka",
+    "country": "JP",
+    "reason": "Peach Aviation direct $160-190 USD"
+  },
+  {
+    "iata": "NRT",
+    "city": "Tokyo",
+    "country": "JP",
+    "reason": "ZIPAIR Tokyo direct $170-200 USD"
+  }
+]
