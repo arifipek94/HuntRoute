@@ -1,7 +1,7 @@
-const fs = require("fs");
-const path = require("path");
-const getAirlineName = require("./getAirlineName");
-const getAirportName = require("./getAirportName");
+import fs from 'fs';
+import path from 'path';
+import getAirlineName from './getAirlineName';
+import getAirportName from './getAirportName';
 
 // Use proper path resolution to find data files
 const dataPath = path.join(__dirname, "..", "data");
@@ -56,6 +56,5 @@ function convertFlightForDisplay(flightData) {
   }
 }
 
-module.exports = {
   convertFlightForDisplay,
 };

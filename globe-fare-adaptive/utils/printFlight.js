@@ -1,7 +1,7 @@
+import chalk from 'chalk';
+import getAirportName from './getAirportName';
+import getAirlineName from './getAirlineName';
 // 📁 utils/printFlight.js
-const chalk = require("chalk");
-const getAirportName = require("./getAirportName");
-const getAirlineName = require("./getAirlineName");
 
 /**
  * Format a timestamp in a user-friendly way
@@ -55,5 +55,3 @@ function printFlight(result) {
 
   console.log(mainInfo + departureTime + timeInfo);
 }
-
-module.exports = printFlight;

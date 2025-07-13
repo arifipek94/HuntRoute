@@ -1,0 +1,375 @@
+# Globe Fare Project: Technical Blueprint & Documentation
+
+---
+
+## Table of Contents
+
+1. [Project Structure](#project-structure)
+2. [Environment & Configuration](#environment--configuration)
+3. [Frontend Overview (`globe-fare-frontend`)](#frontend-overview-globe-fare-frontend)
+    - [App Directory Structure](#app-directory-structure)
+    - [Key Components](#key-components)
+    - [Hooks](#hooks)
+    - [API Endpoints (Frontend)](#api-endpoints-frontend)
+    - [Data Flow: User to API](#data-flow-user-to-api)
+    - [Caching (Frontend)](#caching-frontend)
+4. [Backend Overview (`globe-fare-adaptive`)](#backend-overview-globe-fare-adaptive)
+    - [API Endpoints (Backend)](#api-endpoints-backend)
+    - [Cache & Data Storage](#cache--data-storage)
+    - [Data Flow: Backend](#data-flow-backend)
+5. [Types & Data Contracts](#types--data-contracts)
+6. [Error Handling](#error-handling)
+7. [Debugging & Diagnostics](#debugging--diagnostics)
+8. [Deployment & Build](#deployment--build)
+9. [FAQ: Where/What/How](#faq-wherewhathow)
+10. [Change Log & Future Work](#change-log--future-work)
+
+---
+
+## 1. Project Structure
+
+```
+/globe-fare-frontend
+  /src
+    /app
+      /api
+        /flights
+          route.ts
+        /debug
+          route.ts
+      layout.tsx
+      page.tsx
+    /hooks
+      useFlights.ts
+    /lib
+      dataUtils.ts
+      constants.ts
+    /types
+      api.ts
+      flight.ts
+  .env.local
+  next.config.ts
+  package.json
+  ...
+/globe-fare-adaptive
+  index.js
+  /api
+  /cache
+  /data
+  /pivots
+  /results
+  /services
+  /utils
+  package.json
+  ...
+```
+
+---
+
+## 2. Environment & Configuration
+
+- **Frontend:**  
+  - `.env.local`  
+    - `NEXT_PUBLIC_API_BASE_URL=https://huntroute.onrender.com/api`
+  - `next.config.ts`  
+    - Handles Next.js config, image domains, etc.
+
+- **Backend:**  
+  - `.env`  
+    - Used for backend-specific configs (not shown in detail here).
+
+---
+
+## 3. Frontend Overview (`globe-fare-frontend`)
+
+### App Directory Structure
+
+- **`/src/app`**: Next.js App Router entry point.
+  - `layout.tsx`: Root layout, wraps all pages.
+  - `page.tsx`: Main page, handles search UI and results.
+  - `/api/flights/route.ts`: API route, acts as a proxy/cache for backend.
+  - `/api/debug/route.ts`: Diagnostic endpoint.
+
+### Key Components
+
+- **Flight Search UI**:  
+  - Located in `page.tsx`.
+  - Collects user input (`to`, `date`, `people`), triggers search.
+
+- **Flight Listing/Display**:  
+  - Renders results using data from `useFlights` hook.
+
+### Hooks
+
+#### `useFlights.ts`
+
+- **Purpose:**  
+  Handles fetching, caching, and formatting of flight data for the UI.
+
+- **Key Functions:**
+  - `useFlights(params: FlightParams | null)`:  
+    Uses React Query to fetch flights, deduplicates requests, manages cache.
+  - `fetchFlights(params: FlightParams)`:  
+    Builds query, calls `/api/flights`, validates and formats response.
+  - `clearFlightCache()`:  
+    Calls `/api/flights?action=clear-cache` to clear memory cache.
+  - `getFlightCacheStatus()`:  
+    Calls `/api/flights?action=cache-status` to get cache info.
+
+- **Data Flow:**
+  1. User triggers search (UI).
+  2. `useFlights` is called with params.
+  3. `fetchFlights` builds query:  
+     `/api/flights?to=BKK&date=2025-08-02&people=1`
+  4. Response is validated, formatted, and passed to UI.
+
+### API Endpoints (Frontend)
+
+- **`/api/flights`** (GET):  
+  - Params: `to`, `date`, `people`
+  - Calls backend, caches, formats response.
+- **`/api/flights`** (POST):  
+  - `action=clear-cache`: Clears memory cache.
+  - `action=cache-status`: Returns cache status.
+- **`/api/debug`**:  
+  - Diagnostic endpoint for health checks and backend connectivity.
+
+### Data Flow: User to API
+
+1. User enters search params in UI.
+2. `useFlights` triggers `fetchFlights`.
+3. `fetchFlights` calls `/api/flights` (Next.js API route).
+4. API route checks memory cache, otherwise fetches from backend.
+5. Backend returns raw flight data.
+6. API route formats response (`{ success, data, meta }`).
+7. `useFlights` validates and processes data for display.
+
+### Caching (Frontend)
+
+- **Memory Cache:**  
+  - In-memory Map in API route (`route.ts`).
+  - Key: `${to}-${date}`
+  - Value: `{ timestamp, data }`
+  - TTL: 30 minutes (configurable).
+- **File System Cache:**  
+  - Not actively used in frontend, but status can be queried.
+
+---
+
+## 4. Backend Overview (`globe-fare-adaptive`)
+
+### API Endpoints (Backend)
+
+- **`/api/flights?to=DEST&date=YYYY-MM-DD`**  
+  - Returns flight data for given destination and date.
+  - Response format:
+    ```json
+    {
+      "success": true,
+      "flights": [ ... ],
+      "meta": { ... },
+      "count": 15,
+      "source": "api|cache|stale-cache|error"
+    }
+    ```
+- **`/api/refresh?to=DEST&date=YYYY-MM-DD`**  
+  - Triggers refresh of flight data.
+- **`/health`**  
+  - Health check endpoint.
+
+### Cache & Data Storage
+
+- **File System Cache:**  
+  - `/cache/flight-cache-*.json`
+  - Used for persistent caching of flight data.
+- **In-Memory Cache:**  
+  - Used for quick access in API route.
+
+### Data Flow: Backend
+
+1. Receives request from frontend API route.
+2. Checks file system cache.
+3. If cache miss, fetches fresh data from data sources/APIs.
+4. Saves fresh data to cache.
+5. Returns standardized response.
+
+---
+
+## 5. Types & Data Contracts
+
+### `FlightParams` (frontend)
+```typescript
+interface FlightParams {
+  destination: string;
+  date: string;
+  people?: number;
+}
+```
+
+### `FlightResponse` (frontend)
+```typescript
+interface FlightResponse {
+  success: boolean;
+  data: Flight[];
+  meta: {
+    destination: string;
+    date: string;
+    count: number;
+    source: 'cache' | 'api' | 'stale-cache' | 'error';
+    cached?: boolean;
+    fresh?: boolean;
+    cache_updated_at?: string;
+    timestamp?: number;
+    warning?: string;
+    message?: string;
+  };
+  error?: string;
+}
+```
+
+### `FlightApiResponse` (backend)
+```typescript
+interface FlightApiResponse {
+  success: boolean;
+  flights: Record<string, unknown>[];
+  source: string;
+  count: number;
+  meta: { ... };
+}
+```
+
+---
+
+## 6. Error Handling
+
+- **Frontend:**  
+  - If API returns error or invalid format, logs error and returns empty data with error message.
+- **Backend:**  
+  - Returns `{ error: '...' }` with appropriate status code on validation or fetch failure.
+  - Catches and logs all errors.
+
+---
+
+## 7. Debugging & Diagnostics
+
+- **`/api/debug` endpoint:**  
+  - Checks backend health and flight API connectivity.
+  - Returns detailed info about environment, backend status, and sample data.
+
+- **Console Logging:**  
+  - Both frontend and backend log key events (cache hits, API errors, etc).
+
+---
+
+## 8. Deployment & Build
+
+- **Frontend:**  
+  - Built with Next.js 15+, deployed to Vercel.
+  - Uses `.env.local` for API base URL.
+  - Linting, formatting, and type-checking enforced in CI/CD.
+- **Backend:**  
+  - Node.js/Express, can be run locally or deployed to cloud/VPS.
+  - Uses `.env` for configuration.
+
+---
+
+## 9. FAQ: Where/What/How
+
+### Q: **Where does the frontend fetch flight data from?**
+- From its own API route: `/api/flights` (see `src/app/api/flights/route.ts`).
+
+### Q: **How does the frontend API route fetch data?**
+- Checks memory cache.
+- If not cached, fetches from backend (`BACKEND_URL`), e.g. `https://huntroute.onrender.com/api/flights`.
+
+### Q: **What is the expected response format for the frontend?**
+- `{ success: true, data: [ ... ], meta: { ... } }`
+
+### Q: **Where is the cache implemented?**
+- In-memory cache in `route.ts` (frontend API).
+- File system cache in backend (`globe-fare-adaptive/cache/`).
+
+### Q: **How are errors handled?**
+- All errors are caught and returned as `{ success: false, error: '...' }` with appropriate status.
+
+### Q: **How can I clear the cache?**
+- POST `/api/flights?action=clear-cache` (frontend API route).
+
+### Q: **How can I check cache status?**
+- POST `/api/flights?action=cache-status` (frontend API route).
+
+### Q: **How do I debug backend connectivity?**
+- Use `/api/debug` endpoint.
+
+### Q: **Where are types/interfaces defined?**
+- `src/types/api.ts`, `src/types/flight.ts` (frontend).
+
+### Q: **How is flight data processed for display?**
+- `prepareFlightsForDisplay` in `src/lib/dataUtils.ts` standardizes and formats flight data.
+
+---
+
+## 10. Change Log & Future Work
+
+- **Current:**  
+  - Fully working search, cache, and error handling.
+  - Diagnostic endpoints for debugging.
+- **Future:**  
+  - Add user authentication.
+  - Enhance caching (e.g., Redis).
+  - Add more detailed analytics/logging.
+  - Internationalization, mobile support, etc.
+
+---
+
+# **Data Flow Blueprint**
+
+```
+[User] 
+  ↓ (search params)
+[Frontend UI (page.tsx)]
+  ↓ (calls)
+[useFlights hook]
+  ↓ (fetches)
+[/api/flights (Next.js API route)]
+  ↓ (checks memory cache)
+    ↳ [HIT] → return cached data
+    ↳ [MISS] → fetch from backend
+  ↓
+[Backend API (globe-fare-adaptive)]
+  ↓ (checks file cache, fetches fresh if needed)
+  ↓
+[Returns standardized flight data]
+  ↓
+[API route formats as { success, data, meta }]
+  ↓
+[useFlights processes for display]
+  ↓
+[UI displays results]
+```
+
+---
+
+# **How to Trace Any Data or Call**
+
+- **Want to know where a value comes from?**  
+  - Start at the UI, follow the hook, then the API route, then backend.
+- **Want to know who calls the backend?**  
+  - Only the API route in frontend (`route.ts`) calls the backend.
+- **Want to know how cache works?**  
+  - See memory cache in `route.ts`, file cache in backend `/cache/`.
+- **Want to know how errors are handled?**  
+  - All errors are caught and returned as `{ success: false, error: ... }`.
+
+---
+
+# **Conclusion**
+
+This documentation is your **blueprint** for the entire Globe Fare product.  
+**Every data flow, API call, cache, and type is mapped here.**  
+If you ever have a question like “where is X fetched from?” or “who calls Y?”,  
+**start here and follow the chain.**
+
+---
+
+**For any new feature or bug, update this document to keep it as your single source

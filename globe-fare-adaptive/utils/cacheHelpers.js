@@ -1,9 +1,9 @@
+import fs from 'fs';
+import path from 'path';
 /**
  * Cache helpers that don't interfere with existing functionality
  * These functions supplement the original cacheLayer functions without replacing them
  */
-const fs = require("fs");
-const path = require("path");
 
 // Constants for cache management
 const CACHE_DIR = path.join(__dirname, "..", "cache");
@@ -188,7 +188,6 @@ function safeLoadFromCache(from, to, date) {
   }
 }
 
-module.exports = {
   safeAppendToFlightMemory,
   safeSaveNoDataInfo,
   safeCleanOldCacheFiles,

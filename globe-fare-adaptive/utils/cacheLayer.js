@@ -1,6 +1,6 @@
+import fs from 'fs';
+import path from 'path';
 // 📁 utils/cacheLayer.js
-const fs = require("fs");
-const path = require("path");
 
 const CACHE_DIR = path.join(__dirname, "..", "cache");
 
@@ -172,7 +172,6 @@ function cleanupCache() {
   }
 }
 
-// Add these functions at the end of the file, before module.exports:
 
 function appendToFlightMemory(flightData) {
   try {
@@ -239,7 +238,6 @@ function saveNoDataInfo(from, to, date) {
 }
 
 // Make sure to export all functions
-module.exports = {
   loadFromCache,
   saveToCache,
   appendToFlightMemory,
