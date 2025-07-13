@@ -301,6 +301,7 @@ app.get("/api/flights", async (req, res) => {
             setTimeout(() => reject(new Error("timeout")), 30000),
           ), // Back to 30s
         ]),
+      )
       );
 
     // Extract successful results and flatten arrays
