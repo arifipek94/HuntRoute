@@ -1,27 +1,29 @@
-// 📁 index.js
-
-require("dotenv").config();
-const fs = require("fs");
-const path = require("path");
-const { fetchFlight } = require("./services/flightFetcher.js");
-const getAirlineName = require("./utils/getAirlineName.js");
-const getAirportName = require("./utils/getAirportName.js");
-const {
+import dotenv from "dotenv";
+dotenv.config();
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+import express from "express";
+import cors from "cors";
+import { fetchFlight } from "./services/flightFetcher.js";
+import getAirlineName from "./utils/getAirlineName.js";
+import getAirportName from "./utils/getAirportName.js";
+import {
   loadFromCache,
   saveToCache,
   appendToFlightMemory,
   saveNoDataInfo,
   cleanOldCacheFiles,
-} = require("./utils/cacheLayer.js");
+} from "./utils/cacheLayer.js";
+import printFlight from "./utils/printFlight.js";
+import cacheHelpers from "./utils/cacheHelpers.js";
 
-const printFlight = require("./utils/printFlight");
-const express = require("express");
-const cors = require("cors");
+// ESM __dirname ve __filename tanımı
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 const app = express();
 const PORT = process.env.PORT || 5000;
-
-// Import our safe cache helpers
-const cacheHelpers = require("./utils/cacheHelpers");
 
 // Ensure cache directories at startup
 cacheHelpers.ensureDirectories();
@@ -69,7 +71,7 @@ app.get("/health", (req, res) => {
 // Import cache utilities if they exist, otherwise define locally
 let cacheUtils;
 try {
-  cacheUtils = require("./utils/cacheLayer.js");
+  cacheUtils = await import("./utils/cacheLayer.js");
 } catch (error) {
   console.warn("[CACHE] Cache utilities not found, using local implementation");
 
@@ -299,8 +301,7 @@ app.get("/api/flights", async (req, res) => {
             setTimeout(() => reject(new Error("timeout")), 30000),
           ), // Back to 30s
         ]),
-      ),
-    );
+      );
 
     // Extract successful results and flatten arrays
     const flights = results
@@ -439,7 +440,8 @@ app.get("/api/flights", async (req, res) => {
 
 // Try to import and use existing refresh handler, with fallback
 try {
-  const refreshHandler = require("./api/refresh.js");
+  const refreshHandlerModule = await import("./api/refresh.js");
+  const refreshHandler = refreshHandlerModule.default;
   app.get("/api/refresh", refreshHandler);
   app.post("/api/refresh", refreshHandler);
   console.log("[SERVER] Refresh endpoints loaded successfully");
@@ -762,4 +764,4 @@ runSearch()
   .catch(error => console.error('[SEARCH] Error during initial search:', error.message));
 */
 
-module.exports = app;
+export default app;

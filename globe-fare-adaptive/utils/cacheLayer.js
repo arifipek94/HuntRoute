@@ -1,5 +1,7 @@
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
+
 // 📁 utils/cacheLayer.js
 
 const CACHE_DIR = path.join(__dirname, "..", "cache");
@@ -238,44 +240,10 @@ function saveNoDataInfo(from, to, date) {
 }
 
 // Make sure to export all functions
+export {
   loadFromCache,
   saveToCache,
   appendToFlightMemory,
   saveNoDataInfo,
-  cleanOldCacheFiles: function () {
-    // Implement cache cleanup
-    try {
-      const CACHE_DIR = path.join(__dirname, "..", "cache");
-      if (!fs.existsSync(CACHE_DIR)) {
-        return;
-      }
-
-      const files = fs.readdirSync(CACHE_DIR);
-      const now = Date.now();
-      let deletedCount = 0;
-
-      for (const file of files) {
-        if (file.startsWith("flight-") && file.endsWith(".json")) {
-          const filePath = path.join(CACHE_DIR, file);
-          const stat = fs.statSync(filePath);
-          const ageInHours = (now - stat.mtime.getTime()) / (1000 * 60 * 60);
-
-          if (ageInHours > 24) {
-            fs.unlinkSync(filePath);
-            deletedCount++;
-          }
-        }
-      }
-
-      if (deletedCount > 0) {
-        console.log(`[CACHE] Deleted ${deletedCount} old cache files`);
-      }
-    } catch (error) {
-      console.error("[CACHE] Error cleaning old cache files:", error);
-    }
-  },
-  // For backward compatibility
-  cleanupCache: function () {
-    return this.cleanOldCacheFiles();
-  },
+  cleanOldCacheFiles,
 };

@@ -8,7 +8,7 @@ const { saveToCache } = require("../utils/cache");
 const router = express.Router();
 const pivotsPath = path.join(__dirname, "../pivot-airports");
 
-router.get("/refresh", async (req, res) => {
+const refreshHandler = async (req, res) => {
   const { to, date } = req.query;
 
   console.log(`➡️ [REFRESH] Called with to=${to}, date=${date}`);
@@ -75,6 +75,8 @@ router.get("/refresh", async (req, res) => {
       error: err?.message,
     });
   }
-});
+};
 
-module.exports = router;
+router.get("/refresh", refreshHandler);
+
+export default refreshHandler;

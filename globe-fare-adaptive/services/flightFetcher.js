@@ -1,3 +1,4 @@
+import axios from "axios";
 // 📁 services/flightFetcher.js
 const { fetchFromAmadeus } = require("./providers/amadeus.js");
 // İleride başka sağlayıcılar için:
@@ -13,7 +14,7 @@ const API_MODE = process.env.API_MODE || "amadeus";
  * @param {number} adults Yetişkin sayısı
  * @param {number} max Maksimum sonuç sayısı
  */
-async function fetchFlight(origin, destination, date, adults = 1, max = 5) {
+export async function fetchFlight(origin, destination, date, adults = 1, max = 5) {
   if (API_MODE === "amadeus") {
     return fetchFromAmadeus(origin, destination, date, adults, max);
   }
@@ -24,6 +25,5 @@ async function fetchFlight(origin, destination, date, adults = 1, max = 5) {
   throw new Error(`Unsupported API_MODE: ${API_MODE}`);
 }
 
-module.exports = {
-  fetchFlight,
-};
+// veya
+// export { fetchFlight };

@@ -188,9 +188,10 @@ function safeLoadFromCache(from, to, date) {
   }
 }
 
+export default {
+  ensureDirectories,
   safeAppendToFlightMemory,
   safeSaveNoDataInfo,
   safeCleanOldCacheFiles,
   safeLoadFromCache,
-  ensureDirectories,
 };

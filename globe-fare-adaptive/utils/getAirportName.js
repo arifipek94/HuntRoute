@@ -1,4 +1,5 @@
 import iataData from "../data/iata-data.json" with { type: "json" };
+import airports from "./airports.json" assert { type: "json" };
 
 function getAirportName(code) {
   const entry = iataData[code];

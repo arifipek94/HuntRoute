@@ -55,3 +55,5 @@ function printFlight(result) {
 
   console.log(mainInfo + departureTime + timeInfo);
 }
+
+export default printFlight;
