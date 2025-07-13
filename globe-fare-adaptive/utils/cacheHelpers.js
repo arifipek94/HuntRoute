@@ -1,5 +1,5 @@
-import fs from 'fs';
-import path from 'path';
+import fs from "fs";
+import path from "path";
 /**
  * Cache helpers that don't interfere with existing functionality
  * These functions supplement the original cacheLayer functions without replacing them
@@ -190,8 +190,5 @@ function safeLoadFromCache(from, to, date) {
 
 export default {
   ensureDirectories,
-  safeAppendToFlightMemory,
-  safeSaveNoDataInfo,
   safeCleanOldCacheFiles,
-  safeLoadFromCache,
 };
