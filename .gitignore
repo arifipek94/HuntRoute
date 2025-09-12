@@ -1,5 +1,16 @@
 ﻿# ===== Global / Root Ignores =====
 
+# Terraform state
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# Variable files containing secrets
+*.tfvars
+
+# Crash logs
+crash.log
+
 # Dependencies
 node_modules/
 .pnp
