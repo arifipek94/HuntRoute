@@ -1,9 +1,11 @@
+
+
 // 📁 utils/getAirlineName.js
-import airlines from "./airlines.json" with { type: "json" };
+const airlines = require("../data/airlines.json");
 
 function getAirlineName(code) {
   const airline = airlines.find((a) => a.id === code);
   return airline ? airline.name : code;
 }
 
-export default getAirlineName;
+module.exports = getAirlineName;
