@@ -18,24 +18,29 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '22.x'
+
       - name: npm install & build
         run: |
           npm install
           npm run build --if-present
           npm run test --if-present
+
       - name: Build Docker image
         run: |
           docker build -f globe-fare-adaptive/Dockerfile -t huntrouteacr43776.azurecr.io/huntroute:latest globe-fare-adaptive/
+
       - name: Login to ACR
         uses: azure/docker-login@v1
         with:
           login-server: huntrouteacr43776.azurecr.io
           username: ${{ secrets.ACR_USERNAME }}
           password: ${{ secrets.ACR_PASSWORD }}
+
       - name: Push Docker image to ACR
         run: |
           docker push huntrouteacr43776.azurecr.io/huntroute:latest
@@ -46,6 +51,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+
       - name: Login to Azure
         uses: azure/login@v2
         with:
@@ -53,10 +59,10 @@ jobs:
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
-      - name: Set up kubectl
-        uses: azure/setup-kubectl@v3
-        with:
-          version: 'latest'
+      - name: Configure AKS context
+        run: |
+          az aks get-credentials --resource-group huntroute-rg --name huntroute-aks --overwrite-existing
+
       - name: Deploy to AKS
         run: |
           kubectl apply -f k8s/globe-fare-adaptive.yaml
