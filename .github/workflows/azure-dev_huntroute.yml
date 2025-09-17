@@ -26,7 +26,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t huntrouteacr43776.azurecr.io/huntroute:latest .
+          docker build -f globe-fare-adaptive/Dockerfile -t huntrouteacr43776.azurecr.io/huntroute:latest globe-fare-adaptive/
       
       - name: Login to ACR
         uses: azure/docker-login@v1
