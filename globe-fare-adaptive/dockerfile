@@ -1,6 +1,11 @@
 FROM node:22-bullseye
 WORKDIR /app
+
 COPY package*.json ./
 RUN npm install --production
 COPY . .
+
+# JSON importlarını etkinleştir
+ENV NODE_OPTIONS="--experimental-json-modules"
+
 CMD ["node", "index.js"]
