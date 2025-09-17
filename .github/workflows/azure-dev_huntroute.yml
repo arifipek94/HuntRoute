@@ -59,4 +59,4 @@ jobs:
           version: 'latest'
       - name: Deploy to AKS
         run: |
-          kubectl apply -f k8s/backend.yaml
+          kubectl apply -f k8s/globe-fare-adaptive.yaml
