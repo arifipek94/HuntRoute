@@ -25,7 +25,6 @@ node_modules/
 /out/
 /build/
 /dist/
-.vercel/
 /.netlify/
 
 # Runtime data
@@ -158,11 +157,6 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# Package managers
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
-
 # Testing
 /coverage
 /.coverage
@@ -203,35 +197,3 @@ yarn-error.log*
 .env*.local
 
 .vercel
-
-
-# ===== Project-specific ignores for globe-fare-adaptive =====
-globe-fare-adaptive/node_modules/
-
-globe-fare-adaptive/.env
-globe-fare-adaptive/.env.*
-
-globe-fare-adaptive/*.log
-globe-fare-adaptive/npm-debug.log*
-globe-fare-adaptive/yarn-debug.log*
-globe-fare-adaptive/yarn-error.log*
-
-globe-fare-adaptive/cache/
-globe-fare-adaptive/flightMemory.json
-
-globe-fare-adaptive/results/
-globe-fare-adaptive/frontend/public/results-*.json
-
-globe-fare-adaptive/data/
-globe-fare-adaptive/pivots/
-
-globe-fare-adaptive/.vscode/
-globe-fare-adaptive/.idea/
-
-globe-fare-adaptive/.DS_Store
-globe-fare-adaptive/Thumbs.db
-
-globe-fare-adaptive/coverage/
-
-globe-fare-adaptive/*.swp
-globe-fare-adaptive/*.swo
