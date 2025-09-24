@@ -4,7 +4,7 @@ export const DESTINATIONS = [
 ];
 
 export const BACKEND_URL =
-  process.env.NEXT_PUBLIC_BACKEND_URL || 'https://huntroute.onrender.com';
+  process.env.NEXT_PUBLIC_BACKEND_URL || 'https://98.64.26.226';
 
 export const MESSAGES = {
   WELCOME: '👋 Hi! Where would you like to fly?',
