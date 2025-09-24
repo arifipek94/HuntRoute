@@ -318,7 +318,7 @@ export async function prepareFlightsForDisplay(
           stops: Number(flight.stops) || 0,
           price: Number(flight.price) || 0,
           currency: flight.currency || 'EUR',
-          aircraft: flight.aircraft || flight.aircraftType || '738',
+          aircraft: flight.aircraft || '738',
           availableSeats:
             flight.availableSeats || Math.floor(Math.random() * 50) + 10,
 
