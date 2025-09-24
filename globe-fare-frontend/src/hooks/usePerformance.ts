@@ -1,11 +1,12 @@
 import { useCallback, useEffect, useMemo, useRef } from 'react';
 
 // Type alias for a debounced function with cancel and flush methods
-export type DebouncedCallback<T extends (...args: unknown[]) => unknown> =
-  ((...args: Parameters<T>) => ReturnType<T>) & {
-    cancel: () => void;
-    flush: () => void;
-  };
+export type DebouncedCallback<T extends (...args: unknown[]) => unknown> = ((
+  ...args: Parameters<T>
+) => ReturnType<T>) & {
+  cancel: () => void;
+  flush: () => void;
+};
 
 // Enhanced debounce hook with cancellation and immediate execution option
 export function useDebounceCallback<T extends (...args: unknown[]) => unknown>(
@@ -207,7 +208,7 @@ export function useOptimizedFilter<T>(
 ) {
   const {
     maxResults = 100,
-  // prioritizeExactMatches = true;
+    // prioritizeExactMatches = true;
     caseSensitive = false,
   } = options;
 
