@@ -208,7 +208,7 @@ export function useOptimizedFilter<T>(
 ) {
   const {
     maxResults = 100,
-    // prioritizeExactMatches = true;
+    // prioritizeExactMatches = true,
     caseSensitive = false,
   } = options;
 
@@ -232,14 +232,12 @@ export function useOptimizedFilter<T>(
         if (fieldValue === searchQuery) {
           score += 100;
           hasMatch = true;
-        }
-        // Starts with query
-        else if (fieldValue.startsWith(searchQuery)) {
+        } else if (fieldValue.startsWith(searchQuery)) {
+          // Starts with query
           score += 50;
           hasMatch = true;
-        }
-        // Contains query
-        else if (fieldValue.includes(searchQuery)) {
+        } else if (fieldValue.includes(searchQuery)) {
+          // Contains query
           score += 25;
           hasMatch = true;
         }
