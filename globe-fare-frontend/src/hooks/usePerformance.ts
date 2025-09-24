@@ -1,9 +1,9 @@
 import { useCallback, useEffect, useMemo, useRef } from 'react';
 
 // Type alias for a debounced function with cancel and flush methods
-export type DebouncedCallback<T extends (...args: unknown[]) => unknown> = ((
+export type DebouncedCallback<T extends (...args: unknown[]) => unknown> = (
   ...args: Parameters<T>
-) => ReturnType<T>) & {
+) => ReturnType<T> & {
   cancel: () => void;
   flush: () => void;
 };
@@ -95,12 +95,11 @@ export function useDebounceCallback<T extends (...args: unknown[]) => unknown>(
     return cancel;
   }, [cancel]);
 
-  // Attach cancel and flush methods
-  const typedDebouncedCallback = debouncedCallback as DebouncedCallback<T>;
-  typedDebouncedCallback.cancel = cancel;
-  typedDebouncedCallback.flush = flush;
-
-  return typedDebouncedCallback;
+  // Attach cancel and flush methods using Object.assign for type safety
+  return Object.assign(debouncedCallback, {
+    cancel,
+    flush,
+  }) as DebouncedCallback<T>;
 }
 
 // Throttle hook for rate limiting
