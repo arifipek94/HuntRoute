@@ -1,6 +1,6 @@
 import axios from "axios";
 // 📁 services/flightFetcher.js
-const { fetchFromAmadeus } = require("./providers/amadeus.js");
+import { fetchFromAmadeus } from "./providers/amadeus.js";
 // İleride başka sağlayıcılar için:
 // import { fetchFromKiwi } from './providers/kiwi.js';
 

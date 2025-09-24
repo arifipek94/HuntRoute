@@ -1,6 +1,6 @@
 import chalk from 'chalk';
-import getAirportName from './getAirportName';
-import getAirlineName from './getAirlineName';
+import getAirportName from './getAirportName.js';
+import getAirlineName from './getAirlineName.js';
 // 📁 utils/printFlight.js
 
 /**
