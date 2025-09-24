@@ -13,6 +13,7 @@ export interface Airline {
   id: string;
   name: string;
   code: string;
+  iata?: string;
   logo?: string;
   country?: string;
 }
@@ -44,8 +45,7 @@ export async function loadAirlineData(): Promise<Record<string, Airline>> {
     if (!response.ok)
       throw new Error(`HTTP ${response.status}: Failed to load airline data`);
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const airlines: any[] = await response.json();
+  const airlines: Airline[] = await response.json();
 
     airlinesCache = airlines.reduce(
       (acc, airline) => {
@@ -93,13 +93,12 @@ export async function loadAirportData(): Promise<Record<string, Airport>> {
     console.log('📥 [AIRPORTS] Raw data loaded');
 
     airportsCache = Object.entries(airportData).reduce(
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      (acc, [code, airport]: [string, any]) => {
+      (acc, [code, airport]) => {
         acc[code] = {
           code: code,
-          name: airport.name || `${code} Airport`,
-          city: airport.city || code,
-          country: airport.country || '',
+          name: (airport as Airport).name || `${code} Airport`,
+          city: (airport as Airport).city || code,
+          country: (airport as Airport).country || '',
         };
         return acc;
       },
@@ -274,9 +273,9 @@ export function generateFlightId(
   return `${airline}-${origin}-${destination}-${departure}-${index}-${timestamp}-${random}`;
 }
 
-export async function prepareFlightsForDisplay(
-  flights: any[]
-): Promise<Flight[]> {
+  export async function prepareFlightsForDisplay(
+    flights: Flight[]
+  ): Promise<Flight[]> {
   if (!Array.isArray(flights)) {
     console.warn('[DATA PROCESSING] Expected array, got:', typeof flights);
     return [];
