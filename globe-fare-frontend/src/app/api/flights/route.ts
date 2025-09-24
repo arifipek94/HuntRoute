@@ -145,7 +145,7 @@ export async function POST(request: Request) {
           timestamp: Date.now(),
         },
       });
-  } catch {
+    } catch {
       return NextResponse.json(
         {
           success: false,

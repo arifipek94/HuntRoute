@@ -1,14 +1,21 @@
 import { useCallback, useEffect, useMemo, useRef } from 'react';
 
+// Type alias for a debounced function with cancel and flush methods
+export type DebouncedCallback<T extends (...args: unknown[]) => unknown> =
+  ((...args: Parameters<T>) => ReturnType<T>) & {
+    cancel: () => void;
+    flush: () => void;
+  };
+
 // Enhanced debounce hook with cancellation and immediate execution option
-export function useDebounceCallback<T extends (...args: any[]) => any>(
+export function useDebounceCallback<T extends (...args: unknown[]) => unknown>(
   callback: T,
   delay: number,
   options: {
     immediate?: boolean;
     maxWait?: number;
   } = {}
-): T & { cancel: () => void; flush: () => void } {
+): DebouncedCallback<T> {
   const timeoutRef = useRef<NodeJS.Timeout>();
   const maxTimeoutRef = useRef<NodeJS.Timeout>();
   const callbackRef = useRef(callback);
@@ -16,7 +23,9 @@ export function useDebounceCallback<T extends (...args: any[]) => any>(
   const lastInvokeTimeRef = useRef<number>(0);
 
   // Update callback ref when callback changes
-  callbackRef.current = callback;
+  useEffect(() => {
+    callbackRef.current = callback;
+  }, [callback]);
 
   const cancel = useCallback(() => {
     if (timeoutRef.current) {
@@ -38,6 +47,7 @@ export function useDebounceCallback<T extends (...args: any[]) => any>(
         return callbackRef.current();
       }
     }
+    return undefined;
   }, []);
 
   const debouncedCallback = useCallback(
@@ -74,9 +84,10 @@ export function useDebounceCallback<T extends (...args: any[]) => any>(
           maxTimeoutRef.current = undefined;
         }
       }, delay);
+      return undefined;
     },
     [delay, options.immediate, options.maxWait, cancel]
-  ) as T;
+  );
 
   // Cleanup on unmount
   useEffect(() => {
@@ -84,14 +95,15 @@ export function useDebounceCallback<T extends (...args: any[]) => any>(
   }, [cancel]);
 
   // Attach cancel and flush methods
-  (debouncedCallback as any).cancel = cancel;
-  (debouncedCallback as any).flush = flush;
+  const typedDebouncedCallback = debouncedCallback as DebouncedCallback<T>;
+  typedDebouncedCallback.cancel = cancel;
+  typedDebouncedCallback.flush = flush;
 
-  return debouncedCallback as T & { cancel: () => void; flush: () => void };
+  return typedDebouncedCallback;
 }
 
 // Throttle hook for rate limiting
-export function useThrottleCallback<T extends (...args: any[]) => any>(
+export function useThrottleCallback<T extends (...args: unknown[]) => unknown>(
   callback: T,
   delay: number,
   options: {
@@ -104,7 +116,9 @@ export function useThrottleCallback<T extends (...args: any[]) => any>(
   const callbackRef = useRef(callback);
   const { leading = true, trailing = true } = options;
 
-  callbackRef.current = callback;
+  useEffect(() => {
+    callbackRef.current = callback;
+  }, [callback]);
 
   const cancel = useCallback(() => {
     if (timeoutRef.current) {
@@ -135,6 +149,7 @@ export function useThrottleCallback<T extends (...args: any[]) => any>(
           timeoutRef.current = undefined;
         }, delay - timeSinceLastInvoke);
       }
+      return undefined;
     },
     [delay, leading, trailing]
   ) as T;
@@ -143,7 +158,7 @@ export function useThrottleCallback<T extends (...args: any[]) => any>(
     return cancel;
   }, [cancel]);
 
-  (throttledCallback as any).cancel = cancel;
+  (throttledCallback as T & { cancel: () => void }).cancel = cancel;
 
   return throttledCallback as T & { cancel: () => void };
 }
@@ -192,7 +207,7 @@ export function useOptimizedFilter<T>(
 ) {
   const {
     maxResults = 100,
-    prioritizeExactMatches = true,
+  // prioritizeExactMatches = true;
     caseSensitive = false,
   } = options;
 
@@ -243,7 +258,7 @@ export function useOptimizedFilter<T>(
     query,
     searchFields,
     maxResults,
-  // prioritizeExactMatches, // removed unnecessary dependency
+    // prioritizeExactMatches, // removed unnecessary dependency
     caseSensitive,
   ]);
 }
@@ -255,7 +270,15 @@ export function useMemoryMonitor(enabled = false) {
 
     const checkMemory = () => {
       if ('memory' in performance) {
-  const memory = (performance as Performance & { memory?: { usedJSHeapSize: number; totalJSHeapSize: number; jsHeapSizeLimit: number } }).memory;
+        const memory = (
+          performance as Performance & {
+            memory?: {
+              usedJSHeapSize: number;
+              totalJSHeapSize: number;
+              jsHeapSizeLimit: number;
+            };
+          }
+        ).memory;
         if (memory) {
           console.log('[MEMORY]', {
             used: `${Math.round(memory.usedJSHeapSize / 1024 / 1024)}MB`,

@@ -32,7 +32,7 @@ export async function GET(request: Request) {
   const backendUrl =
     process.env.BACKEND_URL ||
     process.env.NEXT_PUBLIC_BACKEND_URL ||
-  'https://98.64.26.226/';
+    'https://98.64.26.226/';
 
   const debugInfo = {
     timestamp: new Date().toISOString(),

@@ -45,7 +45,7 @@ export async function loadAirlineData(): Promise<Record<string, Airline>> {
     if (!response.ok)
       throw new Error(`HTTP ${response.status}: Failed to load airline data`);
 
-  const airlines: Airline[] = await response.json();
+    const airlines: Airline[] = await response.json();
 
     airlinesCache = airlines.reduce(
       (acc, airline) => {
