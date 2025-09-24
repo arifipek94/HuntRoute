@@ -243,7 +243,7 @@ export function useOptimizedFilter<T>(
     query,
     searchFields,
     maxResults,
-    prioritizeExactMatches,
+  // prioritizeExactMatches, // removed unnecessary dependency
     caseSensitive,
   ]);
 }
@@ -255,12 +255,14 @@ export function useMemoryMonitor(enabled = false) {
 
     const checkMemory = () => {
       if ('memory' in performance) {
-        const memory = (performance as any).memory;
-        console.log('[MEMORY]', {
-          used: `${Math.round(memory.usedJSHeapSize / 1024 / 1024)}MB`,
-          total: `${Math.round(memory.totalJSHeapSize / 1024 / 1024)}MB`,
-          limit: `${Math.round(memory.jsHeapSizeLimit / 1024 / 1024)}MB`,
-        });
+  const memory = (performance as Performance & { memory?: { usedJSHeapSize: number; totalJSHeapSize: number; jsHeapSizeLimit: number } }).memory;
+        if (memory) {
+          console.log('[MEMORY]', {
+            used: `${Math.round(memory.usedJSHeapSize / 1024 / 1024)}MB`,
+            total: `${Math.round(memory.totalJSHeapSize / 1024 / 1024)}MB`,
+            limit: `${Math.round(memory.jsHeapSizeLimit / 1024 / 1024)}MB`,
+          });
+        }
       }
     };
 

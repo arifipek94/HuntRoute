@@ -273,9 +273,9 @@ export function generateFlightId(
   return `${airline}-${origin}-${destination}-${departure}-${index}-${timestamp}-${random}`;
 }
 
-  export async function prepareFlightsForDisplay(
-    flights: Flight[]
-  ): Promise<Flight[]> {
+export async function prepareFlightsForDisplay(
+  flights: Flight[]
+): Promise<Flight[]> {
   if (!Array.isArray(flights)) {
     console.warn('[DATA PROCESSING] Expected array, got:', typeof flights);
     return [];

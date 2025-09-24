@@ -27,6 +27,7 @@ export interface Flight {
   price: number;
   currency: string;
   aircraft?: string;
+  flightDuration?: string;
   availableSeats?: number;
 
   // Additional data
