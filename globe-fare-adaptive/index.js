@@ -733,22 +733,22 @@ async function runSearch() {
 }
 
 // Start the server WITHOUT running automatic search
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(
-    `[SERVER] Globe Fare Backend running on http://localhost:${PORT}`,
+    `[SERVER] Globe Fare Backend running on http://0.0.0.0:${PORT}`,
   );
   console.log(
     `[SERVER] Frontend CORS enabled for: ${process.env.FRONTEND_URL || "http://localhost:3000"}`,
   );
   console.log(`[SERVER] Available endpoints:`);
-  console.log(`  GET  http://localhost:${PORT}/`);
-  console.log(`  GET  http://localhost:${PORT}/health`);
-  console.log(`  GET  http://localhost:${PORT}/api`);
+  console.log(`  GET  http://0.0.0.0:${PORT}/`);
+  console.log(`  GET  http://0.0.0.0:${PORT}/health`);
+  console.log(`  GET  http://0.0.0.0:${PORT}/api`);
   console.log(
-    `  GET  http://localhost:${PORT}/api/flights?to=DPS&date=2025-05-24`,
+    `  GET  http://0.0.0.0:${PORT}/api/flights?to=DPS&date=2025-05-24`,
   );
   console.log(
-    `  POST http://localhost:${PORT}/api/refresh?to=DPS&date=2025-05-24`,
+    `  POST http://0.0.0.0:${PORT}/api/refresh?to=DPS&date=2025-05-24`,
   );
   console.log(
     `[SERVER] 🚫 Automatic search DISABLED - Backend ready to serve frontend requests only`,
